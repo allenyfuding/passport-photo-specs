@@ -1,0 +1,70 @@
+name: spec-sync
+
+# 每日自动复核官方规格页: 事实稳定 → 刷新 verified_date; 事实变更/页面异常 → 开 issue 人工复核。
+on:
+  schedule:
+    - cron: "17 3 * * *"   # 每天 03:17 UTC (北京时间 11:17)
+  workflow_dispatch: {}     # 手动触发: Actions 页 Run workflow
+
+permissions:
+  contents: write   # 提交刷新后的数据集
+  issues: write     # 检测到变更/异常时开 issue
+
+concurrency:
+  group: spec-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run official-source verification
+        run: python3 spec_fetch.py
+
+      - name: Detect drift (needs human review)
+        id: drift
+        run: |
+          if git diff --exit-code -- spec_watch/DRIFT.md >/dev/null 2>&1; then
+            echo "drift=0" >> "$GITHUB_OUTPUT"
+          else
+            echo "drift=1" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Commit refreshed dataset
+        run: |
+          if ! git diff --quiet; then
+            git config user.name "spec-sync[bot]"
+            git config user.email "spec-sync[bot]@users.noreply.github.com"
+            git add -A
+            git commit -m "chore(specs): refresh verified dates ($(date -u +%Y-%m-%d))"
+            git push
+          else
+            echo "No dataset changes this run."
+          fi
+
+      - name: Open / update drift alert issue
+        if: steps.drift.outputs.drift == '1'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          TITLE="⚠ Spec drift detected $(date -u +%Y-%m-%d) — manual re-verification required"
+          {
+            echo "## Run $(date -u +%Y-%m-%d)"
+            echo
+            cat spec_watch/DRIFT.md
+          } > /tmp/drift_body.md
+          EXISTING="$(gh issue list --state open --limit 100 --json number,title \
+            -q '.[] | select(.title | startswith("⚠ Spec drift detected")) | .number' | head -1)"
+          if [ -n "$EXISTING" ]; then
+            gh issue comment "$EXISTING" --body-file /tmp/drift_body.md
+          else
+            gh issue create --title "$TITLE" --body-file /tmp/drift_body.md
+          fi

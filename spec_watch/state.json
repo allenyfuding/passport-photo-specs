@@ -1,0 +1,162 @@
+{
+ "us_passport": {
+  "consecutive_failures": 0,
+  "last_status": "UNREACHABLE",
+  "last_checked": "2026-08-10",
+  "last_note": "HTTP 403"
+ },
+ "us_visa": {
+  "consecutive_failures": 0,
+  "last_status": "UNREACHABLE",
+  "last_checked": "2026-08-10",
+  "last_note": "HTTP 403"
+ },
+ "uk_passport": {
+  "consecutive_failures": 0,
+  "last_status": "OK",
+  "last_checked": "2026-08-10",
+  "last_note": "OK",
+  "facts_hash": "70caea64e470bdb956feecb9",
+  "page_hash": "29794a5356ff1f786ec0e62e",
+  "last_facts": [
+   "age_1mo",
+   "bg_plain_light",
+   "file_50kb_10mb",
+   "head_29_34mm",
+   "print_45x35mm",
+   "px_600",
+   "px_750",
+   "unaltered"
+  ],
+  "last_samples": {
+   "px_600": "600",
+   "px_750": "750",
+   "file_50kb_10mb": "50kb and no more than 10mb",
+   "bg_plain_light": "plain light-coloured",
+   "unaltered": "unaltered",
+   "age_1mo": "last month",
+   "head_29_34mm": "29mm and 34mm",
+   "print_45x35mm": "45 millimetres ( mm ) high by 35mm"
+  }
+ },
+ "uk_visa": {
+  "consecutive_failures": 0,
+  "last_status": "OK",
+  "last_checked": "2026-08-10",
+  "last_note": "OK",
+  "facts_hash": "991da3c02f8dbdc013de97bd",
+  "page_hash": "a8dd6fe598704cced35faa6b",
+  "last_facts": [
+   "bg_light",
+   "max_6mb",
+   "px_600",
+   "px_750"
+  ],
+  "last_samples": {
+   "px_600": "600",
+   "px_750": "750",
+   "max_6mb": "6mb",
+   "bg_light": "plain light"
+  }
+ },
+ "ca_passport": {
+  "consecutive_failures": 0,
+  "last_status": "UNREACHABLE",
+  "last_checked": "2026-08-10",
+  "last_note": "timeout: The read operation timed out"
+ },
+ "ca_visa": {
+  "consecutive_failures": 0,
+  "last_status": "UNREACHABLE",
+  "last_checked": "2026-08-10",
+  "last_note": "timeout: The read operation timed out"
+ },
+ "in_evisa": {
+  "consecutive_failures": 0,
+  "last_status": "OK",
+  "last_checked": "2026-08-10",
+  "last_note": "OK",
+  "facts_hash": "15ce627fb8dbcfcfb6b14e84",
+  "page_hash": "4a07117fd6c3c9dd087cd3b8",
+  "last_facts": [
+   "bg_plain_light",
+   "head_full",
+   "no_spectacles"
+  ],
+  "last_samples": {
+   "no_spectacles": "without spectacles",
+   "head_full": "full head from top of hair to bottom of chin",
+   "bg_plain_light": "plain light colored or white background"
+  }
+ },
+ "sg_passport": {
+  "consecutive_failures": 0,
+  "last_status": "OK",
+  "last_checked": "2026-08-10",
+  "last_note": "OK",
+  "facts_hash": "5bc3ffdabd32198b9b8eaa83",
+  "page_hash": "d330781b746f7fce083d6699",
+  "last_facts": [
+   "formats",
+   "iso_icao",
+   "matte",
+   "max_8mb",
+   "px_400x514"
+  ],
+  "last_samples": {
+   "px_400x514": "400x514 pixels",
+   "formats": "jpg, jpeg",
+   "max_8mb": "8mb",
+   "matte": "matte or semi matte",
+   "iso_icao": "international standards organisation"
+  }
+ },
+ "sa_evisa": {
+  "consecutive_failures": 0,
+  "last_status": "OK",
+  "last_checked": "2026-08-10",
+  "last_note": "OK",
+  "facts_hash": "2fd00181c48990b1a8378d6e",
+  "page_hash": "d0b851e32cd21552e6fbfb86",
+  "last_facts": [
+   "age_6mo",
+   "bg_white",
+   "face_70_80",
+   "kb_5_100",
+   "no_shadows",
+   "size_200"
+  ],
+  "last_samples": {
+   "size_200": "200 x 200",
+   "kb_5_100": "5 to 100 kb",
+   "face_70_80": "70% - 80%",
+   "age_6mo": "six months",
+   "bg_white": "background should be white",
+   "no_shadows": "no shadows"
+  }
+ },
+ "nz_visa_online": {
+  "consecutive_failures": 0,
+  "last_status": "OK",
+  "last_checked": "2026-08-10",
+  "last_note": "OK",
+  "facts_hash": "a79fec81137fa82ba8595d3e",
+  "page_hash": "907405b676bca4ceaf4ae50f",
+  "last_facts": [
+   "age_6mo",
+   "good_contrast",
+   "jpg_jpeg",
+   "kb_512_3_14mb",
+   "no_shadows",
+   "portrait_3_4"
+  ],
+  "last_samples": {
+   "age_6mo": "within the last 6 months",
+   "kb_512_3_14mb": "512 kb and 3.14 mb",
+   "portrait_3_4": "portrait mode with 3:4 aspect ratio",
+   "jpg_jpeg": "jpg or jpeg",
+   "no_shadows": "no shadows on your face",
+   "good_contrast": "good contrast between your face and the background"
+  }
+ }
+}
