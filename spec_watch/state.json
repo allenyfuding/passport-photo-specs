@@ -1,9 +1,9 @@
 {
  "us_passport": {
-  "consecutive_failures": 11,
-  "last_status": "UNREACHABLE",
-  "last_checked": "2026-08-18",
-  "last_note": "RuntimeError: chrome got block page / pdf viewer shell"
+  "consecutive_failures": 0,
+  "last_status": "MANUAL",
+  "last_checked": "2026-08-19",
+  "last_note": "人工核验(官方页 Cloudflare 拦截, 浏览器人工比对 facts 后手动刷新)"
  },
  "us_visa": {
   "consecutive_failures": 11,

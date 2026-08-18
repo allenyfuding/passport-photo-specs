@@ -1,7 +1,7 @@
 {
  "dataset": "Official passport and visa photo specifications",
  "maintained_by": "ExamIDPhoto (https://examidphoto.com)",
- "last_verified": "2026-08-18",
+ "last_verified": "2026-08-19",
  "disclaimer": "Always verify requirements against the official government source before use.",
  "specs": [
   {
@@ -17,7 +17,7 @@
    "notes": "Photo must be taken within the last 6 months; no software/AI editing; no scans for upload.",
    "official_source": "travel.state.gov - U.S. passport photo requirements",
    "official_source_url": "https://travel.state.gov/en/passports/apply/help/photos.html",
-   "verified_date": "2026-08-12"
+   "verified_date": "2026-08-19"
   },
   {
    "id": "uk_passport",

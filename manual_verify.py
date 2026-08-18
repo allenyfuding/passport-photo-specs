@@ -32,7 +32,7 @@ CSV_COLS = ["id", "country", "country_code", "document", "photo_size", "output_p
 FACTS = {
     "us_passport": {"size_2x2": r"2\s*[x×]\s*2", "size_51mm": r"51\s*mm",
                     "head_25_35mm": r"25\s*(?:to|–|—|-)\s*35\s*mm", "bg_white": r"white",
-                    "unaltered": r"do not change your photo", "age_6mo": r"6\s*months"},
+                    "unaltered": r"original, unedited", "age_6mo": r"6\s*months"},
     "us_visa": {"size_2x2": r"2\s*[x×]\s*2", "size_51mm": r"51\s*mm",
                 "px_600": r"600", "bg_white": r"white", "no_glasses": r"no longer allowed"},
     "us_dv_lottery": {"px_600": r"600", "kb_240": r"240", "bg_white": r"white"},
