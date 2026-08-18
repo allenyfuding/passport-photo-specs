@@ -1,15 +1,15 @@
 {
  "us_passport": {
-  "consecutive_failures": 10,
+  "consecutive_failures": 11,
   "last_status": "UNREACHABLE",
   "last_checked": "2026-08-18",
-  "last_note": "HTTP 403"
+  "last_note": "RuntimeError: chrome got block page / pdf viewer shell"
  },
  "us_visa": {
-  "consecutive_failures": 10,
+  "consecutive_failures": 11,
   "last_status": "UNREACHABLE",
   "last_checked": "2026-08-18",
-  "last_note": "HTTP 403"
+  "last_note": "RuntimeError: chrome got block page / pdf viewer shell"
  },
  "uk_passport": {
   "consecutive_failures": 0,
@@ -60,16 +60,46 @@
   }
  },
  "ca_passport": {
-  "consecutive_failures": 10,
-  "last_status": "UNREACHABLE",
+  "consecutive_failures": 0,
+  "last_status": "OK",
   "last_checked": "2026-08-18",
-  "last_note": "TimeoutError: The read operation timed out"
+  "last_note": "OK",
+  "facts_hash": "86323f93434628e666ab1d84",
+  "page_hash": "dd55077fa0b9c12e69eb3e5e",
+  "last_facts": [
+   "bg_white",
+   "head_pct_45_50",
+   "no_alter",
+   "px_1200",
+   "px_1800",
+   "px_3000",
+   "px_4500"
+  ],
+  "last_samples": {
+   "px_1200": "1,200",
+   "px_1800": "1,800",
+   "px_3000": "3,000",
+   "px_4500": "4,500",
+   "head_pct_45_50": "45% and 50%",
+   "bg_white": "white",
+   "no_alter": "alter"
+  }
  },
  "ca_visa": {
-  "consecutive_failures": 10,
-  "last_status": "UNREACHABLE",
+  "consecutive_failures": 0,
+  "last_status": "OK",
   "last_checked": "2026-08-18",
-  "last_note": "TimeoutError: The read operation timed out"
+  "last_note": "OK",
+  "facts_hash": "43c6b0857ba269f42575c702",
+  "page_hash": "c79b66113a286b9eb58fa30a",
+  "last_facts": [
+   "bg_plain_light",
+   "bg_white"
+  ],
+  "last_samples": {
+   "bg_white": "white",
+   "bg_plain_light": "plain white or light-coloured"
+  }
  },
  "in_evisa": {
   "consecutive_failures": 0,
@@ -266,39 +296,73 @@
   }
  },
  "us_green_card": {
-  "consecutive_failures": 1,
-  "last_status": "UNREACHABLE",
+  "consecutive_failures": 0,
+  "last_status": "OK",
   "last_checked": "2026-08-18",
-  "last_note": "HTTP 403"
+  "last_note": "OK",
+  "facts_hash": "bc561818fbe07ce1011f3e00",
+  "page_hash": "c52e3191b6f38739b4db792f",
+  "last_facts": [
+   "bg_white"
+  ],
+  "last_samples": {
+   "bg_white": "white"
+  }
  },
  "us_ead": {
-  "consecutive_failures": 1,
-  "last_status": "UNREACHABLE",
+  "consecutive_failures": 0,
+  "last_status": "OK",
   "last_checked": "2026-08-18",
-  "last_note": "HTTP 403"
+  "last_note": "OK",
+  "facts_hash": "bc561818fbe07ce1011f3e00",
+  "page_hash": "6ce162e87493b997f8d45452",
+  "last_facts": [
+   "bg_white"
+  ],
+  "last_samples": {
+   "bg_white": "white"
+  }
  },
  "us_dv_lottery": {
-  "consecutive_failures": 1,
+  "consecutive_failures": 2,
   "last_status": "UNREACHABLE",
   "last_checked": "2026-08-18",
-  "last_note": "HTTP 403"
+  "last_note": "RuntimeError: chrome empty output rc=0"
  },
  "ca_pr_card": {
-  "consecutive_failures": 1,
-  "last_status": "UNREACHABLE",
+  "consecutive_failures": 0,
+  "last_status": "OK",
   "last_checked": "2026-08-18",
-  "last_note": "TimeoutError: The read operation timed out"
+  "last_note": "OK",
+  "facts_hash": "26ad2ee608cdf6078c37177d",
+  "page_hash": "1dbb6b67d2a54aad88a806ab",
+  "last_facts": [
+   "bg_white",
+   "head_31_36"
+  ],
+  "last_samples": {
+   "head_31_36": "31 mm (1¼ inches) and 36 mm",
+   "bg_white": "plain white"
+  }
  },
  "tz_visa": {
-  "consecutive_failures": 1,
-  "last_status": "UNREACHABLE",
+  "consecutive_failures": 0,
+  "last_status": "ANOMALY",
   "last_checked": "2026-08-18",
-  "last_note": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>"
+  "last_note": "页面 200 但未提取到任何关键事实 — 页面结构可能已改, 需人工核对",
+  "facts_hash": "4f53cda18c2baa0c0354bb5f",
+  "page_hash": "c82178b8649f9c5c693c3268",
+  "last_facts": [],
+  "last_samples": {}
  },
  "ug_visa": {
-  "consecutive_failures": 1,
-  "last_status": "UNREACHABLE",
+  "consecutive_failures": 0,
+  "last_status": "ANOMALY",
   "last_checked": "2026-08-18",
-  "last_note": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>"
+  "last_note": "页面 200 但未提取到任何关键事实 — 页面结构可能已改, 需人工核对",
+  "facts_hash": "4f53cda18c2baa0c0354bb5f",
+  "page_hash": "d4bcec7331e94ee1c5239e1a",
+  "last_facts": [],
+  "last_samples": {}
  }
 }

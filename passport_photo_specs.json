@@ -47,7 +47,7 @@
    "notes": "Online renewal only; must be taken by a commercial photographer <=6 months before submission, unaltered original camera file, no scans.",
    "official_source": "canada.ca - passport photo specifications",
    "official_source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/canadian-passports/photos.html",
-   "verified_date": "2026-08-12"
+   "verified_date": "2026-08-18"
   },
   {
    "id": "us_visa",
@@ -92,7 +92,7 @@
    "notes": "Digital 420x540 file plus print sheet for paper applications.",
    "official_source": "canada.ca - IRCC temporary resident visa photograph specifications",
    "official_source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/application/application-forms-guides/temporary-resident-visa-application-photograph-specifications.html",
-   "verified_date": "2026-08-12"
+   "verified_date": "2026-08-18"
   },
   {
    "id": "in_evisa",
@@ -452,7 +452,7 @@
    "notes": "Two identical colour passport-style photos taken recently; full face frontal view; head bare unless religious headwear required; print name and A-Number (if any) on the back. Must not be retouched or altered in any way. Form I-485 instructions 01/20/25.",
    "official_source": "USCIS — Form I-485 Instructions (page 10)",
    "official_source_url": "https://www.uscis.gov/sites/default/files/document/forms/i-485instr.pdf",
-   "verified_date": "2026-08-11"
+   "verified_date": "2026-08-18"
   },
   {
    "id": "us_ead",
@@ -467,7 +467,7 @@
    "notes": "Two identical colour passport-style photographs taken recently; full face frontal view; head bare unless religious headwear required; print name and A-Number (if any) on the back. Must not be retouched or altered in any way. Same photo rule as Form I-485; Form I-765 instructions.",
    "official_source": "USCIS — Form I-765 Instructions (photographs section)",
    "official_source_url": "https://www.uscis.gov/sites/default/files/document/forms/i-765instr.pdf",
-   "verified_date": "2026-08-11"
+   "verified_date": "2026-08-18"
   },
   {
    "id": "us_dv_lottery",
@@ -497,7 +497,7 @@
    "notes": "Two identical photos; taken no more than 12 months before applying; colour or black and white; clear/sharp focus, uniform lighting, no shadows/glare/flash; neutral expression, mouth closed, eyes open, looking directly at the camera; professionally printed on plain high-quality photo paper (home printing on heavyweight paper not accepted); original photo, not altered in any way; avoid white clothing or white religious head coverings.",
    "official_source": "canada.ca — Permanent resident photos",
    "official_source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/permanent-residents/card/photos.html",
-   "verified_date": "2026-08-11"
+   "verified_date": "2026-08-18"
   },
   {
    "id": "uk_driving_licence",

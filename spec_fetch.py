@@ -28,7 +28,9 @@ import hashlib
 import json
 import os
 import re
+import subprocess
 import sys
+import tempfile
 import time
 import zlib
 import urllib.error
@@ -207,6 +209,17 @@ def extract_facts(text, facts):
 
 
 def fetch(url):
+    """返回 (http_code, normalized_text); 网络层失败抛异常。
+    urllib 直连失败(403/5xx/超时/网络错误) → 无头 Chrome fallback 抓取。"""
+    try:
+        return _fetch_urllib(url)
+    except Exception as e:
+        try:
+            return browser_fetch(url)
+        except Exception as e2:
+            raise e2
+
+def _fetch_urllib(url):
     """返回 (http_code, normalized_text); 网络层失败抛 urllib 异常。"""
     req = urllib.request.Request(url, headers={
         "User-Agent": UA,
@@ -256,6 +269,46 @@ def fetch(url):
             last = e
             time.sleep(2)
     raise last
+
+
+CHROME_PATHS = [
+    os.environ.get("SPEC_FETCH_CHROME", "").strip(),
+    "/usr/bin/google-chrome",
+    "/usr/bin/google-chrome-stable",
+    "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+    "/Applications/Chromium.app/Contents/MacOS/Chromium",
+]
+
+
+def _find_chrome():
+    for p in CHROME_PATHS:
+        if p and os.path.exists(p):
+            return p
+    return None
+
+
+def browser_fetch(url):
+    """无头 Chrome 抓取(突破 403/超时/UA 拦截): 返回 (200, normalized_text)。
+
+    Cloudflare 拦截页 / PDF viewer 壳 / 空输出 → 抛异常, 保持 UNREACHABLE 语义
+    (不把拦截页当真实规格页, 避免 ANOMALY 误报)。"""
+    ch = _find_chrome()
+    if not ch:
+        raise RuntimeError("no chrome binary available for browser fallback")
+    cmd = [ch, "--headless=new", "--disable-gpu", "--no-sandbox", "--disable-dev-shm-usage",
+           "--virtual-time-budget=15000", "--user-agent=" + UA, "--dump-dom", url]
+    try:
+        p = subprocess.run(cmd, capture_output=True, timeout=45)
+    except subprocess.TimeoutExpired:
+        raise RuntimeError("chrome headless timeout")
+    html = (p.stdout or b"").decode("utf-8", "ignore")
+    low = html.lower()
+    if not html.strip() or len(html) < 300:
+        raise RuntimeError("chrome empty output rc=%s" % p.returncode)
+    if any(k in low for k in ("pdf_embedder", "attention required", "cf-error-details",
+                              "just a moment", "cloudflare")):
+        raise RuntimeError("chrome got block page / pdf viewer shell")
+    return 200, normalize_text(html)
 
 
 def write_csv(ds):
