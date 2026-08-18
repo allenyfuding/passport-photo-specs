@@ -26,6 +26,9 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Install pypdf (PDF official sources, e.g. USCIS forms / DV instructions)
+        run: pip install pypdf
+
       - name: Run official-source verification
         run: python3 spec_fetch.py
 

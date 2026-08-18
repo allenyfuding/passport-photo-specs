@@ -118,6 +118,54 @@ SOURCES = [
                "jpg_jpeg": r"jpg or jpeg",
                "no_shadows": r"no shadows on your face",
                "good_contrast": r"good contrast between your face and the background"}},
+    # V243+: 新增国家/证件自动核验。官方页为 JS 应用(SAP/SPA)、正文抓不到的源(巴西/埃及/柬埔寨/埃塞/
+    # 印尼/阿曼/印度护照/马达加斯加)与"仅参考"的 az_visa 暂不加入自动核验, 保留人工核验日期。
+    {"key": "uk_driving_licence", "label": "UK Driving Licence (DVLA)",
+     "url": "https://www.gov.uk/renew-photo-driving-licence",
+     "facts": {"passport_type_photo": r"passport type photo", "photocard": r"photocard driving licence",
+               "change_photo": r"change the photo on your driving licence"}},
+    {"key": "ke_eta", "label": "Kenya eTA",
+     "url": "https://etakenya.go.ke/how-to-apply",
+     "facts": {"passport_photo": r"passport-type photo", "selfie": r"selfie",
+               "blank_page": r"at least one blank page"}},
+    {"key": "india_evisa", "label": "India e-Visa (main site)",
+     "url": "https://indianvisaonline.gov.in/evisa/tvoa.html",
+     "facts": {"jpeg": r"format - jpeg", "min_10kb": r"minimum 10 kb", "max_1mb": r"maximum 1 mb",
+               "square": r"the height and width of the photo must be equal",
+               "no_spectacles": r"without spectacles",
+               "bg_plain_light": r"plain light colored or white background",
+               "no_shadows": r"no shadows on the face or on the background"}},
+    {"key": "sa_visa", "label": "Saudi Arabia Visa",
+     "url": "https://visa.visitsaudi.com/Home/PhotoSpecifications",
+     "facts": {"size_200": r"200\s*[x×]\s*200", "face": r"chin to the crown of the head",
+               "face_14_16": r"1\.4", "age_6mo": r"six months",
+               "bg_white": r"background should be white", "no_shadows": r"no shadows must be shown"}},
+    {"key": "la_visa", "label": "Lao e-Visa",
+     "url": "https://laoevisa.gov.la/faq",
+     "facts": {"size_4x6cm": r"4x6\s*cm", "bg_white": r"plain white background",
+               "no_shadows": r"no shadows", "face_camera": r"face the camera"}},
+    {"key": "us_green_card", "label": "US Green Card (I-485)",
+     "url": "https://www.uscis.gov/sites/default/files/document/forms/i-485instr.pdf",
+     "facts": {"size_2x2": r"2\s*[x×]\s*2", "px_1200": r"1200\s*[x×]\s*1200",
+               "head_25_35": r"25\s*(?:to|–|—|-)\s*35\s*mm", "bg_white": r"white"}},
+    {"key": "us_ead", "label": "US Employment Authorization (I-765)",
+     "url": "https://www.uscis.gov/sites/default/files/document/forms/i-765instr.pdf",
+     "facts": {"size_2x2": r"2\s*[x×]\s*2", "px_1200": r"1200\s*[x×]\s*1200",
+               "head_25_35": r"25\s*(?:to|–|—|-)\s*35\s*mm", "bg_white": r"white"}},
+    {"key": "us_dv_lottery", "label": "US Diversity Visa",
+     "url": "https://travel.state.gov/content/dam/visas/Diversity-Visa/DV-Instructions-Translations/DV-2026-Instructions-Translations/DV%202026%20Plain%20Language%20Instructions%20and%20FAQs.pdf",
+     "facts": {"px_600": r"600\s*[x×]\s*600", "kb_240": r"240\s*kb",
+               "head_50_69": r"50\s*(?:to|–|—|-)\s*69", "bg_white": r"white or near-white"}},
+    {"key": "ca_pr_card", "label": "Canada PR Card",
+     "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/permanent-residents/card/photos.html",
+     "facts": {"size_50x70": r"50\s*mm[^.]{0,20}70\s*mm",
+               "head_31_36": r"31\s*mm[^.]{0,40}36\s*mm", "bg_white": r"plain white"}},
+    {"key": "tz_visa", "label": "Tanzania Visa",
+     "url": "https://visa.immigration.go.tz",
+     "facts": {"size_45x35": r"45\s*mm[^.]{0,20}35\s*mm", "kb_500": r"500\s*kb", "jpeg": r"jpe?g"}},
+    {"key": "ug_visa", "label": "Uganda e-Visa",
+     "url": "https://visas.immigration.go.ug",
+     "facts": {"size_2x2": r"2\s*[x×]\s*2", "px_600": r"600\s*[x×]\s*600", "kb_240": r"240\s*kb"}},
 ]
 
 
@@ -182,6 +230,17 @@ def fetch(url):
                         raw = zlib.decompress(raw)
                     except Exception:
                         raw = zlib.decompress(raw, -zlib.MAX_WBITS)
+                if raw.startswith(b"%PDF"):
+                    # 官方源为 PDF(USCIS 表格说明 / 国务院 DV 指引): 用 pypdf 抽取文本后照常做事实比对。
+                    # workflow 已 pip install pypdf; 本地测试需 python3.12 + pypdf。
+                    try:
+                        import io
+                        from pypdf import PdfReader
+                        pdf = PdfReader(io.BytesIO(raw))
+                        pdf_text = "\n".join((p.extract_text() or "") for p in pdf.pages)
+                    except Exception:
+                        pdf_text = ""
+                    return r.status, normalize_text(pdf_text)
                 enc = (r.headers.get_content_charset() or "utf-8")
                 try:
                     html = raw.decode(enc, "ignore")

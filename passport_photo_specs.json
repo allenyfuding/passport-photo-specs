@@ -512,7 +512,7 @@
    "notes": "DVLA photo change/renewal: you can use your passport photo or upload a new one (£14 online); postal D1 applications require a recent printed passport-type photo. The photo must be unaltered by computer software; plain light-coloured background, no shadows.",
    "official_source": "gov.uk — Change the photo on your driving licence",
    "official_source_url": "https://www.gov.uk/renew-photo-driving-licence",
-   "verified_date": "2026-08-11"
+   "verified_date": "2026-08-18"
   },
   {
    "id": "ke_eta",
@@ -527,7 +527,7 @@
    "notes": "Kenya eTA required for US, UK and Canada citizens before travel. Official How to Apply page verified in a live browser (2026-08-17): it lists \"selfie or passport-type photo\" among the required documents and publishes no pixel dimensions; the online form accepts a digital photo upload. We deliver the passport standard 2×2 in / 600×600 px file (head 50–69% per US passport convention, aipassportphoto cross-check).",
    "official_source": "Kenya Directorate of Immigration Services — eTA portal (How to Apply, verified live 2026-08-17)",
    "official_source_url": "https://etakenya.go.ke/how-to-apply",
-   "verified_date": "2026-08-17"
+   "verified_date": "2026-08-18"
   },
   {
    "id": "india_evisa",
@@ -542,7 +542,7 @@
    "notes": "Square JPEG; no AI editing; verify against the official portal before use.",
    "official_source": "indianvisaonline.gov.in - e-Visa photo requirements",
    "official_source_url": "https://indianvisaonline.gov.in/evisa/tvoa.html",
-   "verified_date": "2026-08-12"
+   "verified_date": "2026-08-18"
   },
   {
    "id": "br_visa",
@@ -632,7 +632,7 @@
    "notes": "Saudi e-Visa available online for US, UK and Canada citizens. Official Photo Specifications page: 200×200 px, image size 5–100 KB, white background, photo no more than 6 months old, face 70–80% of frame. Verified directly on the official portal (visa.visitsaudi.com/Home/PhotoSpecifications).",
    "official_source": "Saudi Arabia e-Visa — visa.visitsaudi.com Photo Specifications",
    "official_source_url": "https://visa.visitsaudi.com/Home/PhotoSpecifications",
-   "verified_date": "2026-08-17"
+   "verified_date": "2026-08-18"
   },
   {
    "id": "om_visa",
@@ -707,7 +707,7 @@
    "notes": "Laos e-Visa available online for US, UK and Canada citizens. Official FAQ (laoevisa.gov.la/faq): photo must be 4×6 cm, in colour, taken within the last 6 months, no shadows, plain white background, facing camera, neutral expression, both eyes open (ICAO standard). Verified directly on the official portal.",
    "official_source": "Lao Official Online Visa — laoevisa.gov.la (FAQ)",
    "official_source_url": "https://laoevisa.gov.la/faq",
-   "verified_date": "2026-08-17"
+   "verified_date": "2026-08-18"
   },
   {
    "id": "az_visa",

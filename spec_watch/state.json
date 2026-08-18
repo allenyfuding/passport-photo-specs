@@ -1,12 +1,12 @@
 {
  "us_passport": {
-  "consecutive_failures": 9,
+  "consecutive_failures": 10,
   "last_status": "UNREACHABLE",
   "last_checked": "2026-08-18",
   "last_note": "HTTP 403"
  },
  "us_visa": {
-  "consecutive_failures": 9,
+  "consecutive_failures": 10,
   "last_status": "UNREACHABLE",
   "last_checked": "2026-08-18",
   "last_note": "HTTP 403"
@@ -60,13 +60,13 @@
   }
  },
  "ca_passport": {
-  "consecutive_failures": 9,
+  "consecutive_failures": 10,
   "last_status": "UNREACHABLE",
   "last_checked": "2026-08-18",
   "last_note": "TimeoutError: The read operation timed out"
  },
  "ca_visa": {
-  "consecutive_failures": 9,
+  "consecutive_failures": 10,
   "last_status": "UNREACHABLE",
   "last_checked": "2026-08-18",
   "last_note": "TimeoutError: The read operation timed out"
@@ -158,5 +158,147 @@
    "no_shadows": "no shadows on your face",
    "good_contrast": "good contrast between your face and the background"
   }
+ },
+ "uk_driving_licence": {
+  "consecutive_failures": 0,
+  "last_status": "OK",
+  "last_checked": "2026-08-18",
+  "last_note": "OK",
+  "facts_hash": "94394e1dd186f007fceadc1a",
+  "page_hash": "64e5554915cbc4a5db059ed0",
+  "last_facts": [
+   "change_photo",
+   "passport_type_photo",
+   "photocard"
+  ],
+  "last_samples": {
+   "passport_type_photo": "passport type photo",
+   "photocard": "photocard driving licence",
+   "change_photo": "change the photo on your driving licence"
+  }
+ },
+ "ke_eta": {
+  "consecutive_failures": 0,
+  "last_status": "OK",
+  "last_checked": "2026-08-18",
+  "last_note": "OK",
+  "facts_hash": "e7b9c291c7f488795ea5117c",
+  "page_hash": "8952c00f6137f8979ac5e3a2",
+  "last_facts": [
+   "blank_page",
+   "passport_photo",
+   "selfie"
+  ],
+  "last_samples": {
+   "passport_photo": "passport-type photo",
+   "selfie": "selfie",
+   "blank_page": "at least one blank page"
+  }
+ },
+ "india_evisa": {
+  "consecutive_failures": 0,
+  "last_status": "OK",
+  "last_checked": "2026-08-18",
+  "last_note": "OK",
+  "facts_hash": "68e38d1da36874622a71f2d2",
+  "page_hash": "d3773074ef8926b6ce38c54b",
+  "last_facts": [
+   "bg_plain_light",
+   "jpeg",
+   "max_1mb",
+   "min_10kb",
+   "no_shadows",
+   "no_spectacles",
+   "square"
+  ],
+  "last_samples": {
+   "jpeg": "format - jpeg",
+   "min_10kb": "minimum 10 kb",
+   "max_1mb": "maximum 1 mb",
+   "square": "the height and width of the photo must be equal",
+   "no_spectacles": "without spectacles",
+   "bg_plain_light": "plain light colored or white background",
+   "no_shadows": "no shadows on the face or on the background"
+  }
+ },
+ "sa_visa": {
+  "consecutive_failures": 0,
+  "last_status": "OK",
+  "last_checked": "2026-08-18",
+  "last_note": "OK",
+  "facts_hash": "a9c3c0ea78d2af506e0d9472",
+  "page_hash": "d0b851e32cd21552e6fbfb86",
+  "last_facts": [
+   "age_6mo",
+   "bg_white",
+   "face",
+   "face_14_16",
+   "no_shadows",
+   "size_200"
+  ],
+  "last_samples": {
+   "size_200": "200 x 200",
+   "face": "chin to the crown of the head",
+   "face_14_16": "1.4",
+   "age_6mo": "six months",
+   "bg_white": "background should be white",
+   "no_shadows": "no shadows must be shown"
+  }
+ },
+ "la_visa": {
+  "consecutive_failures": 0,
+  "last_status": "OK",
+  "last_checked": "2026-08-18",
+  "last_note": "OK",
+  "facts_hash": "8357c71bbef50fac0bc54072",
+  "page_hash": "c7c06d7714c80239db759894",
+  "last_facts": [
+   "bg_white",
+   "face_camera",
+   "no_shadows",
+   "size_4x6cm"
+  ],
+  "last_samples": {
+   "size_4x6cm": "4x6 cm",
+   "bg_white": "plain white background",
+   "no_shadows": "no shadows",
+   "face_camera": "face the camera"
+  }
+ },
+ "us_green_card": {
+  "consecutive_failures": 1,
+  "last_status": "UNREACHABLE",
+  "last_checked": "2026-08-18",
+  "last_note": "HTTP 403"
+ },
+ "us_ead": {
+  "consecutive_failures": 1,
+  "last_status": "UNREACHABLE",
+  "last_checked": "2026-08-18",
+  "last_note": "HTTP 403"
+ },
+ "us_dv_lottery": {
+  "consecutive_failures": 1,
+  "last_status": "UNREACHABLE",
+  "last_checked": "2026-08-18",
+  "last_note": "HTTP 403"
+ },
+ "ca_pr_card": {
+  "consecutive_failures": 1,
+  "last_status": "UNREACHABLE",
+  "last_checked": "2026-08-18",
+  "last_note": "TimeoutError: The read operation timed out"
+ },
+ "tz_visa": {
+  "consecutive_failures": 1,
+  "last_status": "UNREACHABLE",
+  "last_checked": "2026-08-18",
+  "last_note": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>"
+ },
+ "ug_visa": {
+  "consecutive_failures": 1,
+  "last_status": "UNREACHABLE",
+  "last_checked": "2026-08-18",
+  "last_note": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>"
  }
 }
