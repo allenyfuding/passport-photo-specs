@@ -94,7 +94,7 @@ def cmd_set(key, date):
                "consecutive_failures": 0}
     save(STATE_FP, st)
     print(f"{key} 核验日期 -> {date} (JSON/CSV/state 已更新)")
-    print("后续: git add/commit/push; 同步 iMac ~/cutout_demo/spec_dataset/; 无需重启 web(渲染时读数据)")
+    print("后续: git add/commit/push; 同步 iMac ~/cutout_demo/spec_dataset/; 重启 iMac web(launchctl kickstart -k gui/501/com.examid.web, 模块加载时读数据)")
     return 0
 
 
