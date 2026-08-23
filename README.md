@@ -42,6 +42,13 @@ stamp each entry with its verification date, so you can trust the freshness.
 
 ## Sources
 
+## Related tools
+
+- [Free print-at-exact-size tool](https://examidphoto.com/print-tool) — print any photo at its true physical size on A4/Letter/A3–A6
+- [Free 11-point photo compliance checker](https://examidphoto.com/checker) — checks size, head height, background and more against these specs
+- [Free photo compressor](https://examidphoto.com/photo-compress) — shrink photos to official upload limits (10 KB–1 MB, processed in-browser)
+- [Specs quick card](https://examidphoto.com/tools/spec-card) — embeddable reference card built from this dataset
+
 All entries cite an official or cross-checked source with a `verified_date`.
 Entries verified against official pages on 2026-08-09: CN, SG-passport, NZ-visa,
 AU-passport (passports.gov.au), IN-OCI (ociservices.gov.in PDF).
