@@ -52,3 +52,9 @@
 ## 2026-08-25 — 需人工复核
 - **US Visa (DS-160)** (us_visa): 已连续 **18** 次不可达 (最近: RuntimeError: chrome got block page / pdf viewer shell) — 保留核验日期 2026-08-12, 需检查网络/代理
 - **US Diversity Visa** (us_dv_lottery): 已连续 **9** 次不可达 (最近: RuntimeError: chrome got block page / pdf viewer shell) — 保留核验日期 2026-08-11, 需检查网络/代理
+
+## 2026-08-27 — 需人工复核
+- **US Passport** (us_passport): 已连续 **9** 次不可达 (最近: RuntimeError: chrome got block page / pdf viewer shell) — 保留核验日期 2026-08-19, 需检查网络/代理
+- **US Green Card (I-485)** (us_green_card): 已连续 **9** 次不可达 (最近: RuntimeError: chrome empty output rc=0) — 保留核验日期 2026-08-18, 需检查网络/代理
+- **US Employment Authorization (I-765)** (us_ead): 已连续 **9** 次不可达 (最近: RuntimeError: chrome empty output rc=0) — 保留核验日期 2026-08-18, 需检查网络/代理
+- **Tanzania Visa** (tz_visa): **ANOMALY** — 页面可达但提取不到规格事实 (hash 934dbe1fe5b97ad805e6c096 → 67c804606b38afc7356cbbaa), 需人工核对 https://visa.immigration.go.tz
