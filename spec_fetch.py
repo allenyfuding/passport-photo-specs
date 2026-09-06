@@ -210,14 +210,64 @@ def extract_facts(text, facts):
 
 def fetch(url):
     """返回 (http_code, normalized_text); 网络层失败抛异常。
-    urllib 直连失败(403/5xx/超时/网络错误) → 无头 Chrome fallback 抓取。"""
+    urllib 直连失败(403/5xx/超时/网络错误) → curl 兜底 → 无头 Chrome fallback(仅 HTML;
+    PDF 送 Chrome 只会得到查看器空壳, 8/19-9/6 uscis 假 UNREACHABLE 即此因)。"""
     try:
         return _fetch_urllib(url)
-    except Exception as e:
+    except Exception as e1:
         try:
-            return browser_fetch(url)
+            return _fetch_curl(url)
         except Exception as e2:
-            raise e2
+            if url.lower().split("?")[0].endswith(".pdf"):
+                raise e2
+            try:
+                return browser_fetch(url)
+            except Exception as e3:
+                raise e3
+
+def raw_to_text(raw):
+    """把响应体转为归一化文本: PDF 用 pypdf 抽文本, HTML 按编码解码。"""
+    if raw.startswith(b"%PDF"):
+        # 官方源为 PDF(USCIS 表格说明 / 国务院 DV 指引): 用 pypdf 抽取文本后照常做事实比对。
+        # workflow 已 pip install pypdf; 本地测试需 python3.12 + pypdf。
+        try:
+            import io
+            from pypdf import PdfReader
+            pdf = PdfReader(io.BytesIO(raw))
+            pdf_text = "\n".join((p.extract_text() or "") for p in pdf.pages)
+        except Exception:
+            pdf_text = ""
+        return normalize_text(pdf_text)
+    try:
+        html = raw.decode("utf-8", "ignore")
+    except Exception:
+        html = raw.decode("utf-8", "ignore")
+    return normalize_text(html)
+
+
+def _fetch_curl(url):
+    """curl 兜底: 部分官方源(如 uscis.gov/Akamai)按 TLS/UA 指纹拦 Python urllib 但放行 curl。
+    返回 (http_code, normalized_text); 失败抛异常。"""
+    cmd = ["curl", "-sSL", "--compressed", "--max-time", "45", "-A", UA,
+           "-H", "Accept: text/html,application/xhtml+xml,*/*;q=0.8",
+           "-H", "Accept-Language: en-US,en;q=0.9", "-o", "-", "-w", "\n%{http_code}", url]
+    try:
+        p = subprocess.run(cmd, capture_output=True, timeout=60)
+    except subprocess.TimeoutExpired:
+        raise RuntimeError("curl timeout")
+    out = p.stdout or b""
+    code = 0
+    try:
+        head, _, tail = out.rpartition(b"\n")
+        if tail.strip().isdigit():
+            code = int(tail.strip())
+            out = head
+    except Exception:
+        pass
+    if p.returncode != 0:
+        raise RuntimeError("curl rc=%s %s" % (p.returncode, (p.stderr or b"").decode("utf-8", "ignore")[:120]))
+    return code, raw_to_text(out)
+
 
 def _fetch_urllib(url):
     """返回 (http_code, normalized_text); 网络层失败抛 urllib 异常。"""
@@ -243,23 +293,7 @@ def _fetch_urllib(url):
                         raw = zlib.decompress(raw)
                     except Exception:
                         raw = zlib.decompress(raw, -zlib.MAX_WBITS)
-                if raw.startswith(b"%PDF"):
-                    # 官方源为 PDF(USCIS 表格说明 / 国务院 DV 指引): 用 pypdf 抽取文本后照常做事实比对。
-                    # workflow 已 pip install pypdf; 本地测试需 python3.12 + pypdf。
-                    try:
-                        import io
-                        from pypdf import PdfReader
-                        pdf = PdfReader(io.BytesIO(raw))
-                        pdf_text = "\n".join((p.extract_text() or "") for p in pdf.pages)
-                    except Exception:
-                        pdf_text = ""
-                    return r.status, normalize_text(pdf_text)
-                enc = (r.headers.get_content_charset() or "utf-8")
-                try:
-                    html = raw.decode(enc, "ignore")
-                except Exception:
-                    html = raw.decode("utf-8", "ignore")
-                return r.status, normalize_text(html)
+                return r.status, raw_to_text(raw)
         except urllib.error.HTTPError as e:
             if e.code in (404, 410):
                 return e.code, ""
