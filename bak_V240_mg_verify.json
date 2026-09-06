@@ -1,7 +1,7 @@
 {
  "dataset": "Official passport and visa photo specifications",
  "maintained_by": "ExamIDPhoto (https://examidphoto.com)",
- "last_verified": "2026-09-07",
+ "last_verified": "2026-08-17",
  "disclaimer": "Always verify requirements against the official government source before use.",
  "specs": [
   {
@@ -17,7 +17,7 @@
    "notes": "Photo must be taken within the last 6 months; no software/AI editing; no scans for upload.",
    "official_source": "travel.state.gov - U.S. passport photo requirements",
    "official_source_url": "https://travel.state.gov/en/passports/apply/help/photos.html",
-   "verified_date": "2026-08-19"
+   "verified_date": "2026-08-12"
   },
   {
    "id": "uk_passport",
@@ -32,7 +32,7 @@
    "notes": "Digital photo for online applications; photo must not be altered with software.",
    "official_source": "gov.uk - passport photo requirements",
    "official_source_url": "https://www.gov.uk/photos-for-passports",
-   "verified_date": "2026-09-06"
+   "verified_date": "2026-08-12"
   },
   {
    "id": "ca_passport",
@@ -47,7 +47,7 @@
    "notes": "Online renewal only; must be taken by a commercial photographer <=6 months before submission, unaltered original camera file, no scans.",
    "official_source": "canada.ca - passport photo specifications",
    "official_source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/canadian-passports/photos.html",
-   "verified_date": "2026-09-06"
+   "verified_date": "2026-08-12"
   },
   {
    "id": "us_visa",
@@ -77,7 +77,7 @@
    "notes": "Digital only; never altered; background never replaced.",
    "official_source": "gov.uk Home Office - photo for visa application",
    "official_source_url": "https://www.gov.uk/guidance/how-to-take-a-photo-for-a-visa-application-or-permission",
-   "verified_date": "2026-09-06"
+   "verified_date": "2026-08-12"
   },
   {
    "id": "ca_visa",
@@ -92,7 +92,7 @@
    "notes": "Digital 420x540 file plus print sheet for paper applications.",
    "official_source": "canada.ca - IRCC temporary resident visa photograph specifications",
    "official_source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/application/application-forms-guides/temporary-resident-visa-application-photograph-specifications.html",
-   "verified_date": "2026-09-06"
+   "verified_date": "2026-08-12"
   },
   {
    "id": "in_evisa",
@@ -107,7 +107,7 @@
    "notes": "Square JPEG; no AI editing; verify against the official portal before use.",
    "official_source": "indianvisaonline.gov.in - e-Visa photo requirements",
    "official_source_url": "https://indianvisaonline.gov.in/evisa/tvoa.html",
-   "verified_date": "2026-09-06"
+   "verified_date": "2026-08-12"
   },
   {
    "id": "in_passport",
@@ -119,25 +119,10 @@
    "file_size": "- (printed photo; no official digital upload)",
    "head_height_rule": "Frontal view of the full face (official portal does not state a head % range)",
    "background": "White",
-   "notes": "Official Passport Seva portal FAQ/Guide (verified live 2026-08-12 by rendering the portal): 'Passport size coloured photographs (4.5 cm length x 3.5 cm width) with white background'. Printed photos are required for minors under 4, Camp applications and Diplomatic/Official forms; ordinary adult applicants have the photo captured digitally at the PSK. Black & white, polaroid, dark glasses and uniform photos are not accepted. Overseas applications (e.g. from the US/Canada through VFS Global or Indian missions) use the official overseas spec: 2x2 in (51x51 mm) colour photograph, head height 25-35 mm (about 50-69% of photo height), plain white background, no retouching - verified 2026-08-17 against VFS Global's India passport services photo specification PDF (https://visa.vfsglobal.com/one-pager/india/united-states-of-america/passport-services/pdf/photo-specifiation.pdf).",
+   "notes": "Official Passport Seva portal FAQ/Guide (verified live 2026-08-12 by rendering the portal): 'Passport size coloured photographs (4.5 cm length x 3.5 cm width) with white background'. Printed photos are required for minors under 4, Camp applications and Diplomatic/Official forms; ordinary adult applicants have the photo captured digitally at the PSK. Black & white, polaroid, dark glasses and uniform photos are not accepted.",
    "official_source": "passportindia.gov.in — Passport Seva official portal (FAQ & Guides)",
    "official_source_url": "https://www.passportindia.gov.in/psp/Faqs",
    "verified_date": "2026-08-12"
-  },
-  {
-   "id": "in_dl",
-   "country": "India",
-   "country_code": "IN",
-   "document": "India Driving Licence",
-   "photo_size": "35x45 mm (1.38x1.77 in)",
-   "output_pixels": "413x531 px (300 dpi)",
-   "file_size": "20-50 KB (Sarathi/Parivahan online upload)",
-   "head_height_rule": "Passport-standard: full face visible; official portal does not publish a head % range",
-   "background": "Plain white",
-   "notes": "India driving licence photo requirements (Sarathi/Parivahan portal; cross-checked 2026-08-20 against multiple independent compliance tools: ilovephoto.in, idphotosnap.com, visafoto.com, passport-size-photo.com): 35x45 mm, white background, 300 DPI, 20-50 KB for the Sarathi/Parivahan online upload. Direct crawl of the official portal was blocked by anti-bot protection on 2026-08-20 - pending human re-verify at sarathi.parivahan.gov.in. We deliver a 413x531 px upload file tuned to 20-50 KB plus a 4x6 in print sheet (4 per sheet) for RTO physical submissions.",
-   "official_source": "Parivahan Sarathi - online driving licence portal (photo upload)",
-   "official_source_url": "https://sarathi.parivahan.gov.in/",
-   "verified_date": "2026-08-20"
   },
   {
    "id": "cn_passport",
@@ -145,7 +130,7 @@
    "country_code": "CN",
    "document": "China Passport",
    "photo_size": "33x48 mm",
-   "output_pixels": "780x1134 px (600 dpi)",
+   "output_pixels": "1320x1920 px (600 dpi)",
    "file_size": null,
    "head_height_rule": "Head height (top of hair to chin) about 31.5 mm; 5 mm from top of photo to top of hair",
    "background": "White or light background",
@@ -182,7 +167,7 @@
    "notes": "Digital colour photograph taken within the last 3 months; must not be altered or enhanced (no facial-feature modification, no editing software). Formats: jpg, jpeg, heic, heif, png. ICA photo guidelines verified 2026-08-09.",
    "official_source": "Immigration & Checkpoints Authority (ICA) — Photo Guidelines",
    "official_source_url": "https://www.ica.gov.sg/photo-guidelines",
-   "verified_date": "2026-09-06"
+   "verified_date": "2026-08-12"
   },
   {
    "id": "my_evisa",
@@ -194,10 +179,10 @@
    "file_size": "10 - 350 KB",
    "head_height_rule": "Head height (top of hair) about 32.5 mm; 5 mm from top of photo to top of hair",
    "background": "White background",
-   "notes": "e-Visa photo uploaded on the official MyVISA portal (malaysiavisa.imi.gov.my). Requirement table verified 2026-08-17 via visafoto.com which cites the official portal URL: 35×50 mm, 600 dpi, 10–350 KB, head height (top of hair) 32.5 mm, top gap 5 mm, white background; official page unreachable from this network.",
-   "official_source": "Immigration Department of Malaysia — MyVISA e-Visa portal (requirement table via visafoto.com, verified 2026-08-17)",
+   "notes": "e-Visa photo uploaded on the official MyVISA portal (malaysiavisa.imi.gov.my). Cross-checked against visafoto.com aggregation; official page pending browser re-check.",
+   "official_source": "Immigration Department of Malaysia — MyVISA e-Visa portal",
    "official_source_url": "https://malaysiavisa.imi.gov.my/evisa/evisa.jsp",
-   "verified_date": "2026-08-17"
+   "verified_date": "2026-08-09"
   },
   {
    "id": "vn_visa",
@@ -224,10 +209,10 @@
    "file_size": null,
    "head_height_rule": "Head height (top of hair) about 40 mm; 5 mm from top of photo to top of hair",
    "background": "White background",
-   "notes": "UAE / Dubai visa photo. Verified 2026-08-17 against aipassportphoto.com (43×55 mm / 507×649 px / head 38.5–41.25 mm = 70–75% / white background) and visafoto.com aggregation (43×55 mm, head 39–41 mm, matte paper, ≤40 KB electronic); the official UAE portal (u.ae / ICP smart services) is JS-shell and pending browser re-check.",
-   "official_source": "UAE visa photo (aipassportphoto.com cross-check; official ICP portal pending)",
-   "official_source_url": "https://aipassportphoto.com/uae-visa-photo/",
-   "verified_date": "2026-08-17"
+   "notes": "UAE / Dubai visa photo. Cross-checked against visafoto.com aggregation (which cites dubaivisa.net); official UAE portal (u.ae / ICP) pending browser re-check.",
+   "official_source": "visafoto.com aggregation (official UAE portal pending)",
+   "official_source_url": "http://www.dubaivisa.net",
+   "verified_date": "2026-08-09"
   },
   {
    "id": "sa_evisa",
@@ -242,7 +227,7 @@
    "notes": "Photo for the Visit Saudi e-Visa application. Official photo specifications page referenced by the visa portal.",
    "official_source": "Visit Saudi — Photo Specifications",
    "official_source_url": "https://visa.visitsaudi.com/Home/PhotoSpecifications",
-   "verified_date": "2026-09-06"
+   "verified_date": "2026-08-12"
   },
   {
    "id": "nz_passport",
@@ -332,7 +317,7 @@
    "notes": "Official rule verified live 2026-08-09 on immigration.govt.nz: photo taken within the last 6 months; must not be edited or AI-altered (no background replacement, no face edits). visafoto also lists 1650x2200 px with head height about 72% as an additional reference.",
    "official_source": "Immigration New Zealand — Acceptable photos for a visa or NZeTA",
    "official_source_url": "https://www.immigration.govt.nz/new-zealand-visas/apply-for-a-visa/tools-and-information/acceptable-photos",
-   "verified_date": "2026-09-06"
+   "verified_date": "2026-08-12"
   },
   {
    "id": "sg_visa_online",
@@ -344,10 +329,10 @@
    "file_size": "10 – 60 KB",
    "head_height_rule": "Head height (top of hair) about 74%; 9% from top of photo to top of hair",
    "background": "Plain white or light background",
-   "notes": "Photo for the ICA APPLES online visa submission. Verified 2026-08-17 against visafoto.com and passport-photo.online requirement tables (400×514 px, JPEG ≤60 KB, head height 74%, top gap 9%, white/light background); official ICA portal unreachable from this network.",
-   "official_source": "Immigration & Checkpoints Authority (ICA) — APPLES e-services (requirement tables via visafoto.com / passport-photo.online, verified 2026-08-17)",
+   "notes": "Photo for the ICA APPLES online visa submission. Cross-checked against visafoto.com aggregation; official portal pending browser re-check.",
+   "official_source": "Immigration & Checkpoints Authority (ICA) — APPLES e-services",
    "official_source_url": "https://apples.ica.gov.sg/apples/index.xhtml",
-   "verified_date": "2026-08-17"
+   "verified_date": "2026-08-09"
   },
   {
    "id": "my_passport",
@@ -467,7 +452,7 @@
    "notes": "Two identical colour passport-style photos taken recently; full face frontal view; head bare unless religious headwear required; print name and A-Number (if any) on the back. Must not be retouched or altered in any way. Form I-485 instructions 01/20/25.",
    "official_source": "USCIS — Form I-485 Instructions (page 10)",
    "official_source_url": "https://www.uscis.gov/sites/default/files/document/forms/i-485instr.pdf",
-   "verified_date": "2026-09-07"
+   "verified_date": "2026-08-11"
   },
   {
    "id": "us_ead",
@@ -482,7 +467,7 @@
    "notes": "Two identical colour passport-style photographs taken recently; full face frontal view; head bare unless religious headwear required; print name and A-Number (if any) on the back. Must not be retouched or altered in any way. Same photo rule as Form I-485; Form I-765 instructions.",
    "official_source": "USCIS — Form I-765 Instructions (photographs section)",
    "official_source_url": "https://www.uscis.gov/sites/default/files/document/forms/i-765instr.pdf",
-   "verified_date": "2026-09-07"
+   "verified_date": "2026-08-11"
   },
   {
    "id": "us_dv_lottery",
@@ -512,7 +497,7 @@
    "notes": "Two identical photos; taken no more than 12 months before applying; colour or black and white; clear/sharp focus, uniform lighting, no shadows/glare/flash; neutral expression, mouth closed, eyes open, looking directly at the camera; professionally printed on plain high-quality photo paper (home printing on heavyweight paper not accepted); original photo, not altered in any way; avoid white clothing or white religious head coverings.",
    "official_source": "canada.ca — Permanent resident photos",
    "official_source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/permanent-residents/card/photos.html",
-   "verified_date": "2026-09-06"
+   "verified_date": "2026-08-11"
   },
   {
    "id": "uk_driving_licence",
@@ -527,7 +512,7 @@
    "notes": "DVLA photo change/renewal: you can use your passport photo or upload a new one (£14 online); postal D1 applications require a recent printed passport-type photo. The photo must be unaltered by computer software; plain light-coloured background, no shadows.",
    "official_source": "gov.uk — Change the photo on your driving licence",
    "official_source_url": "https://www.gov.uk/renew-photo-driving-licence",
-   "verified_date": "2026-09-06"
+   "verified_date": "2026-08-11"
   },
   {
    "id": "ke_eta",
@@ -539,10 +524,10 @@
    "file_size": "≤ 240 KB JPEG",
    "head_height_rule": "Head height about 50–69% of photo height (passport standard)",
    "background": "Plain light background, passport-style",
-   "notes": "Kenya eTA required for US, UK and Canada citizens before travel. Official How to Apply page verified in a live browser (2026-08-17): it lists \"selfie or passport-type photo\" among the required documents and publishes no pixel dimensions; the online form accepts a digital photo upload. We deliver the passport standard 2×2 in / 600×600 px file (head 50–69% per US passport convention, aipassportphoto cross-check).",
-   "official_source": "Kenya Directorate of Immigration Services — eTA portal (How to Apply, verified live 2026-08-17)",
-   "official_source_url": "https://etakenya.go.ke/how-to-apply",
-   "verified_date": "2026-09-06"
+   "notes": "Kenya eTA required for visa-exempt nationalities including US, UK and Canada citizens. Official How to Apply page lists a selfie or passport-type photo among the required documents; the online form accepts a digital photo upload.",
+   "official_source": "Kenya Directorate of Immigration Services — eTA portal (How to Apply)",
+   "official_source_url": "https://etakenya.go.ke/eTA",
+   "verified_date": "2026-08-16"
   },
   {
    "id": "india_evisa",
@@ -557,21 +542,21 @@
    "notes": "Square JPEG; no AI editing; verify against the official portal before use.",
    "official_source": "indianvisaonline.gov.in - e-Visa photo requirements",
    "official_source_url": "https://indianvisaonline.gov.in/evisa/tvoa.html",
-   "verified_date": "2026-09-06"
+   "verified_date": "2026-08-12"
   },
   {
    "id": "br_visa",
    "country": "Brazil",
    "country_code": "BR",
    "document": "Brazil e-Visa",
-   "photo_size": "35×45 mm (digital upload)",
-   "output_pixels": "413×531 px @300 dpi",
-   "file_size": "10 - 300 KB JPEG",
-   "head_height_rule": "Head height (top of hair) about 68% of photo height; about 7% from top of photo to top of hair",
+   "photo_size": "2×2 in (51×51 mm)",
+   "output_pixels": "600×600 px",
+   "file_size": "≤ 240 KB JPEG",
+   "head_height_rule": "Head height about 50–69% of photo height (passport standard)",
    "background": "Plain white background, no shadows",
-   "notes": "Brazil e-Visa is required for US citizens (since April 2025) and for Australia, Canada and Japan nationals; UK and Canada citizens are visa-exempt. Digital application is submitted on the official MRE form (formulario-mre.serpro.gov.br). Photo spec cross-checked 2026-08-17 against visafoto.com (413×531 px / 10–300 KB / head 68%, citing the VFS official preparation page) and passport-photo.online (431×531 px / head 70% / top 5.2%); the official gov.br portal is WAF-protected from this network. Note: US-consulate paper applications use the 2×2 in standard instead; we deliver the e-Visa digital-upload format as the primary spec.",
-   "official_source": "Brazil MRE e-Visa application — formulario-mre.serpro.gov.br (visafoto/passport-photo.online cross-check)",
-   "official_source_url": "https://formulario-mre.serpro.gov.br",
+   "notes": "Brazil requires an e-Visa for US citizens (since April 2025); UK and Canada citizens are visa-exempt. Photo upload follows the US passport photo standard. Cross-checked against visafoto.com aggregation; official portal pending browser re-check.",
+   "official_source": "Brazil e-Visa portal (VFS) — brazil.vfsevisa.com",
+   "official_source_url": "https://brazil.vfsevisa.com",
    "verified_date": "2026-08-17"
   },
   {
@@ -579,13 +564,13 @@
    "country": "Egypt",
    "country_code": "EG",
    "document": "Egypt e-Visa",
-   "photo_size": "40×60 mm (4×6 cm)",
-   "output_pixels": "500×750 px @300 dpi",
+   "photo_size": "2×2 in (51×51 mm) digital upload",
+   "output_pixels": "600×600 px",
    "file_size": "≤ 240 KB JPEG",
-   "head_height_rule": "Head height about 38 mm (≈63% of photo height); about 6 mm from top of photo to top of hair",
+   "head_height_rule": "Head height about 50–69% of photo height (passport standard)",
    "background": "Plain white background, no shadows",
-   "notes": "Egypt e-Visa application (visa2egypt.gov.eg) requires a white-background passport photo. Official FAQ/How-to-Apply pages verified in a live browser (2026-08-17) publish no pixel dimensions; accepted standard per visafoto.com (Egypt visa page) and passport-photo.online (Egypt passport page) is 40×60 mm, head ≈38 mm (63%), top gap 6 mm, white background, taken within 6 months. US, UK and Canada citizens can also get a visa on arrival — the same photo is used for the arrival form.",
-   "official_source": "Egypt e-Visa portal — visa2egypt.gov.eg (FAQ/How-to-Apply verified live 2026-08-17; dimensions per visafoto/passport-photo cross-check)",
+   "notes": "Egypt e-Visa application requires a plain white-background passport photo. US, UK and Canada citizens can also get a visa on arrival — the same photo is used for the arrival form. Cross-checked against visafoto.com aggregation; official page pending browser re-check.",
+   "official_source": "Egypt e-Visa portal — visa2egypt.gov.eg",
    "official_source_url": "https://visa2egypt.gov.eg",
    "verified_date": "2026-08-17"
   },
@@ -597,7 +582,7 @@
    "photo_size": "4×6 cm (40×60 mm)",
    "output_pixels": "500×750 px",
    "file_size": "≤ 240 KB JPEG",
-   "head_height_rule": "Official registration page publishes no head-height ratio; ≈70% head height, ~7% top gap targeted per common visa-photo standard (visafoto cross-check).",
+   "head_height_rule": "Face about 70–80% of photo height",
    "background": "White / light neutral background, no shadows",
    "notes": "Indonesia e-VOA (electronic visa on arrival) required for US, UK and Canada citizens. Verified on the official portal (evisa.imigrasi.go.id, register page): upload the latest color photo, face forward, size 4 x 6 cm with a resolution of at least 400 x 600 pixels, in JPEG/JPG/PNG format. Product delivers 500×750 px (≥ official 400×600 minimum).",
    "official_source": "Indonesia Directorate General of Immigration — evisa.imigrasi.go.id",
@@ -612,7 +597,7 @@
    "photo_size": "35×45 mm",
    "output_pixels": "827×1063 px",
    "file_size": "≤ 240 KB JPEG",
-   "head_height_rule": "Head height ≈64% of photo height (official requirement).",
+   "head_height_rule": "Passport-standard head height",
    "background": "Plain white background",
    "notes": "Cambodia e-Visa required for US, UK and Canada citizens. Official portal (evisa.gov.kh) lists a passport photo as a required document (FAQ section 'Photo'). 35×45 mm (ICAO standard), plain white background, JPEG — cross-checked on official portal + visa-photo aggregators (visafoto, passport-photo.online). Official portal does not print a pixel size; verified_date = date of portal check.",
    "official_source": "Cambodia Ministry of Foreign Affairs — evisa.gov.kh",
@@ -627,7 +612,7 @@
    "photo_size": "35×45 mm (45 mm length × 35 mm width)",
    "output_pixels": "827×1063 px",
    "file_size": "≤ 500 KB JPEG/JPG (official)",
-   "head_height_rule": "No head-height ratio published; photo max 45 mm (length) × 35 mm (width), ≤500 KB, JPG/JPEG.",
+   "head_height_rule": "Full face from top of hair to bottom of chin, eyes open",
    "background": "Plain background, no distracting shadows",
    "notes": "Tanzania e-Visa required for US, UK and Canada citizens. Official guidelines state photo must not exceed 45×35 mm, ≤500KB, JPG/JPEG; glasses allowed, head coverings only for religious reasons. Verified directly on the official portal (visa.immigration.go.tz guidelines).",
    "official_source": "Tanzania Immigration — visa.immigration.go.tz (Guidelines)",
@@ -642,12 +627,12 @@
    "photo_size": "200×200 px (digital upload)",
    "output_pixels": "200×200 px",
    "file_size": "5–100 KB (official)",
-   "head_height_rule": "Face 70–80% of photo (official Photo Specifications page); 200×200 px, 5–100 KB, white background.",
+   "head_height_rule": "Face takes up 70–80% of the photo",
    "background": "Plain white background",
    "notes": "Saudi e-Visa available online for US, UK and Canada citizens. Official Photo Specifications page: 200×200 px, image size 5–100 KB, white background, photo no more than 6 months old, face 70–80% of frame. Verified directly on the official portal (visa.visitsaudi.com/Home/PhotoSpecifications).",
    "official_source": "Saudi Arabia e-Visa — visa.visitsaudi.com Photo Specifications",
    "official_source_url": "https://visa.visitsaudi.com/Home/PhotoSpecifications",
-   "verified_date": "2026-09-06"
+   "verified_date": "2026-08-17"
   },
   {
    "id": "om_visa",
@@ -657,7 +642,7 @@
    "photo_size": "4×6 cm (40×60 mm)",
    "output_pixels": "500×750 px",
    "file_size": "≤ 240 KB JPEG",
-   "head_height_rule": "Head height ≈63% (38 mm of 60 mm, visa-photo standard cross-check); official FAQ only states ≤512 KB file size.",
+   "head_height_rule": "Passport-standard head height",
    "background": "Plain white background",
    "notes": "Oman e-Visa required for US, UK and Canada citizens. Official portal FAQ (evisa.rop.gov.om, en/frequently-asked-questions): 'File size for passport and picture: not more than 512 KB'. Photo upload required in application; no pixel size published — 4×6 cm (40×60 mm) per visa-photo aggregator cross-check (aipassportphoto.com: 40×60 mm).",
    "official_source": "Royal Oman Police — evisa.rop.gov.om",
@@ -672,7 +657,7 @@
    "photo_size": "2×2 in (51×51 mm)",
    "output_pixels": "600×600 px",
    "file_size": "≤ 240 KB JPEG",
-   "head_height_rule": "Passport-standard 2×2 in; head height 1–1⅜ in (≈50–69% of photo height, US passport convention).",
+   "head_height_rule": "Head height 1–1⅜ in (passport standard)",
    "background": "Plain white background",
    "notes": "Uganda e-Visa required for US, UK and Canada citizens. Verified on the official portal (visas.immigration.go.ug application flow): documents list requires 'Recent Passport-size Photograph' (all visa categories). No pixel size published — 2×2 in (51×51 mm) / 600×600 px per visa-photo aggregator cross-check (aipassportphoto.com).",
    "official_source": "Uganda Directorate of Citizenship and Immigration Control — visas.immigration.go.ug",
@@ -687,11 +672,11 @@
    "photo_size": "35×45 mm (passport standard)",
    "output_pixels": "827×1063 px",
    "file_size": "≤ 240 KB JPEG",
-   "head_height_rule": "Head height 32–36 mm (=71–80% of the 45 mm height, official spec text quoted by visafoto).",
+   "head_height_rule": "Passport-standard head height",
    "background": "Plain white background",
-   "notes": "Madagascar e-Visa available online for US, UK and Canada citizens. Official portal evisamada.gov.mg (the only official site; evisamada-mg.com is a commercial proxy) was unreachable from abroad on 2026-08-17 — TLS handshake reset via US egress proxy; external fetcher r.jina.ai also timed out. Official spec text as quoted by visafoto: printed photo 35–45 mm wide × 45–55 mm high, head height 32–36 mm, plain white background, eyes open looking straight at the camera; glasses only for medical reasons (doctor's letter required). Our 35×45 mm output is within the official range; the 32–36 mm head-height rule maps to our 70–80% head-height check (71–80% of 45 mm).",
-   "official_source": "Madagascar e-Visa — evisamada.gov.mg (unreachable from abroad 2026-08-17; official spec text via visafoto quoting official requirements)",
-   "official_source_url": "https://evisamada.gov.mg",
+   "notes": "Madagascar e-Visa available online for US, UK and Canada citizens. Official portal (evisamada-mg.com; the portal states evisamada.gov.mg is the only official site) runs an account-based application; 'Before you start' checklist requires a valid passport. Photo spec not published publicly — 35×45 mm ICAO passport standard assumed (cross-checked with visa-photo aggregators).",
+   "official_source": "Madagascar e-Visa — evisamada-mg.com",
+   "official_source_url": "https://www.evisamada-mg.com",
    "verified_date": "2026-08-17"
   },
   {
@@ -702,7 +687,7 @@
    "photo_size": "35×45 mm (passport standard)",
    "output_pixels": "827×1063 px",
    "file_size": "≤ 240 KB JPEG",
-   "head_height_rule": "Passport-sized photo (official); ≈62–78% head height targeted per common ICAO passport standard.",
+   "head_height_rule": "Passport-standard head height",
    "background": "Plain white background",
    "notes": "Ethiopia e-Visa available online for US, UK and Canada citizens. Verified on the official portal (evisa.gov.et/information): 'A scanned color copy of the passport and a color passport-sized photo are required.' No pixel size published — 35×45 mm ICAO passport standard assumed.",
    "official_source": "Ethiopia e-Visa — evisa.gov.et",
@@ -717,12 +702,12 @@
    "photo_size": "4×6 cm (40×60 mm)",
    "output_pixels": "500×750 px",
    "file_size": "≤ 240 KB JPEG",
-   "head_height_rule": "No head-height ratio published in official FAQ; 4×6 cm, white background, recent, full-face, eyes open.",
+   "head_height_rule": "ICAO standard photograph",
    "background": "Plain white background, no shadows",
    "notes": "Laos e-Visa available online for US, UK and Canada citizens. Official FAQ (laoevisa.gov.la/faq): photo must be 4×6 cm, in colour, taken within the last 6 months, no shadows, plain white background, facing camera, neutral expression, both eyes open (ICAO standard). Verified directly on the official portal.",
    "official_source": "Lao Official Online Visa — laoevisa.gov.la (FAQ)",
    "official_source_url": "https://laoevisa.gov.la/faq",
-   "verified_date": "2026-09-06"
+   "verified_date": "2026-08-17"
   },
   {
    "id": "az_visa",

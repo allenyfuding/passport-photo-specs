@@ -1,4 +1,4 @@
-# spec_fetch — 最近一次运行: 2026-09-06
+# spec_fetch — 最近一次运行: 2026-09-07
 
 - 完整复核(全部源可达): 是 ✅
 - 本轮刷新核验日期: us_green_card, us_ead
@@ -19,8 +19,8 @@
 - `india_evisa`: OK — 核验日期 2026-09-06 (last_checked 2026-09-06)
 - `sa_visa`: OK — 核验日期 2026-09-06 (last_checked 2026-09-06)
 - `la_visa`: OK — 核验日期 2026-09-06 (last_checked 2026-09-06)
-- `us_green_card`: COSMETIC — 核验日期 2026-09-06 (last_checked 2026-09-06)
-- `us_ead`: OK — 核验日期 2026-09-06 (last_checked 2026-09-06)
+- `us_green_card`: OK — 核验日期 2026-09-07 (last_checked 2026-09-07)
+- `us_ead`: OK — 核验日期 2026-09-07 (last_checked 2026-09-07)
 - `us_dv_lottery`: UNREACHABLE — 核验日期 2026-08-11 (last_checked 2026-09-06)
 - `ca_pr_card`: OK — 核验日期 2026-09-06 (last_checked 2026-09-06)
 - `tz_visa`: ANOMALY — 核验日期 2026-08-17 (last_checked 2026-09-06)
