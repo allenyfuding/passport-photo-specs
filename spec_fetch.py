@@ -334,8 +334,11 @@ def run():
     all_ok = True
     updated = []
 
+    keys_only = [k.strip() for k in os.environ.get("SPEC_FETCH_KEYS", "").split(",") if k.strip()]
     for src in SOURCES:
         key = src["key"]
+        if keys_only and key not in keys_only:
+            continue
         spec = specs.get(key)
         if spec is None:
             lines.append(f"SKIP      {key} — 数据集无此 id")
