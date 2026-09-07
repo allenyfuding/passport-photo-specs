@@ -89,3 +89,10 @@
 ## 2026-09-06 — 需人工复核
 - **US Visa (DS-160)** (us_visa): 已连续 **30** 次不可达 (最近: RuntimeError: chrome got block page / pdf viewer shell) — 保留核验日期 2026-08-12, 需检查网络/代理
 - **US Diversity Visa** (us_dv_lottery): 已连续 **21** 次不可达 (最近: RuntimeError: chrome empty output rc=0) — 保留核验日期 2026-08-11, 需检查网络/代理
+
+## 2026-09-07 — 需人工复核
+- **US Passport** (us_passport): **ANOMALY** — 页面可达但提取不到规格事实 (hash - → b1421f3a97e3577971ec0357), 需人工核对 https://travel.state.gov/en/passports/apply/help/photos.html
+- **US Visa (DS-160)** (us_visa): **ANOMALY** — 页面可达但提取不到规格事实 (hash - → 2d9ffa57ad61da7478f4606b), 需人工核对 https://travel.state.gov/en/passports/apply/help/photos.html
+- **US Green Card (I-485)** (us_green_card): **ANOMALY** — 页面可达但提取不到规格事实 (hash eda0819036091e7db44ee9f7 → 092ae7251767b1da87171d3e), 需人工核对 https://www.uscis.gov/sites/default/files/document/forms/i-485instr.pdf
+- **US Employment Authorization (I-765)** (us_ead): **ANOMALY** — 页面可达但提取不到规格事实 (hash 6ce162e87493b997f8d45452 → 8be416920b37ad8d4c91d2dc), 需人工核对 https://www.uscis.gov/sites/default/files/document/forms/i-765instr.pdf
+- **US Diversity Visa** (us_dv_lottery): **ANOMALY** — 页面可达但提取不到规格事实 (hash - → 6546dbe43613c27d32e20902), 需人工核对 https://travel.state.gov/content/dam/visas/Diversity-Visa/DV-Instructions-Translations/DV-2026-Instructions-Translations/DV%202026%20Plain%20Language%20Instructions%20and%20FAQs.pdf
