@@ -110,3 +110,10 @@
 - **US Green Card (I-485)** (us_green_card): **ANOMALY** — 页面可达但提取不到规格事实 (hash 8075da776312ff7d20e22805 → 3c4c585224bdad0b6a09c30f), 需人工核对 https://www.uscis.gov/sites/default/files/document/forms/i-485instr.pdf
 - **US Employment Authorization (I-765)** (us_ead): **ANOMALY** — 页面可达但提取不到规格事实 (hash a73d0a2ed550600acfc3a8ac → 83cf06a806834ff5f3f0d196), 需人工核对 https://www.uscis.gov/sites/default/files/document/forms/i-765instr.pdf
 - **US Diversity Visa** (us_dv_lottery): **ANOMALY** — 页面可达但提取不到规格事实 (hash c7560287bbdf2294ac5dd78b → bf6ef113e60ab44b335434db), 需人工核对 https://travel.state.gov/content/dam/visas/Diversity-Visa/DV-Instructions-Translations/DV-2026-Instructions-Translations/DV%202026%20Plain%20Language%20Instructions%20and%20FAQs.pdf
+
+## 2026-09-10 — 需人工复核
+- **US Passport** (us_passport): **ANOMALY** — 页面可达但提取不到规格事实 (hash 58dd0155c042da1ad11e50e8 → acf3ed66f1808aec3a7e9c6f), 需人工核对 https://travel.state.gov/en/passports/apply/help/photos.html
+- **US Visa (DS-160)** (us_visa): **ANOMALY** — 页面可达但提取不到规格事实 (hash 592714da395b2a691fe3fb22 → 1e8d085ddfb6acd8d08bbe27), 需人工核对 https://travel.state.gov/en/passports/apply/help/photos.html
+- **US Green Card (I-485)** (us_green_card): **ANOMALY** — 页面可达但提取不到规格事实 (hash 3c4c585224bdad0b6a09c30f → 2ab942fb0f1f40cb8db3fae8), 需人工核对 https://www.uscis.gov/sites/default/files/document/forms/i-485instr.pdf
+- **US Employment Authorization (I-765)** (us_ead): **ANOMALY** — 页面可达但提取不到规格事实 (hash 83cf06a806834ff5f3f0d196 → 4d171beb316ea6f5e3fd335a), 需人工核对 https://www.uscis.gov/sites/default/files/document/forms/i-765instr.pdf
+- **US Diversity Visa** (us_dv_lottery): **ANOMALY** — 页面可达但提取不到规格事实 (hash bf6ef113e60ab44b335434db → 54083917bf1a6ab0ebd5817e), 需人工核对 https://travel.state.gov/content/dam/visas/Diversity-Visa/DV-Instructions-Translations/DV-2026-Instructions-Translations/DV%202026%20Plain%20Language%20Instructions%20and%20FAQs.pdf
