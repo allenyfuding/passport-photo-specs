@@ -117,3 +117,11 @@
 - **US Green Card (I-485)** (us_green_card): **ANOMALY** — 页面可达但提取不到规格事实 (hash 3c4c585224bdad0b6a09c30f → 2ab942fb0f1f40cb8db3fae8), 需人工核对 https://www.uscis.gov/sites/default/files/document/forms/i-485instr.pdf
 - **US Employment Authorization (I-765)** (us_ead): **ANOMALY** — 页面可达但提取不到规格事实 (hash 83cf06a806834ff5f3f0d196 → 4d171beb316ea6f5e3fd335a), 需人工核对 https://www.uscis.gov/sites/default/files/document/forms/i-765instr.pdf
 - **US Diversity Visa** (us_dv_lottery): **ANOMALY** — 页面可达但提取不到规格事实 (hash bf6ef113e60ab44b335434db → 54083917bf1a6ab0ebd5817e), 需人工核对 https://travel.state.gov/content/dam/visas/Diversity-Visa/DV-Instructions-Translations/DV-2026-Instructions-Translations/DV%202026%20Plain%20Language%20Instructions%20and%20FAQs.pdf
+
+## 2026-09-11 — 需人工复核
+- **US Passport** (us_passport): **ANOMALY** — 页面可达但提取不到规格事实 (hash acf3ed66f1808aec3a7e9c6f → 07846b529f91b2006df5a1fb), 需人工核对 https://travel.state.gov/en/passports/apply/help/photos.html
+- **US Visa (DS-160)** (us_visa): **ANOMALY** — 页面可达但提取不到规格事实 (hash 1e8d085ddfb6acd8d08bbe27 → 08528153a1eb557d34875f3d), 需人工核对 https://travel.state.gov/en/passports/apply/help/photos.html
+- **US Green Card (I-485)** (us_green_card): **ANOMALY** — 页面可达但提取不到规格事实 (hash 2ab942fb0f1f40cb8db3fae8 → b05519135d6a357893d3566f), 需人工核对 https://www.uscis.gov/sites/default/files/document/forms/i-485instr.pdf
+- **US Employment Authorization (I-765)** (us_ead): **ANOMALY** — 页面可达但提取不到规格事实 (hash 4d171beb316ea6f5e3fd335a → fbf657bc93b0118aadc89c88), 需人工核对 https://www.uscis.gov/sites/default/files/document/forms/i-765instr.pdf
+- **US Diversity Visa** (us_dv_lottery): **ANOMALY** — 页面可达但提取不到规格事实 (hash 54083917bf1a6ab0ebd5817e → 7c6f1003092efa57d31488c2), 需人工核对 https://travel.state.gov/content/dam/visas/Diversity-Visa/DV-Instructions-Translations/DV-2026-Instructions-Translations/DV%202026%20Plain%20Language%20Instructions%20and%20FAQs.pdf
+- **Tanzania Visa** (tz_visa): **ANOMALY** — 页面可达但提取不到规格事实 (hash 67c804606b38afc7356cbbaa → 187ee5fbd682c051bb8cc30d), 需人工核对 https://visa.immigration.go.tz
