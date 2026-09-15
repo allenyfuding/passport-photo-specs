@@ -306,7 +306,7 @@
  "us_green_card": {
   "consecutive_failures": 0,
   "last_status": "OK",
-  "last_checked": "2026-09-15",
+  "last_checked": "2026-09-16",
   "last_note": "OK",
   "facts_hash": "7cca4107b2c6a5540b61597f",
   "page_hash": "eda0819036091e7db44ee9f7",
@@ -340,7 +340,7 @@
  "us_ead": {
   "consecutive_failures": 0,
   "last_status": "OK",
-  "last_checked": "2026-09-15",
+  "last_checked": "2026-09-16",
   "last_note": "OK",
   "facts_hash": "33f799d010dc5e0720be0646",
   "page_hash": "6ce162e87493b997f8d45452",
@@ -372,10 +372,10 @@
   }
  },
  "us_dv_lottery": {
-  "consecutive_failures": 0,
-  "last_status": "ANOMALY",
-  "last_checked": "2026-09-15",
-  "last_note": "页面 200 但未提取到任何关键事实 — 页面结构可能已改, 需人工核对",
+  "consecutive_failures": 3,
+  "last_status": "UNREACHABLE",
+  "last_checked": "2026-09-16",
+  "last_note": "RuntimeError: HTTP 403",
   "facts_hash": "4f53cda18c2baa0c0354bb5f",
   "page_hash": "2754aad66b6216e8d7a184e1",
   "last_facts": [],
@@ -399,21 +399,29 @@
  },
  "tz_visa": {
   "consecutive_failures": 0,
-  "last_status": "ANOMALY",
-  "last_checked": "2026-09-15",
-  "last_note": "页面 200 但未提取到任何关键事实 — 页面结构可能已改, 需人工核对",
-  "facts_hash": "4f53cda18c2baa0c0354bb5f",
-  "page_hash": "67c804606b38afc7356cbbaa",
-  "last_facts": [],
-  "last_samples": {}
+  "last_status": "OK",
+  "last_checked": "2026-09-16",
+  "last_note": "OK",
+  "facts_hash": "6694ebf90e31a258b8e20c30",
+  "page_hash": "cc796d5a02a0a9afcfe227f2",
+  "last_facts": [
+   "jpeg",
+   "kb_500",
+   "size_45x35"
+  ],
+  "last_samples": {
+   "size_45x35": "45mm (length) x 35 mm",
+   "kb_500": "500kb",
+   "jpeg": "jpg"
+  }
  },
  "ug_visa": {
   "consecutive_failures": 0,
   "last_status": "ANOMALY",
-  "last_checked": "2026-09-15",
+  "last_checked": "2026-09-16",
   "last_note": "页面 200 但未提取到任何关键事实 — 页面结构可能已改, 需人工核对",
   "facts_hash": "4f53cda18c2baa0c0354bb5f",
-  "page_hash": "6cc3e1b6edbcce755197c536",
+  "page_hash": "d4bcec7331e94ee1c5239e1a",
   "last_facts": [],
   "last_samples": {}
  }

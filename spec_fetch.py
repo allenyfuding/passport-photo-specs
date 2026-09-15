@@ -184,8 +184,11 @@ SOURCES = [
      "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/permanent-residents/card/photos.html",
      "facts": {"size_50x70": r"50\s*mm[^.]{0,20}70\s*mm",
                "head_31_36": r"31\s*mm[^.]{0,40}36\s*mm", "bg_white": r"plain white"}},
+    # V371: 规格写在 /guidelines 页(首页只有导航和欢迎语, 抓了 8/18-9/15 一直空转判 ANOMALY)。
+    # 实测该页含 "The photo size should not exceed 45mm (length) x 35 mm (width)" /
+    # "should not exceed 500KB" / "must be jpg or jpeg", 与库内规格一致。
     {"key": "tz_visa", "label": "Tanzania Visa",
-     "url": "https://visa.immigration.go.tz",
+     "url": "https://visa.immigration.go.tz/guidelines",
      "facts": {"size_45x35": r"45\s*mm[^.]{0,20}35\s*mm", "kb_500": r"500\s*kb", "jpeg": r"jpe?g"}},
     {"key": "ug_visa", "label": "Uganda e-Visa",
      "url": "https://visas.immigration.go.ug",
@@ -231,21 +234,33 @@ def extract_facts(text, facts):
 
 
 def fetch(url):
-    """返回 (http_code, normalized_text); 网络层失败抛异常。
-    urllib 直连失败(403/5xx/超时/网络错误) → curl 兜底 → 无头 Chrome fallback(仅 HTML;
-    PDF 送 Chrome 只会得到查看器空壳, 8/19-9/6 uscis 假 UNREACHABLE 即此因)。"""
-    try:
-        return _fetch_urllib(url)
-    except Exception as e1:
+    """返回 (http_code, normalized_text); 被拦截/网络失败抛异常。
+    urllib 直连 → curl 兜底 → 无头 Chrome fallback(仅 HTML; PDF 送 Chrome 只会得到查看器空壳,
+    8/19-9/6 uscis 假 UNREACHABLE 即此因)。
+
+    V371 修正: 旧实现里 curl 不带 --fail, 403/5xx 与 JS 空壳也被当成"成功"返回, 后果有两层 ——
+    ① 无头 Chrome 兜底从未真正执行过(与上面声明的兜底链不符);
+    ② run() 把拦截页当成页面内容, 403 被误报成"页面可达但提取不到事实"(ANOMALY) 而不是不可达,
+       排查方向被带偏(8/12-9/15 美国三源一直挂着 ANOMALY 即此因)。
+    现在: 只有 200/404/410 算"拿到了页面", 其余一律升级到无头 Chrome; Chrome 也不给就抛异常,
+    由 run() 记 UNREACHABLE, 语义与提示才是对的。"""
+    is_pdf = url.lower().split("?")[0].endswith(".pdf")
+    last_err = None
+    for fn in (_fetch_urllib, _fetch_curl):
         try:
-            return _fetch_curl(url)
-        except Exception as e2:
-            if url.lower().split("?")[0].endswith(".pdf"):
-                raise e2
-            try:
-                return browser_fetch(url)
-            except Exception as e3:
-                raise e3
+            code, text = fn(url)
+        except Exception as e:
+            last_err = e
+            continue
+        if code in (200, 404, 410):
+            return code, text
+        last_err = RuntimeError("HTTP %s" % code)
+    if is_pdf:
+        raise last_err
+    try:
+        return browser_fetch(url)
+    except Exception as e:
+        raise last_err or e
 
 def raw_to_text(raw):
     """把响应体转为归一化文本: PDF 用 pypdf 抽文本, HTML 按编码解码。"""
@@ -457,6 +472,20 @@ def run():
             lines.append(f"{status:<11} {key} — {st['last_note']} (连续失败 {st['consecutive_failures']})")
         else:
             fact_keys, fact_samples = extract_facts(text, facts_re)
+            # V371: 直连拿到 200 却一条事实都抽不到 —— 很可能抓到的是 JS 空壳页(实测埃塞俄比亚
+            # 直连 68 字符 / 马达加斯加直连失败, 无头浏览器分别能拿到 3720 / 2085 字符)。
+            # 旧代码的 Chrome 兜底就是被"空壳也算成功"短路掉的, 这里补上一次渲染重取。
+            # 只在"本来就要判 ANOMALY"时触发, 健康源零额外开销。
+            if not fact_keys and not any(u.lower().split("?")[0].endswith(".pdf") for u in urls):
+                try:
+                    rtexts = [browser_fetch(u)[1] for u in urls]
+                    rtext = "\n---PAGE---\n".join(rtexts)
+                    rkeys, rsamples = extract_facts(rtext, facts_re)
+                    if rkeys:
+                        text, fact_keys, fact_samples = rtext, rkeys, rsamples
+                        reason += "; 直连无事实, 已用无头 Chrome 渲染重取"
+                except Exception:
+                    pass
             new_facts_hash = sha(json.dumps(fact_keys, ensure_ascii=False))
             new_page_hash = sha(text)
             if not fact_keys:
