@@ -154,3 +154,13 @@
 - **US Green Card (I-485)** (us_green_card): **ANOMALY** — 页面可达但提取不到规格事实 (hash afdb10d230412130e7b64e8f → da0b324844b71fdacbbaf6a5), 需人工核对 https://www.uscis.gov/sites/default/files/document/forms/i-485instr.pdf
 - **US Employment Authorization (I-765)** (us_ead): **ANOMALY** — 页面可达但提取不到规格事实 (hash 67c03d2dfd8b922398ff7856 → 089504714b78b767b6a39b0f), 需人工核对 https://www.uscis.gov/sites/default/files/document/forms/i-765instr.pdf
 - **US Diversity Visa** (us_dv_lottery): **ANOMALY** — 页面可达但提取不到规格事实 (hash 80eb1bf6f9f4449edbb3a5bb → 2754aad66b6216e8d7a184e1), 需人工核对 https://travel.state.gov/content/dam/visas/Diversity-Visa/DV-Instructions-Translations/DV-2026-Instructions-Translations/DV%202026%20Plain%20Language%20Instructions%20and%20FAQs.pdf
+
+## 2026-09-15 — 需人工复核
+- **US Green Card (I-485)** (us_green_card): **规格变更** — 官方页 https://www.uscis.gov/sites/default/files/document/forms/i-485instr.pdf
+  - 新增/变化事实: ['bg_white (white)']
+  - 消失事实: —
+  - **数值与核验日期未自动修改**(红线: 真实规格数据), 请人工复核后手动更新 JSON + 日期
+- **US Employment Authorization (I-765)** (us_ead): **规格变更** — 官方页 https://www.uscis.gov/sites/default/files/document/forms/i-765instr.pdf
+  - 新增/变化事实: ['bg_white (white)']
+  - 消失事实: —
+  - **数值与核验日期未自动修改**(红线: 真实规格数据), 请人工复核后手动更新 JSON + 日期

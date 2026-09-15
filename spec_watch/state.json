@@ -305,23 +305,31 @@
  },
  "us_green_card": {
   "consecutive_failures": 0,
-  "last_status": "ANOMALY",
+  "last_status": "CHANGED",
   "last_checked": "2026-09-15",
-  "last_note": "页面 200 但未提取到任何关键事实 — 页面结构可能已改, 需人工核对",
-  "facts_hash": "4f53cda18c2baa0c0354bb5f",
-  "page_hash": "da0b324844b71fdacbbaf6a5",
-  "last_facts": [],
-  "last_samples": {}
+  "last_note": "规格事实变更 4f53cda18c2baa0c0354bb5f → bc561818fbe07ce1011f3e00",
+  "facts_hash": "bc561818fbe07ce1011f3e00",
+  "page_hash": "eda0819036091e7db44ee9f7",
+  "last_facts": [
+   "bg_white"
+  ],
+  "last_samples": {
+   "bg_white": "white"
+  }
  },
  "us_ead": {
   "consecutive_failures": 0,
-  "last_status": "ANOMALY",
+  "last_status": "CHANGED",
   "last_checked": "2026-09-15",
-  "last_note": "页面 200 但未提取到任何关键事实 — 页面结构可能已改, 需人工核对",
-  "facts_hash": "4f53cda18c2baa0c0354bb5f",
-  "page_hash": "089504714b78b767b6a39b0f",
-  "last_facts": [],
-  "last_samples": {}
+  "last_note": "规格事实变更 4f53cda18c2baa0c0354bb5f → bc561818fbe07ce1011f3e00",
+  "facts_hash": "bc561818fbe07ce1011f3e00",
+  "page_hash": "6ce162e87493b997f8d45452",
+  "last_facts": [
+   "bg_white"
+  ],
+  "last_samples": {
+   "bg_white": "white"
+  }
  },
  "us_dv_lottery": {
   "consecutive_failures": 0,
