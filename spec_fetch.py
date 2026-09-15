@@ -190,9 +190,19 @@ SOURCES = [
     {"key": "tz_visa", "label": "Tanzania Visa",
      "url": "https://visa.immigration.go.tz/guidelines",
      "facts": {"size_45x35": r"45\s*mm[^.]{0,20}35\s*mm", "kb_500": r"500\s*kb", "jpeg": r"jpe?g"}},
-    {"key": "ug_visa", "label": "Uganda e-Visa",
-     "url": "https://visas.immigration.go.ug",
-     "facts": {"size_2x2": r"2\s*[x×]\s*2", "px_600": r"600\s*[x×]\s*600", "kb_240": r"240\s*kb"}},
+    # V372 (2026-09-16) 乌干达摘出自动核验: 官方门户对非浏览器 UA 只回 175 字符
+    # "Your browser is not supported", 无头 Chrome 渲染则超时; 该站也不发布任何尺寸/像素/体积数字。
+    # 监控每轮稳定产出 ANOMALY 噪音(约 45 秒/轮) —— 规格数字保留在数据集(护照标准值 + 备注说明),
+    # 但不再自动核验; 若要恢复监控, 需先确认官方发布可比对的事实。
+    # V372 (2026-09-16) 埃塞俄比亚纳入自动核验: 官方 evisa.gov.et 是 React SPA, 直连只拿到 68 字符
+    # 外壳(HTTP 200), 无头 Chrome 渲染 /visa 页后才见到官方原文 —— 即 V371 "直连无事实则渲染重取"
+    # 那条兜底的受益者。以下事实键全部按官方原文逐字匹配(已实测 4/4 命中)。
+    {"key": "et_visa", "label": "Ethiopia e-Visa",
+     "url": "https://www.evisa.gov.et/visa",
+     "facts": {"max_2mb": r"less than 2\s*mb",
+               "jpeg_jpg_png": r"photo and passport copy should be only in image file type of jpeg, jpg, png",
+               "no_blurred_or_unclean_background": r"blurred or unclean background",
+               "clear_and_readable": r"image/document should be clear and readable"}},
 ]
 
 

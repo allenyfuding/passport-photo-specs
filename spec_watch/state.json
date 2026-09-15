@@ -414,15 +414,5 @@
    "kb_500": "500kb",
    "jpeg": "jpg"
   }
- },
- "ug_visa": {
-  "consecutive_failures": 0,
-  "last_status": "ANOMALY",
-  "last_checked": "2026-09-16",
-  "last_note": "页面 200 但未提取到任何关键事实 — 页面结构可能已改, 需人工核对",
-  "facts_hash": "4f53cda18c2baa0c0354bb5f",
-  "page_hash": "d4bcec7331e94ee1c5239e1a",
-  "last_facts": [],
-  "last_samples": {}
  }
 }

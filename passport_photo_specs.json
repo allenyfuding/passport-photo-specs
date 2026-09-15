@@ -687,7 +687,7 @@
    "file_size": "≤ 240 KB JPEG",
    "head_height_rule": "Passport-standard 2×2 in; head height 1–1⅜ in (≈50–69% of photo height, US passport convention).",
    "background": "Plain white background",
-   "notes": "The official portal does not publish a size for this photo — the figures below are the passport-standard values we apply. Uganda e-Visa required for US, UK and Canada citizens. Verified on the official portal (visas.immigration.go.ug application flow): documents list requires 'Recent Passport-size Photograph' (all visa categories). No pixel size published — 2×2 in (51×51 mm) / 600×600 px per visa-photo aggregator cross-check (aipassportphoto.com).",
+   "notes": "The official portal does not publish a size for this photo — the figures below are the passport-standard values we apply. Uganda e-Visa required for US, UK and Canada citizens. Verified on the official portal (visas.immigration.go.ug application flow): documents list requires 'Recent Passport-size Photograph' (all visa categories). No pixel size published — 2×2 in (51×51 mm) / 600×600 px per visa-photo aggregator cross-check (aipassportphoto.com). Automated re-check removed on 2026-09-16: the portal answers non-browser clients with \"Your browser is not supported\" and the headless-browser render times out, and it publishes no size, pixel or file-size figures — there is nothing to compare against, so this entry is no longer machine-verified and the date above is the last manual check, not a daily re-check.",
    "official_source": "Uganda Directorate of Citizenship and Immigration Control — visas.immigration.go.ug",
    "official_source_url": "https://visas.immigration.go.ug",
    "verified_date": "2026-08-17"
