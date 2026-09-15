@@ -223,9 +223,9 @@
    "file_size": null,
    "head_height_rule": "Head height (top of hair) about 40 mm; 5 mm from top of photo to top of hair",
    "background": "White background",
-   "notes": "UAE / Dubai visa photo. Figures cross-checked 2026-08-17 — aipassportphoto.com (43×55 mm / 507×649 px / head 38.5–41.25 mm = 70–75% / white background) and visafoto.com (43×55 mm, head 39–41 mm, matte paper, ≤40 KB electronic). Check the current rule on the official UAE portal (u.ae / ICP smart services) before you apply.",
-   "official_source": "UAE visa photo (aipassportphoto.com cross-check)",
-   "official_source_url": "https://aipassportphoto.com/uae-visa-photo/",
+   "notes": "UAE / Dubai visa photo. The official UAE portals do not publish photo dimensions, so the figures below are the cross-checked convention we apply (43×55 mm; head height 38.5–41.25 mm ≈ 70–75% of photo height; white background; matte paper preferred). Always check the current rule on the official UAE portal before you apply. Cross-checked 2026-08-17.",
+   "official_source": "UAE Government portal — u.ae (visa and Emirates ID section; the official UAE pages do not publish photo dimensions)",
+   "official_source_url": "https://u.ae/en/information-and-services/visa-and-emirates-id",
    "verified_date": "2026-08-17",
    "official_page_verified": false
   },
@@ -748,7 +748,7 @@
    "file_size": "≤ 240 KB JPEG",
    "head_height_rule": "Passport-standard head height",
    "background": "Plain white background",
-   "notes": "Provenance: the official portal does not publish a size for this photo — the figures below are the passport-standard values we apply. Azerbaijan ASAN e-Visa available online for US, UK and Canada citizens. OFFICIAL FLOW CHECK (2026-08-17): the official 'Conditions for issuing electronic visas' page (evisa.gov.az/en/conditions) states the application attaches 'the scanned page of a travel document with a photo' (passport bio page); no standalone photo upload is specified on the official portal or public pages. Per project policy (Turkey precedent: no photo field → no photo product), EXCLUDED from the product lineup. 35×45 mm entry kept for reference only.",
+   "notes": "The official ASAN e-Visa portal does not publish a photo size for this document — the figures below are the passport-standard values we apply. Azerbaijan ASAN e-Visa is available online for US, UK and Canada citizens. The official 'Conditions for issuing electronic visas' page (evisa.gov.az/en/conditions) describes attaching a scanned page of a travel document that already carries a photo; no standalone photo upload is specified on the official portal or its public pages.",
    "official_source": "Azerbaijan ASAN e-Visa — evisa.gov.az",
    "official_source_url": "https://evisa.gov.az",
    "verified_date": "2026-08-17"
