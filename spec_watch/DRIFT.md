@@ -164,3 +164,14 @@
   - 新增/变化事实: ['bg_white (white)']
   - 消失事实: —
   - **数值与核验日期未自动修改**(红线: 真实规格数据), 请人工复核后手动更新 JSON + 日期
+
+## 2026-09-15 — 人工复核结论（V370，已结案）
+- **US Green Card (I-485)** / **US Employment Authorization (I-765)**：上方 2026-09-15 那条"规格变更"
+  经人工复核确认为**误报**。当日直接下载两份官方 PDF 逐字比对，原文 "white to off-white background,
+  printed on thin paper with a glossy finish, and unmounted and unretouched" 与我库 `background`
+  字段一致 —— **官方要求未变，规格数据未做任何修改**。
+- 成因：这两个源的抽取正则与官方原文用词不符（官方写 "2 by 2 inches"，正则找 "2x2"；官方写
+  "1 to 1 3/8 inches"，正则找 "25 to 35 mm"），长期只剩 "white" 一词可命中；旧基线记的是空事实集，
+  抽取偶然恢复后只命中 "white"，于是被误判为"新增事实"。
+- 处置：V370 已按官方原文字面重写正则，并新增版本号事实键（官方换版会触发 CHANGED），
+  基线已重建为 11 项事实。详见 `HANDOFF_V370_EXTRACTOR_REGEX_20260915.md`。
