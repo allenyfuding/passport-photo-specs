@@ -690,7 +690,8 @@
    "notes": "The official portal does not publish a size for this photo — the figures below are the passport-standard values we apply. Uganda e-Visa required for US, UK and Canada citizens. Verified on the official portal (visas.immigration.go.ug application flow): documents list requires 'Recent Passport-size Photograph' (all visa categories). No pixel size published — 2×2 in (51×51 mm) / 600×600 px per visa-photo aggregator cross-check (aipassportphoto.com). Automated re-check removed on 2026-09-16: the portal answers non-browser clients with \"Your browser is not supported\" and the headless-browser render times out, and it publishes no size, pixel or file-size figures — there is nothing to compare against, so this entry is no longer machine-verified and the date above is the last manual check, not a daily re-check.",
    "official_source": "Uganda Directorate of Citizenship and Immigration Control — visas.immigration.go.ug",
    "official_source_url": "https://visas.immigration.go.ug",
-   "verified_date": "2026-08-17"
+   "verified_date": "2026-08-17",
+   "official_page_verified": false
   },
   {
    "id": "mg_visa",
@@ -721,7 +722,8 @@
    "notes": "The official portal does not publish a size for this photo — the figures below are the passport-standard values we apply. Ethiopia e-Visa available online for US, UK and Canada citizens. Verified on the official portal (evisa.gov.et/information): 'A scanned color copy of the passport and a color passport-sized photo are required.' No pixel size published — 35×45 mm ICAO passport standard assumed.",
    "official_source": "Ethiopia e-Visa — evisa.gov.et",
    "official_source_url": "https://www.evisa.gov.et",
-   "verified_date": "2026-08-17"
+   "verified_date": "2026-08-17",
+   "official_page_verified": false
   },
   {
    "id": "la_visa",
@@ -751,7 +753,8 @@
    "notes": "The official ASAN e-Visa portal does not publish a photo size for this document — the figures below are the passport-standard values we apply. Azerbaijan ASAN e-Visa is available online for US, UK and Canada citizens. The official 'Conditions for issuing electronic visas' page (evisa.gov.az/en/conditions) describes attaching a scanned page of a travel document that already carries a photo; no standalone photo upload is specified on the official portal or its public pages.",
    "official_source": "Azerbaijan ASAN e-Visa — evisa.gov.az",
    "official_source_url": "https://evisa.gov.az",
-   "verified_date": "2026-08-17"
+   "verified_date": "2026-08-17",
+   "official_page_verified": false
   }
  ],
  "last_verified": "2026-09-16"
