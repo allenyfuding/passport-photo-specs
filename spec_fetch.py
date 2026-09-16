@@ -203,6 +203,28 @@ SOURCES = [
                "jpeg_jpg_png": r"photo and passport copy should be only in image file type of jpeg, jpg, png",
                "no_blurred_or_unclean_background": r"blurred or unclean background",
                "clear_and_readable": r"image/document should be clear and readable"}},
+    # V375 (2026-09-16) 巴西 e-Visa 纳入自动核验。
+    #   MRE/SCI 门户(formulario-mre.serpro.gov.br)是 Angular SPA: 直连只有 184 字符外壳,
+    #   无头 Chrome 渲染也只到"选国籍"首页, 照片要求是交互后由后端下发的 —— 但门户自己的
+    #   公开 REST 翻译接口是纯 JSON, 里面就是门户在用的 ICAO 照片规格原文, 事实键逐字取自它。
+    #   第二个 URL 是"外国人入境巴西签证制度总表"(QGRV)页面: 用该页的"Atualizado em"版本日期
+    #   钉住当前版, 巴西每出新版本键即失配 -> 开 issue 提醒人工核对"哪些国籍需要电子签"
+    #   (2026-09 我们曾把日本错写成需要、把澳洲错删, 这条就是防它复发)。
+    #   注: 客户实际提交 e-Visa 的站点是巴西领馆公告所指向的 brazil.vfsevisa.com(VFS 运营,
+    #   Cloudflare 拦中国 IP), 抓不到; 以上两个 gov.br 源覆盖 MRE 官方口径的那部分。
+    {"key": "br_visa", "label": "Brazil e-Visa (MRE/SCI)",
+     "urls": ["https://formulario-mre.serpro.gov.br/sci/rest/publico/v1/domain/traducoes/en",
+              "https://www.gov.br/mre/pt-br/assuntos/portal-consular/vistos/quadro-geral-de-regime-de-vistos-para-entrada-de-estrangeiros-no-brasil"],
+     "facts": {"photo_min_413x531": r"at least 413x531 pixels",
+               "white_background": r"against a white background",
+               "face_and_shoulders_framed": r"face and shoulders must be fully framed",
+               "look_directly_at_camera": r"must look directly at the camera",
+               "no_shadows_or_reflections": r"no reflections, shadows, or penumbras",
+               "neutral_expression_eyes_open": r"neutral expression and the eyes must be open",
+               "qgrv_page": r"quadro geral de regime de vistos para entrada de estrangeiros no brasil",
+               "qgrv_en_pdf_title": r"entry visas to brazil \(qgrv\)",
+               "qgrv_pt_pdf_title": r"quadro geral de regime de vistos \(qgrv\)",
+               "qgrv_edition_26aug2026": r"atualizado em 26/08/2026"}},
 ]
 
 
