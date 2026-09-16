@@ -577,13 +577,13 @@
    "document": "Brazil e-Visa",
    "photo_size": "35×45 mm (digital upload)",
    "output_pixels": "413×531 px @300 dpi",
-   "file_size": "10 - 300 KB JPEG",
-   "head_height_rule": "Head height (top of hair) about 68% of photo height; about 7% from top of photo to top of hair",
+   "file_size": "Up to 2 MB JPEG/JPG (official portal limit); we deliver a 10\u2013300 KB file",
+   "head_height_rule": "The portal guide publishes no head-height ratio (it asks only for space above the head and a centred face); we target ≈68% head height and ≈7% top gap per the cross-referenced visa-photo standard (visafoto.com, 2026-08-17).",
    "background": "Plain white background, no shadows",
-   "notes": "Brazil e-Visa is required for US citizens (since April 2025) and for Australia, Canada and Japan nationals; UK citizens are visa-exempt. Digital applications go through the official MRE form (formulario-mre.serpro.gov.br). Figures cross-checked 2026-08-17 against independent published requirement tables — visafoto.com (413×531 px / 10–300 KB / head 68%, citing the official VFS preparation page) and passport-photo.online (431×531 px / head 70% / top 5.2%). Note: US-consulate paper applications use the 2×2 in standard instead; we deliver the e-Visa digital-upload format as the primary spec.",
+   "notes": "Brazil e-Visa photo requirements (official portal formulario-mre.serpro.gov.br): colour photo on a white background, 3.5×4.5 cm (413×531 px), JPEG/JPG up to 2 MB; space above the head; face centred and looking straight at the lens; head and chin not cropped; shoulders visible and inside the box; no smiling or showing teeth; hair tied back with the ears visible; no headgear; no spectacles; and the photo must not be cropped from the passport bio page. The portal publishes no head-height percentage — the 68% figure in the table is the cross-referenced reference (visafoto.com, 2026-08-17). The e-Visa is required for US citizens (since April 2025) and Canadian citizens (travel.gc.ca, updated 2026-09-11); UK citizens are visa-exempt (gov.uk). Digital applications go through the official MRE form; US-consulate paper applications use the 2×2 in standard instead, so we deliver the e-Visa digital-upload format as the primary spec.",
    "official_source": "Brazil MRE e-Visa application — formulario-mre.serpro.gov.br (visafoto/passport-photo.online cross-check)",
    "official_source_url": "https://formulario-mre.serpro.gov.br",
-   "verified_date": "2026-08-17",
+   "verified_date": "2026-09-16",
    "official_page_verified": false
   },
   {
