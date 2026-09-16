@@ -24,4 +24,3 @@
 - `us_dv_lottery`: UNREACHABLE — 核验日期 2026-09-15 (last_checked 2026-09-16)
 - `ca_pr_card`: OK — 核验日期 2026-09-15 (last_checked 2026-09-15)
 - `tz_visa`: OK — 核验日期 2026-09-16 (last_checked 2026-09-16)
-- `ug_visa`: ANOMALY — 核验日期 2026-08-17 (last_checked 2026-09-16)
