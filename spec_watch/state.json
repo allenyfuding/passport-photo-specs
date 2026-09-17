@@ -304,10 +304,10 @@
   }
  },
  "us_green_card": {
-  "consecutive_failures": 1,
-  "last_status": "UNREACHABLE",
-  "last_checked": "2026-09-17",
-  "last_note": "RuntimeError: HTTP 403",
+  "consecutive_failures": 0,
+  "last_status": "OK",
+  "last_checked": "2026-09-18",
+  "last_note": "OK",
   "facts_hash": "7cca4107b2c6a5540b61597f",
   "page_hash": "eda0819036091e7db44ee9f7",
   "last_facts": [
@@ -338,10 +338,10 @@
   }
  },
  "us_ead": {
-  "consecutive_failures": 1,
-  "last_status": "UNREACHABLE",
-  "last_checked": "2026-09-17",
-  "last_note": "RuntimeError: HTTP 403",
+  "consecutive_failures": 0,
+  "last_status": "OK",
+  "last_checked": "2026-09-18",
+  "last_note": "OK",
   "facts_hash": "33f799d010dc5e0720be0646",
   "page_hash": "6ce162e87493b997f8d45452",
   "last_facts": [

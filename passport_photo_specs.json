@@ -478,7 +478,7 @@
    "notes": "Two identical colour passport-style photos taken recently; full face frontal view; head bare unless religious headwear required; print name and A-Number (if any) on the back. Must not be retouched or altered in any way. Form I-485 Instructions 09/04/26.",
    "official_source": "USCIS — Form I-485 Instructions (page 10)",
    "official_source_url": "https://www.uscis.gov/sites/default/files/document/forms/i-485instr.pdf",
-   "verified_date": "2026-09-17"
+   "verified_date": "2026-09-18"
   },
   {
    "id": "us_ead",
@@ -493,7 +493,7 @@
    "notes": "Two identical colour passport-style photographs taken recently; full face frontal view; head bare unless religious headwear required; print name and A-Number (if any) on the back. Must not be retouched or altered in any way. Same photo rule as Form I-485; Form I-765 Instructions 08/21/25.",
    "official_source": "USCIS — Form I-765 Instructions (photographs section)",
    "official_source_url": "https://www.uscis.gov/sites/default/files/document/forms/i-765instr.pdf",
-   "verified_date": "2026-09-17"
+   "verified_date": "2026-09-18"
   },
   {
    "id": "us_dv_lottery",
@@ -757,5 +757,5 @@
    "official_page_verified": false
   }
  ],
- "last_verified": "2026-09-17"
+ "last_verified": "2026-09-18"
 }
