@@ -183,3 +183,9 @@
 - **US Passport** (us_passport): 已连续 **3** 次不可达 (最近: RuntimeError: HTTP 403) — 保留核验日期 2026-08-19, 需检查网络/代理
 - **US Visa (DS-160)** (us_visa): 已连续 **3** 次不可达 (最近: RuntimeError: HTTP 403) — 保留核验日期 2026-08-12, 需检查网络/代理
 - **US Diversity Visa** (us_dv_lottery): 已连续 **6** 次不可达 (最近: RuntimeError: HTTP 403) — 保留核验日期 2026-09-15, 需检查网络/代理
+
+## 2026-09-19 — 需人工复核
+- **US Green Card (I-485)** (us_green_card): **规格变更** — 官方页 https://www.uscis.gov/sites/default/files/document/forms/i-485instr.pdf
+  - 新增/变化事实: —
+  - 消失事实: ['edition_i485_09_04_26 (form i-485 instructions 09/04/26)']
+  - **数值与核验日期未自动修改**(红线: 真实规格数据), 请人工复核后手动更新 JSON + 日期
