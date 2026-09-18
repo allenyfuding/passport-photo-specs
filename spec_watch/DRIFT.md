@@ -178,3 +178,8 @@
 
 ## 2026-09-16 — 需人工复核
 - **US Diversity Visa** (us_dv_lottery): 已连续 **3** 次不可达 (最近: RuntimeError: HTTP 403) — 保留核验日期 2026-09-15, 需检查网络/代理
+
+## 2026-09-18 — 需人工复核
+- **US Passport** (us_passport): 已连续 **3** 次不可达 (最近: RuntimeError: HTTP 403) — 保留核验日期 2026-08-19, 需检查网络/代理
+- **US Visa (DS-160)** (us_visa): 已连续 **3** 次不可达 (最近: RuntimeError: HTTP 403) — 保留核验日期 2026-08-12, 需检查网络/代理
+- **US Diversity Visa** (us_dv_lottery): 已连续 **6** 次不可达 (最近: RuntimeError: HTTP 403) — 保留核验日期 2026-09-15, 需检查网络/代理
