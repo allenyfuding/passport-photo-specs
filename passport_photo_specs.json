@@ -28,7 +28,7 @@
    "notes": "Digital photo for online applications; photo must not be altered with software.",
    "official_source": "gov.uk - passport photo requirements",
    "official_source_url": "https://www.gov.uk/photos-for-passports",
-   "verified_date": "2026-09-20"
+   "verified_date": "2026-09-21"
   },
   {
    "id": "ca_passport",
@@ -43,7 +43,7 @@
    "notes": "Online renewal only; must be taken by a commercial photographer <=6 months before submission, unaltered original camera file, no scans.",
    "official_source": "canada.ca - passport photo specifications",
    "official_source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/canadian-passports/photos.html",
-   "verified_date": "2026-09-20"
+   "verified_date": "2026-09-21"
   },
   {
    "id": "us_visa",
@@ -73,7 +73,7 @@
    "notes": "Digital only; never altered; background never replaced.",
    "official_source": "gov.uk Home Office - photo for visa application",
    "official_source_url": "https://www.gov.uk/guidance/how-to-take-a-photo-for-a-visa-application-or-permission",
-   "verified_date": "2026-09-20"
+   "verified_date": "2026-09-21"
   },
   {
    "id": "ca_visa",
@@ -88,7 +88,7 @@
    "notes": "Digital 420x540 file plus print sheet for paper applications.",
    "official_source": "canada.ca - IRCC temporary resident visa photograph specifications",
    "official_source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/application/application-forms-guides/temporary-resident-visa-application-photograph-specifications.html",
-   "verified_date": "2026-09-20"
+   "verified_date": "2026-09-21"
   },
   {
    "id": "in_evisa",
@@ -103,7 +103,7 @@
    "notes": "Square JPEG; the official page states no pixel size and no DPI — 600x600 px is our delivery file, which sits inside the official 10 KB–1 MB range. No AI editing. Re-verified against indianvisaonline.gov.in/evisa/tvoa.html on 2026-09-12.",
    "official_source": "indianvisaonline.gov.in - e-Visa photo requirements",
    "official_source_url": "https://indianvisaonline.gov.in/evisa/tvoa.html",
-   "verified_date": "2026-09-20"
+   "verified_date": "2026-09-21"
   },
   {
    "id": "in_passport",
@@ -179,7 +179,7 @@
    "notes": "Digital colour photograph taken within the last 3 months; must not be altered or enhanced (no facial-feature modification, no editing software). Formats: jpg, jpeg, heic, heif, png. ICA photo guidelines verified 2026-08-09.",
    "official_source": "Immigration & Checkpoints Authority (ICA) — Photo Guidelines",
    "official_source_url": "https://www.ica.gov.sg/photo-guidelines",
-   "verified_date": "2026-09-20"
+   "verified_date": "2026-09-21"
   },
   {
    "id": "my_evisa",
@@ -242,7 +242,7 @@
    "notes": "Photo for the Visit Saudi e-Visa application. Official photo specifications page referenced by the visa portal.",
    "official_source": "Visit Saudi — Photo Specifications",
    "official_source_url": "https://visa.visitsaudi.com/Home/PhotoSpecifications",
-   "verified_date": "2026-09-20"
+   "verified_date": "2026-09-21"
   },
   {
    "id": "nz_passport",
@@ -335,7 +335,7 @@
    "notes": "Rule read live on immigration.govt.nz (2026-08-09): photo taken within the last 6 months; must not be edited or AI-altered (no background replacement, no face edits). visafoto also lists 1650x2200 px with head height about 72% as an additional reference.",
    "official_source": "Immigration New Zealand — Acceptable photos for a visa or NZeTA",
    "official_source_url": "https://www.immigration.govt.nz/new-zealand-visas/apply-for-a-visa/tools-and-information/acceptable-photos",
-   "verified_date": "2026-09-20",
+   "verified_date": "2026-09-21",
    "official_page_verified": false
   },
   {
@@ -523,7 +523,7 @@
    "notes": "Two identical photos; taken no more than 12 months before applying; colour or black and white; clear/sharp focus, uniform lighting, no shadows/glare/flash; neutral expression, mouth closed, eyes open, looking directly at the camera; professionally printed on plain high-quality photo paper (home printing on heavyweight paper not accepted); original photo, not altered in any way; avoid white clothing or white religious head coverings.",
    "official_source": "canada.ca — Permanent resident photos",
    "official_source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/permanent-residents/card/photos.html",
-   "verified_date": "2026-09-20"
+   "verified_date": "2026-09-21"
   },
   {
    "id": "uk_driving_licence",
@@ -538,7 +538,7 @@
    "notes": "DVLA photo change/renewal: you can use your passport photo or upload a new one (£14 online); postal D1 applications require a recent printed passport-type photo. The photo must be unaltered by computer software; plain light-coloured background, no shadows.",
    "official_source": "gov.uk — Change the photo on your driving licence",
    "official_source_url": "https://www.gov.uk/renew-photo-driving-licence",
-   "verified_date": "2026-09-20"
+   "verified_date": "2026-09-21"
   },
   {
    "id": "ke_eta",
@@ -553,7 +553,7 @@
    "notes": "The official portal does not publish a size for this photo — the figures below are the passport-standard values we apply. Kenya eTA required for US, UK and Canada citizens before travel. Official How to Apply page verified in a live browser (2026-08-17): it lists \"selfie or passport-type photo\" among the required documents and publishes no pixel dimensions; the online form accepts a digital photo upload. We deliver the passport standard 2×2 in / 600×600 px file (head 50–69% per US passport convention, aipassportphoto cross-check).",
    "official_source": "Kenya Directorate of Immigration Services — eTA portal (How to Apply, verified live 2026-08-17)",
    "official_source_url": "https://etakenya.go.ke/how-to-apply",
-   "verified_date": "2026-09-20"
+   "verified_date": "2026-09-21"
   },
   {
    "id": "india_evisa",
@@ -568,7 +568,7 @@
    "notes": "Square JPEG; the official page states no pixel size and no DPI — 600x600 px is our delivery file, which sits inside the official 10 KB–1 MB range. No AI editing. Re-verified against indianvisaonline.gov.in/evisa/tvoa.html on 2026-09-12.",
    "official_source": "indianvisaonline.gov.in - e-Visa photo requirements",
    "official_source_url": "https://indianvisaonline.gov.in/evisa/tvoa.html",
-   "verified_date": "2026-09-20"
+   "verified_date": "2026-09-21"
   },
   {
    "id": "br_visa",
@@ -583,7 +583,7 @@
    "notes": "Brazil e-Visa photo requirements (official portal formulario-mre.serpro.gov.br): colour photo on a white background, 3.5×4.5 cm (413×531 px), JPEG/JPG up to 2 MB; space above the head; face centred and looking straight at the lens; head and chin not cropped; shoulders visible and inside the box; no smiling or showing teeth; hair tied back with the ears visible; no headgear; no spectacles; and the photo must not be cropped from the passport bio page. The portal publishes no head-height percentage — the 68% figure in the table is the cross-referenced reference (visafoto.com, 2026-08-17). The e-Visa is required for US, Australian and Canadian citizens (Brazilian MRE 'Entry Visas to Brazil' table, updated 2026-08-26: visit-visa code 1 = visa required; Canada also confirmed via travel.gc.ca, updated 2026-09-11); UK and Japanese citizens are visa-exempt (code 4 = exemption up to 90 days). Digital applications go through the official MRE form; US-consulate paper applications use the 2×2 in standard instead, so we deliver the e-Visa digital-upload format as the primary spec.",
    "official_source": "Brazil MRE e-Visa application — formulario-mre.serpro.gov.br (visafoto/passport-photo.online cross-check)",
    "official_source_url": "https://formulario-mre.serpro.gov.br",
-   "verified_date": "2026-09-20",
+   "verified_date": "2026-09-21",
    "official_page_verified": false
   },
   {
@@ -645,7 +645,7 @@
    "notes": "Tanzania e-Visa required for US, UK and Canada citizens. Official guidelines state photo must not exceed 45×35 mm, ≤500KB, JPG/JPEG; glasses allowed, head coverings only for religious reasons. Verified directly on the official portal (visa.immigration.go.tz guidelines).",
    "official_source": "Tanzania Immigration — visa.immigration.go.tz (Guidelines)",
    "official_source_url": "https://visa.immigration.go.tz",
-   "verified_date": "2026-09-20"
+   "verified_date": "2026-09-21"
   },
   {
    "id": "sa_visa",
@@ -660,7 +660,7 @@
    "notes": "Saudi e-Visa available online for US, UK and Canada citizens. Official Photo Specifications page: 200×200 px, image size 5–100 KB, white background, photo no more than 6 months old, face 70–80% of frame. Verified directly on the official portal (visa.visitsaudi.com/Home/PhotoSpecifications).",
    "official_source": "Saudi Arabia e-Visa — visa.visitsaudi.com Photo Specifications",
    "official_source_url": "https://visa.visitsaudi.com/Home/PhotoSpecifications",
-   "verified_date": "2026-09-20"
+   "verified_date": "2026-09-21"
   },
   {
    "id": "om_visa",
@@ -722,7 +722,7 @@
    "notes": "The official portal does not publish pixel dimensions for this photo — the figures below are the passport-standard values we apply. It does publish the upload limit; read live on evisa.gov.et/visa 2026-09-16 ('Attachments' note, verbatim): 'Size of the image/document should be less than 2MB. Photo and Passport Copy should be only in Image file type of JPEG, JPG, PNG format.' Ethiopia e-Visa available online for US, UK and Canada citizens. Verified on the official portal (evisa.gov.et/information): 'A scanned color copy of the passport and a color passport-sized photo are required.' No pixel size published — 35×45 mm ICAO passport standard assumed.",
    "official_source": "Ethiopia e-Visa — evisa.gov.et",
    "official_source_url": "https://www.evisa.gov.et",
-   "verified_date": "2026-09-20",
+   "verified_date": "2026-09-21",
    "official_page_verified": false
   },
   {
@@ -738,7 +738,7 @@
    "notes": "Laos e-Visa available online for US, UK and Canada citizens. Official FAQ (laoevisa.gov.la/faq): photo must be 4×6 cm, in colour, taken within the last 6 months, no shadows, plain white background, facing camera, neutral expression, both eyes open (ICAO standard). Verified directly on the official portal.",
    "official_source": "Lao Official Online Visa — laoevisa.gov.la (FAQ)",
    "official_source_url": "https://laoevisa.gov.la/faq",
-   "verified_date": "2026-09-20"
+   "verified_date": "2026-09-21"
   },
   {
    "id": "az_visa",
