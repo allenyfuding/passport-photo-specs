@@ -221,3 +221,10 @@
 - **US Green Card (I-485)** (us_green_card): 已连续 **3** 次不可达 (最近: RuntimeError: HTTP 403) — 保留核验日期 2026-10-04, 需检查网络/代理
 - **US Employment Authorization (I-765)** (us_ead): 已连续 **3** 次不可达 (最近: RuntimeError: HTTP 403) — 保留核验日期 2026-10-04, 需检查网络/代理
 - **US Diversity Visa** (us_dv_lottery): 已连续 **24** 次不可达 (最近: RuntimeError: HTTP 403) — 保留核验日期 2026-09-15, 需检查网络/代理
+
+## 2026-10-09 — 需人工复核
+- **US Passport** (us_passport): 已连续 **24** 次不可达 (最近: RuntimeError: HTTP 403) — 保留核验日期 2026-10-04, 需检查网络/代理
+- **US Visa (DS-160)** (us_visa): 已连续 **24** 次不可达 (最近: RuntimeError: HTTP 403) — 保留核验日期 2026-10-04, 需检查网络/代理
+- **US Green Card (I-485)** (us_green_card): 已连续 **6** 次不可达 (最近: RuntimeError: HTTP 403) — 保留核验日期 2026-10-04, 需检查网络/代理
+- **US Employment Authorization (I-765)** (us_ead): 已连续 **6** 次不可达 (最近: RuntimeError: HTTP 403) — 保留核验日期 2026-10-04, 需检查网络/代理
+- **US Diversity Visa** (us_dv_lottery): 已连续 **27** 次不可达 (最近: RuntimeError: HTTP 403) — 保留核验日期 2026-09-15, 需检查网络/代理
