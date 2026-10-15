@@ -241,3 +241,11 @@
 - **US Green Card (I-485)** (us_green_card): 已连续 **9** 次不可达 (最近: RuntimeError: HTTP 403) — 保留核验日期 2026-10-04, 需检查网络/代理
 - **US Employment Authorization (I-765)** (us_ead): 已连续 **9** 次不可达 (最近: RuntimeError: HTTP 403) — 保留核验日期 2026-10-04, 需检查网络/代理
 - **US Diversity Visa** (us_dv_lottery): 已连续 **30** 次不可达 (最近: RuntimeError: HTTP 403) — 保留核验日期 2026-09-15, 需检查网络/代理
+
+## 2026-10-15 — 需人工复核
+- **US Passport** (us_passport): 已连续 **30** 次不可达 (最近: RuntimeError: HTTP 403) — 保留核验日期 2026-10-04, 需检查网络/代理
+- **US Visa (DS-160)** (us_visa): 已连续 **30** 次不可达 (最近: RuntimeError: HTTP 403) — 保留核验日期 2026-10-04, 需检查网络/代理
+- **New Zealand Visa / NZeTA** (nz_visa_online): **ANOMALY** — 页面可达但提取不到规格事实 (hash 686413f167cb92d056d02bb2 → 49c9ea7e912c8a2ab3288ddc), 需人工核对 https://www.immigration.govt.nz/new-zealand-visas/apply-for-a-visa/tools-and-information/acceptable-photos
+- **US Green Card (I-485)** (us_green_card): 已连续 **12** 次不可达 (最近: RuntimeError: HTTP 403) — 保留核验日期 2026-10-04, 需检查网络/代理
+- **US Employment Authorization (I-765)** (us_ead): 已连续 **12** 次不可达 (最近: RuntimeError: HTTP 403) — 保留核验日期 2026-10-04, 需检查网络/代理
+- **US Diversity Visa** (us_dv_lottery): 已连续 **33** 次不可达 (最近: RuntimeError: HTTP 403) — 保留核验日期 2026-09-15, 需检查网络/代理
