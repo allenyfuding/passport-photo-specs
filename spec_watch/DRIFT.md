@@ -255,3 +255,10 @@
   - 新增/变化事实: ['age_6mo (within the last 6 months)', 'good_contrast (good contrast between your face and the background)', 'jpg_jpeg (jpg or jpeg)', 'kb_512_3_14mb (512 kb and 3.14 mb)', 'no_shadows (no shadows on your face)', 'portrait_3_4 (portrait mode with 3:4 aspect ratio)']
   - 消失事实: —
   - **数值与核验日期未自动修改**(红线: 真实规格数据), 请人工复核后手动更新 JSON + 日期
+
+## 2026-10-18 — 需人工复核
+- **US Passport** (us_passport): 已连续 **33** 次不可达 (最近: RuntimeError: HTTP 403) — 保留核验日期 2026-10-04, 需检查网络/代理
+- **US Visa (DS-160)** (us_visa): 已连续 **33** 次不可达 (最近: RuntimeError: HTTP 403) — 保留核验日期 2026-10-04, 需检查网络/代理
+- **US Green Card (I-485)** (us_green_card): 已连续 **15** 次不可达 (最近: RuntimeError: HTTP 403) — 保留核验日期 2026-10-04, 需检查网络/代理
+- **US Employment Authorization (I-765)** (us_ead): 已连续 **15** 次不可达 (最近: RuntimeError: HTTP 403) — 保留核验日期 2026-10-04, 需检查网络/代理
+- **US Diversity Visa** (us_dv_lottery): 已连续 **36** 次不可达 (最近: RuntimeError: HTTP 403) — 保留核验日期 2026-09-15, 需检查网络/代理
