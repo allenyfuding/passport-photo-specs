@@ -80,8 +80,7 @@ def cmd_set(key, date):
     else:
         print(f"未找到 {key}")
         return 1
-    if all(re.fullmatch(r"\d{4}-\d{2}-\d{2}", s.get("verified_date", "")) for s in ds["specs"]):
-        ds["last_verified"] = date
+    # V414: 单条人工核验不是全库复核，不能刷新 last_verified（避免 /standards 误报“全部已复核”）
     save(DATASET_FP, ds)
     with open(CSV_FP, "w", encoding="utf-8", newline="") as f:
         w = csv.writer(f, lineterminator="\r\n")
