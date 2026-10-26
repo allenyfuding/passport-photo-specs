@@ -56,11 +56,11 @@
    "file_size": "<=240 KB",
    "head_height_rule": "Head height 50-69% of photo height",
    "background": "Plain white or off-white",
-   "notes": "Glasses not allowed (rare medical exceptions need a doctor's statement); photo within last 6 months. Digital: square 600-1200 px, head 50-69%, eye height 56-69% of image height.",
+   "notes": "Glasses not allowed (rare medical exceptions need a doctor's statement); photo within last 6 months. Digital: square 600-1200 px, head 50-69%, eye 56-69%, JPEG <=240KB (600x600 upload).",
    "official_source": "9 FAM 303.6-2(A)(1) — Photo Standards (paper rules)",
    "official_source_url": "https://fam.state.gov/FAM/09FAM/09FAM030306.html",
    "verified_date": "2026-10-26",
-   "verified_note": "Paper photo rules source verified via 9 FAM (2026-10-26); digital composition template (square 600-1200 px, head 50-69%, eye 56-69%) source verified via State Dept (2026-10-26); JPEG/<=240KB limit last manually verified 2026-10-04."
+   "verified_note": "Paper photo rules source verified via 9 FAM (2026-10-26); digital composition template (square 600-1200 px, head 50-69%, eye 56-69%) source verified via State Dept (2026-10-26); JPEG/<=240KB/600x600 confirmed on the same State Dept visa photo page DV digital requirements (2026-10-26); DS-160-specific Digital Image Requirements subpage not directly opened."
   },
   {
    "id": "uk_visa",
