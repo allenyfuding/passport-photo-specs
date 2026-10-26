@@ -384,10 +384,10 @@
   }
  },
  "us_dv_lottery": {
-  "consecutive_failures": 44,
-  "last_status": "UNREACHABLE",
+  "consecutive_failures": 0,
+  "last_status": "MANUAL",
   "last_checked": "2026-10-26",
-  "last_note": "RuntimeError: HTTP 403",
+  "last_note": "人工核验(官方页 Cloudflare 拦截, 浏览器人工比对 facts 后手动刷新)",
   "facts_hash": "4f53cda18c2baa0c0354bb5f",
   "page_hash": "2754aad66b6216e8d7a184e1",
   "last_facts": [],
