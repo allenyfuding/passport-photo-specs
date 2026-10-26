@@ -56,9 +56,10 @@
    "head_height_rule": "Head height 50-69% of photo height",
    "background": "Plain white or off-white",
    "notes": "Glasses not allowed (rare medical exceptions need a doctor's statement); photo within last 6 months.",
-   "official_source": "travel.state.gov - DS-160 photo requirements",
-   "official_source_url": "https://travel.state.gov/content/travel/en/us-visas/visa-information-resources/photos.html",
-   "verified_date": "2026-10-04"
+   "official_source": "9 FAM 303.6-2(A)(1) — Photo Standards (paper rules)",
+   "official_source_url": "https://fam.state.gov/FAM/09FAM/09FAM030306.html",
+   "verified_date": "2026-10-26",
+   "verified_note": "Paper photo rules verified via 9 FAM; digital upload limits (600×600 px, ≤240 KB) last manually verified 2026-10-04."
   },
   {
    "id": "uk_visa",

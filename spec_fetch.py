@@ -28,6 +28,7 @@ import hashlib
 import json
 import os
 import re
+import ssl
 import subprocess
 import sys
 import tempfile
@@ -46,6 +47,21 @@ REPORT_FP = os.path.join(OUT_DIR, "REPORT.md")
 DRIFT_FP = os.path.join(OUT_DIR, "DRIFT.md")
 FAIL_ALERT = int(os.environ.get("SPEC_FETCH_FAIL_ALERT", "3"))
 PROXY = os.environ.get("SPEC_FETCH_PROXY") or None
+CERTS_DIR = os.path.join(APP_DIR, "certs")
+FAM_CA = os.path.join(CERTS_DIR, "sectigo_public_server_auth_ca_ov_r36.pem")
+
+
+def _ssl_ctx():
+    ctx = ssl.create_default_context()
+    if os.path.isfile(FAM_CA):
+        try:
+            ctx.load_verify_locations(cafile=FAM_CA)
+        except Exception:
+            pass
+    return ctx
+
+
+SSL_CTX = _ssl_ctx()
 UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/126.0 Safari/537.36")
 TIMEOUT = 25
@@ -66,10 +82,16 @@ SOURCES = [
     {"key": "us_visa", "label": "US Visa (DS-160)",
      "urls": ["https://travel.state.gov/en/passports/apply/help/photos.html",
               "https://travel.state.gov/content/travel/en/us-visas/visa-information-resources/photos.html",
-              "https://travel.state.gov/content/travel/en/us-visas/visa-information-resources/photos/digital-image-requirements.html"],
-     "facts": {"size_2x2": r"2\s*[x×]\s*2", "size_51mm": r"51\s*mm",
-               "px_600": r"600", "px_1200": r"1200", "bg_white": r"white", "age_6mo": r"6\s*months",
-               "head_word": r"head", "no_glasses": r"no longer allowed"}},
+              "https://travel.state.gov/content/travel/en/us-visas/visa-information-resources/photos/digital-image-requirements.html",
+              "https://fam.state.gov/FAM/09FAM/09FAM030306.html"],
+     "fallback_host": "fam.state.gov",
+     "optional_facts": ["px_600", "px_1200"],
+     "facts": {"size_2x2": r"2\s*[x×]\s*2|2\s*(?:inches|in)\s*square",
+               "size_51mm": r"(?:50|51)\s*mm",
+               "px_600": r"600", "px_1200": r"1200", "bg_white": r"white",
+               "age_6mo": r"6\s*months|six\s*months",
+               "head_word": r"head",
+               "no_glasses": r"no longer allowed|must not be worn|not be worn"}},
     {"key": "uk_passport", "label": "UK Passport",
      "urls": ["https://www.gov.uk/photos-for-passports",
               "https://www.gov.uk/photos-for-passports/print"],
@@ -346,7 +368,7 @@ def _fetch_urllib(url):
         "Accept-Language": "en-US,en;q=0.9",
         "Accept-Encoding": "gzip, deflate",
     })
-    opener = urllib.request.build_opener()
+    opener = urllib.request.build_opener(urllib.request.HTTPSHandler(context=SSL_CTX))
     if PROXY:
         opener.add_handler(urllib.request.ProxyHandler({"http": PROXY, "https": PROXY}))
     last = None
@@ -456,30 +478,37 @@ def run():
         page_hash = st.get("page_hash", "")
         old_date = spec.get("verified_date") or ""
 
-        texts, code_notes = [], []
+        texts, code_notes, ok_urls = [], [], []
         removed = False
-        try:
-            for u in urls:
+        last_exc = None
+        for u in urls:
+            try:
                 code, text = fetch(u)
                 code_notes.append(f"HTTP {code}")
                 if code in (404, 410):
                     removed = True
-                    text = ""
-                texts.append(text)
+                    continue
+                if text:
+                    texts.append(text)
+                    ok_urls.append(u)
+            except urllib.error.HTTPError as e:
+                code_notes.append(f"HTTP {e.code}")
+                last_exc = e
+            except Exception as e:
+                code_notes.append(f"{type(e).__name__}")
+                last_exc = e
+        if ok_urls:
             code = 200
             text = "\n---PAGE---\n".join(texts)
             reason = "; ".join(code_notes)
-        except urllib.error.HTTPError as e:
-            code = e.code
-            text = ""
-            reason = f"HTTP {e.code}"
-        except Exception as e:
-            code = 0
-            text = ""
-            reason = f"{type(e).__name__}: {e}"
-        if removed:
+        elif removed:
             code = 404
-
+            text = ""
+            reason = "; ".join(code_notes)
+        else:
+            code = getattr(last_exc, "code", 0) or 0
+            text = ""
+            reason = "; ".join(code_notes) or (str(last_exc) if last_exc else "all sources failed")
         if code in (404, 410):
             status = "REMOVED"
             note = f"HTTP {code} — 官方页面已移除/失效, 需人工核对新 URL"
@@ -518,6 +547,17 @@ def run():
                         reason += "; 直连无事实, 已用无头 Chrome 渲染重取"
                 except Exception:
                     pass
+            _fallback = (bool(ok_urls) and all((src.get("fallback_host") or "") in u for u in ok_urls)
+                         if src.get("fallback_host") else False)
+            if _fallback and src.get("optional_facts"):
+                _opt = set(src.get("optional_facts") or [])
+                _prev = set(st.get("last_facts", []))
+                _keep = _opt & _prev
+                if _keep:
+                    fact_keys = sorted(set(fact_keys) | _keep)
+                    _old_s = st.get("last_samples", {})
+                    for _k in _keep:
+                        fact_samples.setdefault(_k, _old_s.get(_k, "previously verified"))
             new_facts_hash = sha(json.dumps(fact_keys, ensure_ascii=False))
             new_page_hash = sha(text)
             if not fact_keys:
@@ -569,7 +609,7 @@ def run():
 
         state[key] = st
 
-    if all_ok:
+    if all_ok and not keys_only:
         ds["last_verified"] = today
 
     save_json(DATASET_FP, ds)

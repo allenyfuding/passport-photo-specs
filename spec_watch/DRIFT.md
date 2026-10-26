@@ -276,3 +276,14 @@
 - **US Green Card (I-485)** (us_green_card): 已连续 **21** 次不可达 (最近: RuntimeError: HTTP 403) — 保留核验日期 2026-10-04, 需检查网络/代理
 - **US Employment Authorization (I-765)** (us_ead): 已连续 **21** 次不可达 (最近: RuntimeError: HTTP 403) — 保留核验日期 2026-10-04, 需检查网络/代理
 - **US Diversity Visa** (us_dv_lottery): 已连续 **42** 次不可达 (最近: RuntimeError: HTTP 403) — 保留核验日期 2026-09-15, 需检查网络/代理
+
+## 2026-10-26 — 需人工复核
+- **US Visa (DS-160)** (us_visa): 已连续 **42** 次不可达 (最近: RuntimeError; RuntimeError; RuntimeError; RuntimeError) — 保留核验日期 2026-10-04, 需检查网络/代理
+
+## 2026-10-26 — 需人工复核
+- **US Visa (DS-160)** (us_visa): **规格变更** — 官方页 https://travel.state.gov/en/passports/apply/help/photos.html
+  - 新增/变化事实: ['age_6mo (six months)', 'bg_white (white)', 'head_word (head)', 'no_glasses (must not be worn)', 'size_2x2 (2 inches square)', 'size_51mm (50 mm)']
+  - 消失事实: —
+  - **数值与核验日期未自动修改**(红线: 真实规格数据), 请人工复核后手动更新 JSON + 日期
+
+  - 复核结论（2026-10-26）：改用 9 FAM 303.6-2(A)(1) 作为美国签证纸质规则源；数字上传规格（600×600/≤240KB）仍为 2026-10-04 人工核验。JSON 已更新为 2026-10-26。

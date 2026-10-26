@@ -10,14 +10,28 @@
   "last_samples": {}
  },
  "us_visa": {
-  "consecutive_failures": 41,
-  "last_status": "UNREACHABLE",
+  "consecutive_failures": 0,
+  "last_status": "OK",
   "last_checked": "2026-10-26",
-  "last_note": "RuntimeError: HTTP 403",
-  "facts_hash": "4f53cda18c2baa0c0354bb5f",
-  "page_hash": "774715d15cac38dd2ca148a4",
-  "last_facts": [],
-  "last_samples": {}
+  "last_note": "OK",
+  "facts_hash": "a13029b16e7ec2195b796bec",
+  "page_hash": "5df41e1de9552e4db27a9887",
+  "last_facts": [
+   "age_6mo",
+   "bg_white",
+   "head_word",
+   "no_glasses",
+   "size_2x2",
+   "size_51mm"
+  ],
+  "last_samples": {
+   "size_2x2": "2 inches square",
+   "size_51mm": "50 mm",
+   "bg_white": "white",
+   "age_6mo": "six months",
+   "head_word": "head",
+   "no_glasses": "must not be worn"
+  }
  },
  "uk_passport": {
   "consecutive_failures": 0,
