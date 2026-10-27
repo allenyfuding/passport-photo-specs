@@ -5,11 +5,10 @@ Automatic sources: 33
 Specs: 49
 Stale threshold: 60 days
 
-## Stale (22)
+## Stale (21)
 
 | id | document | verified_date | age_days | auto_source | source_status | official_url |
 |---|---|---|---:|---|---|---|
-| cn_visa_online | China Visa | 2026-08-09 | 79 | NO | - | https://www.fmprc.gov.cn |
 | mm_visa | Myanmar e-Visa | 2026-08-09 | 79 | NO | - | http://evisa.moip.gov.mm |
 | my_passport | Malaysia Passport | 2026-08-09 | 79 | optional | REMOVED | https://www.imi.gov.my/index.php/en/main-services/passport/malaysian-international-passport.html |
 | nz_passport | New Zealand Passport | 2026-08-09 | 79 | NO | - | https://www.passports.govt.nz/passport-photos/passport-photo-requirements/ |
@@ -39,7 +38,7 @@ These specs cannot advance their verified_date until a source is registered or a
 - `ae_passport` — UAE Passport — 2026-08-10 — https://icp.gov.ae/en/
 - `ae_visa` — UAE Visa — 2026-08-17 — https://u.ae/en/information-and-services/visa-and-emirates-id
 - `az_visa` — Azerbaijan e-Visa — 2026-08-17 — https://evisa.gov.az
-- `cn_visa_online` — China Visa — 2026-08-09 — https://www.fmprc.gov.cn
+- `cn_visa_online` — China Visa — 2026-10-27 — https://consular.mfa.gov.cn/VISA/img/zpyq1_zh_CN.f7c96ced.png
 - `eg_visa` — Egypt e-Visa — 2026-08-17 — https://visa2egypt.gov.eg
 - `in_dl` — India Driving Licence — 2026-08-20 — https://sarathi.parivahan.gov.in/
 - `mg_visa` — Madagascar e-Visa — 2026-08-17 — https://evisamada.gov.mg
