@@ -37,6 +37,7 @@ def main():
         rows.append({
             "id": s.get("id", ""),
             "document": s.get("document", ""),
+            "url": s.get("official_source_url", ""),
             "date": d or "—",
             "age": age,
             "auto": s.get("id") in source_keys,
@@ -56,13 +57,13 @@ def main():
         "",
         f"## Stale ({len(stale)})",
         "",
-        "| id | document | verified_date | age_days | auto_source | source_status |",
-        "|---|---|---|---:|---|---|",
+        "| id | document | verified_date | age_days | auto_source | source_status | official_url |",
+        "|---|---|---|---:|---|---|---|",
     ]
     for r in sorted(stale, key=lambda x: (x["date"], x["id"])):
         lines.append(f"| {r['id']} | {r['document']} | {r['date']} | "
                      f"{r['age'] if r['age'] is not None else '?'} | "
-                     f"{'yes' if r['auto'] else 'NO'} | {r['status'] or '-'} |")
+                     f"{'yes' if r['auto'] else 'NO'} | {r['status'] or '-'} | {r['url'] or '-'} |")
     lines += [
         "",
         f"## Unsourced ({len(unsourced)})",
@@ -71,7 +72,8 @@ def main():
         "or a manual verification is recorded.",
         "",
     ]
-    lines += [f"- `{r['id']}` — {r['document']} — {r['date']}" for r in sorted(unsourced, key=lambda x: x["id"])]
+    lines += [f"- `{r['id']}` — {r['document']} — {r['date']} — {r['url'] or 'no URL'}"
+              for r in sorted(unsourced, key=lambda x: x["id"])]
     lines += [
         "",
         f"## Automatic sources not OK ({len(failing)})",
