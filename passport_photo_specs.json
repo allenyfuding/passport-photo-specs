@@ -628,10 +628,10 @@
    "photo_size": "35×45 mm",
    "output_pixels": "827×1063 px",
    "file_size": "≤ 240 KB JPEG",
-   "head_height_rule": "Head height ≈64% of photo height (official requirement).",
+   "head_height_rule": "Head height ≈64% is our framing convention; the official e-Visa portal does not publish a head-height rule.",
    "background": "Plain white background",
-   "notes": "Cambodia e-Visa is required for US, UK and Canada citizens. The official portal (evisa.gov.kh) lists a passport photo as a required document (FAQ section 'Photo'): 35×45 mm (ICAO standard), plain white background, JPEG — read on the official portal and cross-checked against independent published requirement tables. The portal does not publish a pixel size.",
-   "official_source": "Cambodia Ministry of Foreign Affairs — evisa.gov.kh",
+   "notes": "Cambodia e-Visa is required for US, UK and Canada citizens. The official portal (evisa.gov.kh) lists a passport photo as a required document but does not publish a photo-specification page or dimensions; the 35×45 mm, plain white background and ≤240 KB JPEG values are cross-checked from independent requirement tables and must be confirmed during the application. If the portal rejects the photo, use the free redo.",
+   "official_source": "Cambodia e-Visa portal — no public photo-specification page",
    "official_source_url": "https://www.evisa.gov.kh",
    "verified_date": "2026-08-17",
    "official_page_verified": false

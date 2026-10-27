@@ -1,7 +1,7 @@
 # Spec source / staleness audit
 
 Generated: 2026-10-27
-Automatic sources: 34
+Automatic sources: 33
 Specs: 49
 Stale threshold: 60 days
 
@@ -22,7 +22,7 @@ Stale threshold: 60 days
 | az_visa | Azerbaijan e-Visa | 2026-08-17 | 71 | NO | - | https://evisa.gov.az |
 | eg_visa | Egypt e-Visa | 2026-08-17 | 71 | NO | - | https://visa2egypt.gov.eg |
 | id_evoa | Indonesia e-VOA | 2026-08-17 | 71 | optional | ANOMALY | https://evisa.imigrasi.go.id |
-| kh_visa | Cambodia e-Visa | 2026-08-17 | 71 | optional | UNREACHABLE | https://www.evisa.gov.kh |
+| kh_visa | Cambodia e-Visa | 2026-08-17 | 71 | NO | UNREACHABLE | https://www.evisa.gov.kh |
 | mg_visa | Madagascar e-Visa | 2026-08-17 | 71 | NO | - | https://evisamada.gov.mg |
 | my_evisa | Malaysia e-Visa | 2026-08-17 | 71 | optional | ANOMALY | https://malaysiavisa.imi.gov.my/evisa/evisa.jsp |
 | om_visa | Oman e-Visa | 2026-08-17 | 71 | NO | - | https://evisa.rop.gov.om |
@@ -30,7 +30,7 @@ Stale threshold: 60 days
 | ug_visa | Uganda e-Visa | 2026-08-17 | 71 | NO | - | https://visas.immigration.go.ug |
 | in_dl | India Driving Licence | 2026-08-20 | 68 | NO | - | https://sarathi.parivahan.gov.in/ |
 
-## Unsourced (15)
+## Unsourced (16)
 
 These specs cannot advance their verified_date until a source is registered or a manual verification is recorded.
 
@@ -40,6 +40,7 @@ These specs cannot advance their verified_date until a source is registered or a
 - `cn_visa_online` — China Visa — 2026-10-27 — https://consular.mfa.gov.cn/VISA/img/zpyq1_zh_CN.f7c96ced.png
 - `eg_visa` — Egypt e-Visa — 2026-08-17 — https://visa2egypt.gov.eg
 - `in_dl` — India Driving Licence — 2026-08-20 — https://sarathi.parivahan.gov.in/
+- `kh_visa` — Cambodia e-Visa — 2026-08-17 — https://www.evisa.gov.kh
 - `mg_visa` — Madagascar e-Visa — 2026-08-17 — https://evisamada.gov.mg
 - `mm_passport` — Myanmar Passport — 2026-08-10 — https://www.immigration.gov.mm/
 - `mm_visa` — Myanmar e-Visa — 2026-08-09 — http://evisa.moip.gov.mm
@@ -50,11 +51,10 @@ These specs cannot advance their verified_date until a source is registered or a
 - `uz_passport` — Uzbekistan Passport — 2026-08-10 — https://evisa.mfa.uz/evisa_en/
 - `uz_visa` — Uzbekistan Visa — 2026-08-09 — https://evisa.mfa.uz/evisa_en/
 
-## Automatic sources not OK (12)
+## Automatic sources not OK (11)
 
 - `ca_passport` — COSMETIC — 2026-10-27
 - `id_evoa` — ANOMALY — 2026-08-17
-- `kh_visa` — UNREACHABLE — 2026-08-17
 - `my_evisa` — ANOMALY — 2026-08-17
 - `my_passport` — REMOVED — 2026-08-09
 - `nz_passport` — UNREACHABLE — 2026-10-27
