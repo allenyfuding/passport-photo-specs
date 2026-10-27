@@ -146,12 +146,12 @@
    "photo_size": "33x48 mm",
    "output_pixels": "780x1134 px (600 dpi)",
    "file_size": null,
-   "head_height_rule": "Head height (top of hair to chin) about 31.5 mm; 5 mm from top of photo to top of hair",
-   "background": "White or light background",
-   "notes": "Standard Chinese passport photo. Official embassy guidance cited by the visa/passport application centres.",
-   "official_source": "China Embassy / MFA consular guidance",
-   "official_source_url": "http://www.china-embassy.org/chn/lszj/hzlxz/t1644169.htm",
-   "verified_date": "2026-08-09"
+   "head_height_rule": "Head width 15–22 mm; head height (chin to top) 28–33 mm; 3–5 mm from top of photo to top of hair; at least 7 mm below the chin",
+   "background": "White",
+   "notes": "Official Embassy of China in the US passport-photo guidance: 33×48 mm colour photo taken within 6 months; white background; head width 15–22 mm; head height 28–33 mm; 3–5 mm top gap; at least 7 mm below the chin; no shadows or photo editing. Checked 2026-10-27.",
+   "official_source": "Embassy of China in the US — passport photo requirements",
+   "official_source_url": "https://us.china-embassy.gov.cn/lsfw/zj/hzlxz/201903/t20190309_5098803.htm",
+   "verified_date": "2026-10-27"
   },
   {
    "id": "cn_visa_online",

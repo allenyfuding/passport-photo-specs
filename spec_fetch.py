@@ -123,6 +123,16 @@ SOURCES = [
                "no_spectacles": r"without spectacles", "head_full": r"full head from top of hair to bottom of chin",
                "bg_plain_light": r"plain light colored or white background",
                "no_shadows": r"No shadows on the face or on the background", "no_borders": r"Without borders"}},
+    # V421: China passport photo — official embassy page (Chinese text) publishes exact
+    # 33x48 mm / head 28-33 mm / head width 15-22 mm / top gap 3-5 mm / >=7 mm below chin.
+    {"key": "cn_passport", "label": "China Passport",
+     "url": "https://us.china-embassy.gov.cn/lsfw/zj/hzlxz/201903/t20190309_5098803.htm",
+     "facts": {"size_33x48": r"宽\s*33\s*mm[^。]{0,30}高\s*48\s*mm",
+               "head_w_15_22": r"头部宽度在\s*15\s*mm\s*至\s*22\s*mm",
+               "head_h_28_33": r"头部高度[^。]{0,30}28\s*mm\s*至\s*33\s*mm",
+               "top_3_5": r"头顶至相片上边距离在\s*3\s*mm\s*至\s*5\s*mm",
+               "chin_7": r"下颚以下至图像下边沿高度不小于\s*7\s*mm",
+               "bg_white": r"背景为白色", "no_edit": r"不得对照片进行修改"}},
     {"key": "sg_passport", "label": "Singapore Passport (ICA)",
      "url": "https://www.ica.gov.sg/photo-guidelines",
      "facts": {"px_400x514": r"400\s*[x×]\s*514\s*pixels",

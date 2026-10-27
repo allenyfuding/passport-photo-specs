@@ -476,5 +476,31 @@
    "qgrv_en_pdf_title": "entry visas to brazil (qgrv)",
    "qgrv_pt_pdf_title": "quadro geral de regime de vistos (qgrv)"
   }
+ },
+ "cn_passport": {
+  "consecutive_failures": 0,
+  "last_status": "OK",
+  "last_checked": "2026-10-27",
+  "last_note": "OK",
+  "facts_hash": "027a13eeeed16cad10c6b8cc",
+  "page_hash": "2608e342bbc4b36b83177c7b",
+  "last_facts": [
+   "bg_white",
+   "chin_7",
+   "head_h_28_33",
+   "head_w_15_22",
+   "no_edit",
+   "size_33x48",
+   "top_3_5"
+  ],
+  "last_samples": {
+   "size_33x48": "宽 33mm ，高 48mm",
+   "head_w_15_22": "头部宽度在 15mm 至 22mm",
+   "head_h_28_33": "头部高度（从下巴至头顶）在 28mm 至 33mm",
+   "top_3_5": "头顶至相片上边距离在 3mm 至 5mm",
+   "chin_7": "下颚以下至图像下边沿高度不小于 7mm",
+   "bg_white": "背景为白色",
+   "no_edit": "不得对照片进行修改"
+  }
  }
 }
