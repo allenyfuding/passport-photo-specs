@@ -117,10 +117,10 @@
    "file_size": "- (printed photo; no official digital upload)",
    "head_height_rule": "Frontal view of the full face (official portal does not state a head % range)",
    "background": "White",
-   "notes": "Official Passport Seva portal FAQ/Guide (verified live 2026-08-12 by rendering the portal): 'Passport size coloured photographs (4.5 cm length x 3.5 cm width) with white background'. Printed photos are required for minors under 4, Camp applications and Diplomatic/Official forms; ordinary adult applicants have the photo captured digitally at the PSK. Black & white, polaroid, dark glasses and uniform photos are not accepted. Overseas applications (e.g. from the US/Canada through VFS Global or Indian missions) use the official overseas spec: 2x2 in (51x51 mm) colour photograph, head height 25-35 mm (about 50-69% of photo height), plain white background, no retouching - verified 2026-08-17 against VFS Global's India passport services photo specification PDF (https://visa.vfsglobal.com/one-pager/india/united-states-of-america/passport-services/pdf/photo-specifiation.pdf).",
-   "official_source": "passportindia.gov.in — Passport Seva official portal (FAQ & Guides)",
-   "official_source_url": "https://www.passportindia.gov.in/psp/Faqs",
-   "verified_date": "2026-08-12"
+   "notes": "Official Passport Seva application-form instruction booklet (ApplicationformInstructionBooklet-V3.0.pdf, verified 2026-10-27): a recent passport-size COLOUR photograph, 4.5 cm length x 3.5 cm width, plain white background, frontal view of the full face. Printed photos are required for minors under 4, Camp applications and Diplomatic/Official forms; ordinary adult applicants have the photo captured digitally at the PSK. Black & white, polaroid, dark glasses and uniform photos are not accepted. Overseas applications (e.g. from the US/Canada through VFS Global or Indian missions) use the official overseas spec: 2x2 in (51x51 mm) colour photograph, head height 25-35 mm (about 50-69% of photo height), plain white background, no retouching - verified 2026-08-17 against the VFS Global India passport photo specification PDF.",
+   "official_source": "passportindia.gov.in — Passport Seva application-form instruction booklet",
+   "official_source_url": "https://www.passportindia.gov.in/AppOnlineProject/pdf/ApplicationformInstructionBooklet-V3.0.pdf",
+   "verified_date": "2026-10-27"
   },
   {
    "id": "in_dl",

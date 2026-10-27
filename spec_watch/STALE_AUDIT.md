@@ -1,11 +1,11 @@
 # Spec source / staleness audit
 
 Generated: 2026-10-27
-Automatic sources: 24
+Automatic sources: 25
 Specs: 49
 Stale threshold: 60 days
 
-## Stale (25)
+## Stale (24)
 
 | id | document | verified_date | age_days | auto_source | source_status | official_url |
 |---|---|---|---:|---|---|---|
@@ -22,7 +22,6 @@ Stale threshold: 60 days
 | sa_passport | Saudi Arabia Passport | 2026-08-10 | 78 | NO | - | https://www.my.gov.sa/ |
 | uz_passport | Uzbekistan Passport | 2026-08-10 | 78 | NO | - | https://evisa.mfa.uz/evisa_en/ |
 | vn_passport | Vietnam Passport | 2026-08-10 | 78 | NO | - | https://xuatnhapcanh.gov.vn/ |
-| in_passport | India Passport (printed photo) | 2026-08-12 | 76 | NO | - | https://www.passportindia.gov.in/psp/Faqs |
 | ae_visa | UAE Visa | 2026-08-17 | 71 | NO | - | https://u.ae/en/information-and-services/visa-and-emirates-id |
 | az_visa | Azerbaijan e-Visa | 2026-08-17 | 71 | NO | - | https://evisa.gov.az |
 | eg_visa | Egypt e-Visa | 2026-08-17 | 71 | NO | - | https://visa2egypt.gov.eg |
@@ -35,7 +34,7 @@ Stale threshold: 60 days
 | ug_visa | Uganda e-Visa | 2026-08-17 | 71 | NO | - | https://visas.immigration.go.ug |
 | in_dl | India Driving Licence | 2026-08-20 | 68 | NO | - | https://sarathi.parivahan.gov.in/ |
 
-## Unsourced (25)
+## Unsourced (24)
 
 These specs cannot advance their verified_date until a source is registered or a manual verification is recorded.
 
@@ -48,7 +47,6 @@ These specs cannot advance their verified_date until a source is registered or a
 - `eg_visa` — Egypt e-Visa — 2026-08-17 — https://visa2egypt.gov.eg
 - `id_evoa` — Indonesia e-VOA — 2026-08-17 — https://evisa.imigrasi.go.id
 - `in_dl` — India Driving Licence — 2026-08-20 — https://sarathi.parivahan.gov.in/
-- `in_passport` — India Passport (printed photo) — 2026-08-12 — https://www.passportindia.gov.in/psp/Faqs
 - `kh_visa` — Cambodia e-Visa — 2026-08-17 — https://www.evisa.gov.kh
 - `mg_visa` — Madagascar e-Visa — 2026-08-17 — https://evisamada.gov.mg
 - `mm_passport` — Myanmar Passport — 2026-08-10 — https://www.immigration.gov.mm/

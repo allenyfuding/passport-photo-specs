@@ -524,5 +524,19 @@
    "bg_light": "plain light colored background",
    "no_shadows": "no distracting shadows"
   }
+ },
+ "in_passport": {
+  "consecutive_failures": 0,
+  "last_status": "OK",
+  "last_checked": "2026-10-27",
+  "last_note": "OK",
+  "facts_hash": "61941e308b3d8529f9ea0874",
+  "page_hash": "2028ec0948042469b78a2755",
+  "last_facts": [
+   "size_45x35"
+  ],
+  "last_samples": {
+   "size_45x35": "4.5 cm length x 3.5 cm width"
+  }
  }
 }
