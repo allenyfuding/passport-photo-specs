@@ -148,6 +148,15 @@ SOURCES = [
                "colour_photo": r"COLOUR\s+photograph",
                "bg_white": r"Background of the photograph should be plain white",
                "full_face": r"Frontal view of the full face"}},
+    # V422: optional source. GitHub-hosted runner may reach the AU site even when
+    # the local China link cannot. Optional failures do not create drift/alerts.
+    {"key": "au_passport", "label": "Australia Passport", "optional": True,
+     "url": "https://www.passports.gov.au/help/passport-photos",
+     "facts": {"size_35_45": r"35\s*mm[^.]{0,40}45\s*mm|45\s*mm[^.]{0,40}50\s*mm",
+               "head_32_36": r"32\s*mm[^.]{0,40}36\s*mm",
+               "bg_white_grey": r"white or light grey|plain white or light grey",
+               "age_6mo": r"6\s*months",
+               "no_retouch": r"not be altered|no retouching|unaltered"}},
     {"key": "sg_passport", "label": "Singapore Passport (ICA)",
      "url": "https://www.ica.gov.sg/photo-guidelines",
      "facts": {"px_400x514": r"400\s*[x×]\s*514\s*pixels",
@@ -487,6 +496,7 @@ def run():
     keys_only = [k.strip() for k in os.environ.get("SPEC_FETCH_KEYS", "").split(",") if k.strip()]
     for src in SOURCES:
         key = src["key"]
+        optional = bool(src.get("optional"))
         if keys_only and key not in keys_only:
             continue
         spec = specs.get(key)
@@ -538,8 +548,9 @@ def run():
             status = "REMOVED"
             note = f"HTTP {code} — 官方页面已移除/失效, 需人工核对新 URL"
             st["consecutive_failures"] = 0
-            all_ok = False
-            if st.get("last_status") != "REMOVED":
+            if not optional:
+                all_ok = False
+            if not optional and st.get("last_status") != "REMOVED":
                 drift.append(f"- **{src['label']}** ({key}): 官方页面 **{status}** — {note} (URL: {urls[0]})")
             st["last_status"] = status
             st["last_note"] = note
@@ -551,8 +562,9 @@ def run():
             st["last_status"] = status
             st["last_checked"] = today
             st["last_note"] = reason
-            all_ok = False
-            if st["consecutive_failures"] >= FAIL_ALERT and st["consecutive_failures"] % FAIL_ALERT == 0:
+            if not optional:
+                all_ok = False
+            if not optional and st["consecutive_failures"] >= FAIL_ALERT and st["consecutive_failures"] % FAIL_ALERT == 0:
                 drift.append(f"- **{src['label']}** ({key}): 已连续 **{st['consecutive_failures']}** 次不可达"
                              f" (最近: {st['last_note']}) — 保留核验日期 {old_date or '无'}, 需检查网络/代理")
             lines.append(f"{status:<11} {key} — {st['last_note']} (连续失败 {st['consecutive_failures']})")
@@ -591,8 +603,9 @@ def run():
                 st["last_status"] = status
                 st["last_checked"] = today
                 st["last_note"] = "页面 200 但未提取到任何关键事实 — 页面结构可能已改, 需人工核对"
-                all_ok = False
-                if st.get("page_hash") != new_page_hash:
+                if not optional:
+                    all_ok = False
+                if not optional and st.get("page_hash") != new_page_hash:
                     drift.append(f"- **{src['label']}** ({key}): **ANOMALY** — 页面可达但提取不到规格事实"
                                  f" (hash {st.get('page_hash','-')} → {new_page_hash}), 需人工核对 {urls[0]}")
                 lines.append(f"{status:<11} {key} — {st['last_note']}")
@@ -612,7 +625,8 @@ def run():
                     f"- **{src['label']}** ({key}): **规格变更** — 官方页 {urls[0]}\n"
                     f"  - 新增/变化事实: {new_f or '—'}\n  - 消失事实: {gone_f or '—'}\n"
                     f"  - **数值与核验日期未自动修改**(红线: 真实规格数据), 请人工复核后手动更新 JSON + 日期")
-                all_ok = False
+                if not optional:
+                    all_ok = False
                 lines.append(f"{status:<11} {key} — 事实变更, 需人工复核(数值/日期未动)")
             else:
                 if facts_hash:

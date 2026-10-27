@@ -1,7 +1,7 @@
 # Spec source / staleness audit
 
 Generated: 2026-10-27
-Automatic sources: 25
+Automatic sources: 26
 Specs: 49
 Stale threshold: 60 days
 
@@ -9,7 +9,7 @@ Stale threshold: 60 days
 
 | id | document | verified_date | age_days | auto_source | source_status | official_url |
 |---|---|---|---:|---|---|---|
-| au_passport | Australia Passport | 2026-08-09 | 79 | NO | - | https://www.passports.gov.au/help/passport-photos |
+| au_passport | Australia Passport | 2026-08-09 | 79 | yes | UNREACHABLE | https://www.passports.gov.au/help/passport-photos |
 | au_visa | Australia Visa | 2026-08-09 | 79 | NO | - | https://immi.homeaffairs.gov.au/form-listing/forms/1419.pdf |
 | cn_visa_online | China Visa | 2026-08-09 | 79 | NO | - | https://www.fmprc.gov.cn |
 | mm_visa | Myanmar e-Visa | 2026-08-09 | 79 | NO | - | http://evisa.moip.gov.mm |
@@ -34,13 +34,12 @@ Stale threshold: 60 days
 | ug_visa | Uganda e-Visa | 2026-08-17 | 71 | NO | - | https://visas.immigration.go.ug |
 | in_dl | India Driving Licence | 2026-08-20 | 68 | NO | - | https://sarathi.parivahan.gov.in/ |
 
-## Unsourced (24)
+## Unsourced (23)
 
 These specs cannot advance their verified_date until a source is registered or a manual verification is recorded.
 
 - `ae_passport` — UAE Passport — 2026-08-10 — https://icp.gov.ae/en/
 - `ae_visa` — UAE Visa — 2026-08-17 — https://u.ae/en/information-and-services/visa-and-emirates-id
-- `au_passport` — Australia Passport — 2026-08-09 — https://www.passports.gov.au/help/passport-photos
 - `au_visa` — Australia Visa — 2026-08-09 — https://immi.homeaffairs.gov.au/form-listing/forms/1419.pdf
 - `az_visa` — Azerbaijan e-Visa — 2026-08-17 — https://evisa.gov.az
 - `cn_visa_online` — China Visa — 2026-08-09 — https://www.fmprc.gov.cn
@@ -63,8 +62,9 @@ These specs cannot advance their verified_date until a source is registered or a
 - `vn_passport` — Vietnam Passport — 2026-08-10 — https://xuatnhapcanh.gov.vn/
 - `vn_visa` — Vietnam e-Visa — 2026-08-09 — https://evisa.gov.vn/
 
-## Automatic sources not OK (3)
+## Automatic sources not OK (4)
 
+- `au_passport` — UNREACHABLE — 2026-08-09
 - `ca_passport` — COSMETIC — 2026-10-26
 - `us_dv_lottery` — MANUAL — 2026-10-26
 - `us_passport` — MANUAL — 2026-10-26
