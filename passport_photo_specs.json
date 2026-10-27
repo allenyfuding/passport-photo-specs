@@ -610,15 +610,16 @@
    "country": "Indonesia",
    "country_code": "ID",
    "document": "Indonesia e-VOA",
-   "photo_size": "4×6 cm (40×60 mm)",
-   "output_pixels": "500×750 px",
-   "file_size": "≤ 240 KB JPEG",
-   "head_height_rule": "Official registration page publishes no head-height ratio; ≈70% head height, ~7% top gap targeted per common visa-photo standard (visafoto cross-check).",
-   "background": "White / light neutral background, no shadows",
-   "notes": "Indonesia e-VOA (electronic visa on arrival) required for US, UK and Canada citizens. Verified on the official portal (evisa.imigrasi.go.id, register page): upload the latest color photo, face forward, size 4 x 6 cm with a resolution of at least 400 x 600 pixels, in JPEG/JPG/PNG format. Product delivers 500×750 px (≥ official 400×600 minimum).",
+   "photo_size": "Official page only says 'passport size photo' (no dimensions); we deliver 4×6 cm (40×60 mm), 500×750 px — dimensions are cross-checked",
+   "output_pixels": "500×750 px (our delivery; dimensions cross-checked, not published on this official page)",
+   "file_size": "JPG/JPEG/PNG, max 200 KB (official)",
+   "head_height_rule": "Official page does not publish a head-height rule; ≈70% is our framing convention. Dimensions are cross-checked, not official.",
+   "background": "Official page does not publish a background rule; we use white/light neutral without shadows.",
+   "notes": "Official Indonesia e-Visa portal required-documents text (checked 2026-10-27): passport biodata page JPG/JPEG/PNG max 200 KB; passport-size photo JPG/JPEG/PNG max 200 KB; email address; valid Mastercard/Visa/JCB card. The portal does not publish photo dimensions or a head-height rule; our delivered 4×6 cm/500×750 px and ≈70% head-height target are cross-checked values, not official dimensions.",
    "official_source": "Indonesia Directorate General of Immigration — evisa.imigrasi.go.id",
    "official_source_url": "https://evisa.imigrasi.go.id",
-   "verified_date": "2026-08-17"
+   "verified_date": "2026-10-27",
+   "official_page_verified": false
   },
   {
    "id": "kh_visa",
