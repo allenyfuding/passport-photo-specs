@@ -33,6 +33,9 @@ jobs:
       - name: Run official-source verification
         run: python3 spec_fetch.py
 
+      - name: Monitor COVA China visa photo images
+        run: python3 cova_photo_monitor.py
+
       - name: Audit source coverage and stale dates
         run: python3 spec_stale_audit.py
 
