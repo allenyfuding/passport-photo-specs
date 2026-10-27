@@ -502,5 +502,27 @@
    "bg_white": "背景为白色",
    "no_edit": "不得对照片进行修改"
   }
+ },
+ "in_passport_oci": {
+  "consecutive_failures": 0,
+  "last_status": "OK",
+  "last_checked": "2026-10-27",
+  "last_note": "OK",
+  "facts_hash": "79fd5295cfe25723d85939cd",
+  "page_hash": "ade14c06e75aa62d59a30f50",
+  "last_facts": [
+   "bg_light",
+   "full_face",
+   "head_25_35",
+   "no_shadows",
+   "size_2x2"
+  ],
+  "last_samples": {
+   "size_2x2": "2 inch x 2 inch",
+   "head_25_35": "1 inch to 1-3/8",
+   "full_face": "full face, front view",
+   "bg_light": "plain light colored background",
+   "no_shadows": "no distracting shadows"
+  }
  }
 }

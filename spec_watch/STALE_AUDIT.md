@@ -1,18 +1,17 @@
 # Spec source / staleness audit
 
 Generated: 2026-10-27
-Automatic sources: 23
+Automatic sources: 24
 Specs: 49
 Stale threshold: 60 days
 
-## Stale (26)
+## Stale (25)
 
 | id | document | verified_date | age_days | auto_source | source_status | official_url |
 |---|---|---|---:|---|---|---|
 | au_passport | Australia Passport | 2026-08-09 | 79 | NO | - | https://www.passports.gov.au/help/passport-photos |
 | au_visa | Australia Visa | 2026-08-09 | 79 | NO | - | https://immi.homeaffairs.gov.au/form-listing/forms/1419.pdf |
 | cn_visa_online | China Visa | 2026-08-09 | 79 | NO | - | https://www.fmprc.gov.cn |
-| in_passport_oci | India OCI (Overseas Citizen) — online photo | 2026-08-09 | 79 | NO | - | https://ociservices.gov.in/Photo-Spec-FINAL.pdf |
 | mm_visa | Myanmar e-Visa | 2026-08-09 | 79 | NO | - | http://evisa.moip.gov.mm |
 | my_passport | Malaysia Passport | 2026-08-09 | 79 | NO | - | https://www.imi.gov.my/index.php/en/main-services/passport/malaysian-international-passport.html |
 | nz_passport | New Zealand Passport | 2026-08-09 | 79 | NO | - | https://www.passports.govt.nz/passport-photos/passport-photo-requirements/ |
@@ -36,7 +35,7 @@ Stale threshold: 60 days
 | ug_visa | Uganda e-Visa | 2026-08-17 | 71 | NO | - | https://visas.immigration.go.ug |
 | in_dl | India Driving Licence | 2026-08-20 | 68 | NO | - | https://sarathi.parivahan.gov.in/ |
 
-## Unsourced (26)
+## Unsourced (25)
 
 These specs cannot advance their verified_date until a source is registered or a manual verification is recorded.
 
@@ -50,7 +49,6 @@ These specs cannot advance their verified_date until a source is registered or a
 - `id_evoa` — Indonesia e-VOA — 2026-08-17 — https://evisa.imigrasi.go.id
 - `in_dl` — India Driving Licence — 2026-08-20 — https://sarathi.parivahan.gov.in/
 - `in_passport` — India Passport (printed photo) — 2026-08-12 — https://www.passportindia.gov.in/psp/Faqs
-- `in_passport_oci` — India OCI (Overseas Citizen) — online photo — 2026-08-09 — https://ociservices.gov.in/Photo-Spec-FINAL.pdf
 - `kh_visa` — Cambodia e-Visa — 2026-08-17 — https://www.evisa.gov.kh
 - `mg_visa` — Madagascar e-Visa — 2026-08-17 — https://evisamada.gov.mg
 - `mm_passport` — Myanmar Passport — 2026-08-10 — https://www.immigration.gov.mm/

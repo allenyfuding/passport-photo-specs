@@ -133,6 +133,15 @@ SOURCES = [
                "top_3_5": r"头顶至相片上边距离在\s*3\s*mm\s*至\s*5\s*mm",
                "chin_7": r"下颚以下至图像下边沿高度不小于\s*7\s*mm",
                "bg_white": r"背景为白色", "no_edit": r"不得对照片进行修改"}},
+    # V421: official PDFs/pages verified 2026-10-27. Only sources whose official
+    # page has explicit photo facts are listed here.
+    {"key": "in_passport_oci", "label": "India OCI",
+     "url": "https://ociservices.gov.in/Photo-Spec-FINAL.pdf",
+     "facts": {"size_2x2": r"2\s*inch\s*x\s*2\s*inch|51\s*mm\s*x\s*51\s*mm",
+               "head_25_35": r"25\s*mm\s*to\s*35\s*mm|1\s*inch\s*to\s*1-3/8",
+               "full_face": r"full face, front view",
+               "bg_light": r"plain light colored background",
+               "no_shadows": r"no distracting shadows"}},
     {"key": "sg_passport", "label": "Singapore Passport (ICA)",
      "url": "https://www.ica.gov.sg/photo-guidelines",
      "facts": {"px_400x514": r"400\s*[x×]\s*514\s*pixels",
