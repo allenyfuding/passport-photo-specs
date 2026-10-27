@@ -14,7 +14,7 @@ Stale threshold: 60 days
 | my_passport | Malaysia Passport | 2026-08-09 | 79 | optional | REMOVED | https://www.imi.gov.my/index.php/en/main-services/passport/malaysian-international-passport.html |
 | nz_passport | New Zealand Passport | 2026-08-09 | 79 | NO | - | https://www.passports.govt.nz/passport-photos/passport-photo-requirements/ |
 | uz_visa | Uzbekistan Visa | 2026-08-09 | 79 | NO | - | https://evisa.mfa.uz/evisa_en/ |
-| vn_visa | Vietnam e-Visa | 2026-08-09 | 79 | optional | UNREACHABLE | https://evisa.gov.vn/ |
+| vn_visa | Vietnam e-Visa | 2026-08-09 | 79 | optional | ANOMALY | https://evisa.gov.vn/ |
 | ae_passport | UAE Passport | 2026-08-10 | 78 | NO | - | https://icp.gov.ae/en/ |
 | mm_passport | Myanmar Passport | 2026-08-10 | 78 | NO | - | https://www.immigration.gov.mm/ |
 | sa_passport | Saudi Arabia Passport | 2026-08-10 | 78 | NO | - | https://www.my.gov.sa/ |
@@ -53,12 +53,10 @@ These specs cannot advance their verified_date until a source is registered or a
 - `uz_passport` — Uzbekistan Passport — 2026-08-10 — https://evisa.mfa.uz/evisa_en/
 - `uz_visa` — Uzbekistan Visa — 2026-08-09 — https://evisa.mfa.uz/evisa_en/
 
-## Automatic sources not OK (13)
+## Automatic sources not OK (11)
 
-- `br_visa` — COSMETIC — 2026-10-27
 - `ca_passport` — COSMETIC — 2026-10-27
 - `id_evoa` — ANOMALY — 2026-08-17
-- `in_passport_oci` — COSMETIC — 2026-10-27
 - `kh_visa` — UNREACHABLE — 2026-08-17
 - `my_evisa` — ANOMALY — 2026-08-17
 - `my_passport` — REMOVED — 2026-08-09
@@ -67,7 +65,7 @@ These specs cannot advance their verified_date until a source is registered or a
 - `us_green_card` — UNREACHABLE — 2026-10-27
 - `us_passport` — UNREACHABLE — 2026-10-26
 - `vn_passport` — ANOMALY — 2026-08-10
-- `vn_visa` — UNREACHABLE — 2026-08-09
+- `vn_visa` — ANOMALY — 2026-08-09
 
 ## Policy
 

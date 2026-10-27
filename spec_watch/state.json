@@ -1,6 +1,6 @@
 {
  "us_passport": {
-  "consecutive_failures": 1,
+  "consecutive_failures": 2,
   "last_status": "UNREACHABLE",
   "last_checked": "2026-10-27",
   "last_note": "RuntimeError; RuntimeError",
@@ -87,7 +87,7 @@
   "last_checked": "2026-10-27",
   "last_note": "页面措辞变化, 规格事实未变",
   "facts_hash": "86323f93434628e666ab1d84",
-  "page_hash": "990b568bf8b9fdf5a44de6f1",
+  "page_hash": "876f6ff4b802e08e0b6b8660",
   "last_facts": [
    "bg_white",
    "head_pct_45_50",
@@ -318,7 +318,7 @@
   }
  },
  "us_green_card": {
-  "consecutive_failures": 1,
+  "consecutive_failures": 2,
   "last_status": "UNREACHABLE",
   "last_checked": "2026-10-27",
   "last_note": "RuntimeError",
@@ -350,7 +350,7 @@
   }
  },
  "us_ead": {
-  "consecutive_failures": 1,
+  "consecutive_failures": 2,
   "last_status": "UNREACHABLE",
   "last_checked": "2026-10-27",
   "last_note": "RuntimeError",
@@ -384,7 +384,7 @@
   }
  },
  "us_dv_lottery": {
-  "consecutive_failures": 1,
+  "consecutive_failures": 2,
   "last_status": "UNREACHABLE",
   "last_checked": "2026-10-27",
   "last_note": "RuntimeError",
@@ -449,9 +449,9 @@
  },
  "br_visa": {
   "consecutive_failures": 0,
-  "last_status": "COSMETIC",
+  "last_status": "OK",
   "last_checked": "2026-10-27",
-  "last_note": "页面措辞变化, 规格事实未变",
+  "last_note": "OK",
   "facts_hash": "a9a5524deb5d34b915f82eef",
   "page_hash": "78b8fff0f5bfa7605c858531",
   "last_facts": [
@@ -505,9 +505,9 @@
  },
  "in_passport_oci": {
   "consecutive_failures": 0,
-  "last_status": "COSMETIC",
+  "last_status": "OK",
   "last_checked": "2026-10-27",
-  "last_note": "页面措辞变化, 规格事实未变",
+  "last_note": "OK",
   "facts_hash": "79fd5295cfe25723d85939cd",
   "page_hash": "e121bbe4c8412e15da3e65c6",
   "last_facts": [
@@ -572,7 +572,7 @@
   }
  },
  "kh_visa": {
-  "consecutive_failures": 1,
+  "consecutive_failures": 2,
   "last_status": "UNREACHABLE",
   "last_checked": "2026-10-27",
   "last_note": "RuntimeError"
@@ -588,10 +588,14 @@
   "last_samples": {}
  },
  "vn_visa": {
-  "consecutive_failures": 1,
-  "last_status": "UNREACHABLE",
+  "consecutive_failures": 0,
+  "last_status": "ANOMALY",
   "last_checked": "2026-10-27",
-  "last_note": "RuntimeError"
+  "last_note": "页面 200 但未提取到任何关键事实 — 页面结构可能已改, 需人工核对",
+  "facts_hash": "4f53cda18c2baa0c0354bb5f",
+  "page_hash": "ca188bd2ba817750da9ceff0",
+  "last_facts": [],
+  "last_samples": {}
  },
  "my_evisa": {
   "consecutive_failures": 0,
@@ -609,7 +613,7 @@
   "last_checked": "2026-10-27",
   "last_note": "页面 200 但未提取到任何关键事实 — 页面结构可能已改, 需人工核对",
   "facts_hash": "4f53cda18c2baa0c0354bb5f",
-  "page_hash": "7efdf8bc6757e57479b6d808",
+  "page_hash": "fa3ce938469c0a41da6eed40",
   "last_facts": [],
   "last_samples": {}
  },
