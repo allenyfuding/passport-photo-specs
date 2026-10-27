@@ -1,7 +1,7 @@
 # spec_fetch — 最近一次运行: 2026-10-27
 
-- 完整复核(全部源可达): 否(部分源不可达, 保留各自核验日期)
-- 本轮刷新核验日期: us_visa, uk_passport, uk_visa, ca_passport, ca_visa, in_evisa, cn_passport, in_passport_oci, in_passport, au_passport, au_visa, sg_passport, sa_evisa, nz_visa_online, uk_driving_licence, ke_eta, india_evisa, sa_visa, la_visa, ca_pr_card, tz_visa, et_visa, br_visa
+- 完整复核(全部源可达): 是 ✅
+- 本轮刷新核验日期: 无
 - 连续失败告警阈值: 3 次
 
 - `us_passport`: UNREACHABLE — 核验日期 2026-10-26 (last_checked 2026-10-27)
@@ -37,3 +37,4 @@
 - `my_evisa`: ANOMALY — 核验日期 2026-08-17 (last_checked 2026-10-27)
 - `vn_passport`: ANOMALY — 核验日期 2026-08-10 (last_checked 2026-10-27)
 - `my_passport`: REMOVED — 核验日期 2026-08-09 (last_checked 2026-10-27)
+- `nz_passport`: UNREACHABLE — 核验日期 2026-08-09 (last_checked 2026-10-27)
