@@ -25,7 +25,8 @@ def main():
     if os.path.exists(STATE_FP):
         with open(STATE_FP, encoding="utf-8") as f:
             state = json.load(f)
-    source_keys = {s["key"] for s in SOURCES}
+    source_map = {s["key"]: s for s in SOURCES}
+    source_keys = set(source_map)
     today = date.today()
     rows = []
     for s in specs:
@@ -41,6 +42,7 @@ def main():
             "date": d or "—",
             "age": age,
             "auto": s.get("id") in source_keys,
+            "optional": bool((source_map.get(s.get("id")) or {}).get("optional")),
             "status": (state.get(s.get("id")) or {}).get("last_status", ""),
         })
 
@@ -63,7 +65,8 @@ def main():
     for r in sorted(stale, key=lambda x: (x["date"], x["id"])):
         lines.append(f"| {r['id']} | {r['document']} | {r['date']} | "
                      f"{r['age'] if r['age'] is not None else '?'} | "
-                     f"{'yes' if r['auto'] else 'NO'} | {r['status'] or '-'} | {r['url'] or '-'} |")
+                     f"{'optional' if r['optional'] else ('yes' if r['auto'] else 'NO')} | "
+                     f"{r['status'] or '-'} | {r['url'] or '-'} |")
     lines += [
         "",
         f"## Unsourced ({len(unsourced)})",
