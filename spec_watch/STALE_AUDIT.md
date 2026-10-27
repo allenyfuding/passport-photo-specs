@@ -1,16 +1,15 @@
 # Spec source / staleness audit
 
 Generated: 2026-10-27
-Automatic sources: 31
+Automatic sources: 30
 Specs: 49
 Stale threshold: 60 days
 
-## Stale (18)
+## Stale (17)
 
 | id | document | verified_date | age_days | auto_source | source_status | official_url |
 |---|---|---|---:|---|---|---|
 | mm_visa | Myanmar e-Visa | 2026-08-09 | 79 | NO | - | http://evisa.moip.gov.mm |
-| my_passport | Malaysia Passport | 2026-08-09 | 79 | optional | REMOVED | https://www.imi.gov.my/index.php/en/main-services/passport/malaysian-international-passport.html |
 | uz_visa | Uzbekistan Visa | 2026-08-09 | 79 | NO | - | https://evisa.mfa.uz/evisa_en/ |
 | vn_visa | Vietnam e-Visa | 2026-08-09 | 79 | optional | ANOMALY | https://evisa.gov.vn/ |
 | ae_passport | UAE Passport | 2026-08-10 | 78 | NO | - | https://icp.gov.ae/en/ |
@@ -28,7 +27,7 @@ Stale threshold: 60 days
 | ug_visa | Uganda e-Visa | 2026-08-17 | 71 | NO | - | https://visas.immigration.go.ug |
 | in_dl | India Driving Licence | 2026-08-20 | 68 | NO | - | https://sarathi.parivahan.gov.in/ |
 
-## Unsourced (18)
+## Unsourced (19)
 
 These specs cannot advance their verified_date until a source is registered or a manual verification is recorded.
 
@@ -44,6 +43,7 @@ These specs cannot advance their verified_date until a source is registered or a
 - `mm_passport` — Myanmar Passport — 2026-08-10 — https://www.immigration.gov.mm/
 - `mm_visa` — Myanmar e-Visa — 2026-08-09 — http://evisa.moip.gov.mm
 - `my_evisa` — Malaysia e-Visa — 2026-10-27 — https://malaysiavisa.imi.gov.my/evisa/assets/images/samples/sample-passport-photo-req.png
+- `my_passport` — Malaysia Passport — 2026-10-27 — https://www.imi.gov.my/wp-content/uploads/2026/06/Saiz_Gambar_Pasport.jpg
 - `om_visa` — Oman e-Visa — 2026-08-17 — https://evisa.rop.gov.om
 - `sa_passport` — Saudi Arabia Passport — 2026-08-10 — https://www.my.gov.sa/
 - `sg_visa_online` — Singapore Visa (online photo) — 2026-08-17 — https://apples.ica.gov.sg/apples/index.xhtml
@@ -51,10 +51,9 @@ These specs cannot advance their verified_date until a source is registered or a
 - `uz_passport` — Uzbekistan Passport — 2026-08-10 — https://evisa.mfa.uz/evisa_en/
 - `uz_visa` — Uzbekistan Visa — 2026-08-09 — https://evisa.mfa.uz/evisa_en/
 
-## Automatic sources not OK (9)
+## Automatic sources not OK (8)
 
 - `ca_passport` — COSMETIC — 2026-10-27
-- `my_passport` — REMOVED — 2026-08-09
 - `nz_passport` — UNREACHABLE — 2026-10-27
 - `us_dv_lottery` — UNREACHABLE — 2026-10-26
 - `us_ead` — UNREACHABLE — 2026-10-27
