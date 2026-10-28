@@ -207,14 +207,14 @@
    "document": "Vietnam e-Visa",
    "photo_size": "40x60 mm",
    "output_pixels": "300 dpi",
-   "file_size": "max 45 KB",
-   "head_height_rule": "Head height (top of hair) about 40 mm; 6 mm from top of photo to top of hair",
+   "file_size": "Under 2 MB (official portal limit)",
+   "head_height_rule": "Our framing convention (not published by the portal): head height (top of hair to chin) about 40 mm; 6 mm from top of photo to top of hair",
    "background": "White background",
-   "notes": "Photo for the Vietnam e-Visa portal (evisa.gov.vn). Figures cross-checked against independent published requirement tables (visafoto.com, 2026-08-09).",
-   "official_source": "Vietnam National E-Visa system",
-   "official_source_url": "https://evisa.gov.vn/",
-   "verified_date": "2026-08-09",
-   "official_page_verified": false
+   "notes": "Photo for the Vietnam e-Visa portal (evisa.gov.vn). Official application-page text verified 2026-10-28: 4x6 cm, JPG/JPEG under 2 MB, straight face, no hat, no glasses, formal clothes, plain white background, one passport data page image with all four corners visible. The earlier 45 KB figure is retired.",
+   "official_source": "Vietnam National E-Visa system (Cuc Quan ly xuat nhap canh)",
+   "official_source_url": "https://evisa.gov.vn/e-visa/foreigners",
+   "verified_date": "2026-10-28",
+   "official_page_verified": true
   },
   {
    "id": "ae_visa",
@@ -460,13 +460,13 @@
    "photo_size": "40x60 mm",
    "output_pixels": "600 dpi",
    "file_size": "",
-   "head_height_rule": "Head height about 39 mm; eye line about 36 mm from bottom of photo",
+   "head_height_rule": "Our framing convention (not published by the portal): head height about 39 mm; eye line about 36 mm from bottom of photo",
    "background": "White background",
-   "notes": "Vietnam passport photo 4x6 cm (40x60 mm), 600 dpi. Figures cross-checked against independent published requirement tables (passport-photo.online, 2026-08-10).",
-   "official_source": "Vietnam Immigration Department — passport photo requirements",
-   "official_source_url": "https://xuatnhapcanh.gov.vn/",
-   "verified_date": "2026-08-10",
-   "official_page_verified": false
+   "notes": "Vietnam passport photo, official FAQ verified 2026-10-28: two 4x6 cm photos, plain white background, face straight to the front, head uncovered, no tinted glasses, and the photos must be taken at a studio authorised by the Vietnam Immigration Department. The same photo rule is stated for first passports, repeat passports, and applications for minors or persons with limited civil capacity. A self-made digital photo is not a substitute for an authorised studio.",
+   "official_source": "Vietnam Immigration Department - passport FAQ (hochieu.xuatnhapcanh.gov.vn)",
+   "official_source_url": "https://hochieu.xuatnhapcanh.gov.vn/faces/faq.jspx",
+   "verified_date": "2026-10-28",
+   "official_page_verified": true
   },
   {
    "id": "us_green_card",
