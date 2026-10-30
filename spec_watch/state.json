@@ -1,8 +1,8 @@
 {
  "us_passport": {
-  "consecutive_failures": 4,
+  "consecutive_failures": 5,
   "last_status": "UNREACHABLE",
-  "last_checked": "2026-10-29",
+  "last_checked": "2026-10-30",
   "last_note": "RuntimeError; RuntimeError",
   "facts_hash": "4f53cda18c2baa0c0354bb5f",
   "page_hash": "5a8d99d70b5c89ffc17b2060",
@@ -36,7 +36,7 @@
  "uk_passport": {
   "consecutive_failures": 0,
   "last_status": "OK",
-  "last_checked": "2026-10-29",
+  "last_checked": "2026-10-30",
   "last_note": "OK",
   "facts_hash": "70caea64e470bdb956feecb9",
   "page_hash": "29794a5356ff1f786ec0e62e",
@@ -64,7 +64,7 @@
  "uk_visa": {
   "consecutive_failures": 0,
   "last_status": "OK",
-  "last_checked": "2026-10-29",
+  "last_checked": "2026-10-30",
   "last_note": "OK",
   "facts_hash": "991da3c02f8dbdc013de97bd",
   "page_hash": "212b0f507b1378b2ff4e26a5",
@@ -84,7 +84,7 @@
  "ca_passport": {
   "consecutive_failures": 0,
   "last_status": "OK",
-  "last_checked": "2026-10-29",
+  "last_checked": "2026-10-30",
   "last_note": "OK",
   "facts_hash": "86323f93434628e666ab1d84",
   "page_hash": "876f6ff4b802e08e0b6b8660",
@@ -110,7 +110,7 @@
  "ca_visa": {
   "consecutive_failures": 0,
   "last_status": "OK",
-  "last_checked": "2026-10-29",
+  "last_checked": "2026-10-30",
   "last_note": "OK",
   "facts_hash": "43c6b0857ba269f42575c702",
   "page_hash": "e84e7c20fdb2d92b824153e4",
@@ -125,9 +125,9 @@
  },
  "in_evisa": {
   "consecutive_failures": 0,
-  "last_status": "COSMETIC",
-  "last_checked": "2026-10-29",
-  "last_note": "页面措辞变化, 规格事实未变",
+  "last_status": "OK",
+  "last_checked": "2026-10-30",
+  "last_note": "OK",
   "facts_hash": "15ce627fb8dbcfcfb6b14e84",
   "page_hash": "606002bb0ae42ab984472b05",
   "last_facts": [
@@ -143,30 +143,28 @@
  },
  "sg_passport": {
   "consecutive_failures": 0,
-  "last_status": "OK",
-  "last_checked": "2026-10-29",
-  "last_note": "OK",
-  "facts_hash": "5bc3ffdabd32198b9b8eaa83",
-  "page_hash": "d330781b746f7fce083d6699",
+  "last_status": "CHANGED",
+  "last_checked": "2026-10-30",
+  "last_note": "规格事实变更 5bc3ffdabd32198b9b8eaa83 → ec0bde05e1acd3ee715e9c56",
+  "facts_hash": "ec0bde05e1acd3ee715e9c56",
+  "page_hash": "892ce0c5dfb771bcfc13a605",
   "last_facts": [
    "formats",
    "iso_icao",
-   "matte",
    "max_8mb",
    "px_400x514"
   ],
   "last_samples": {
-   "px_400x514": "400x514 pixels",
+   "px_400x514": "400 x 514 pixels",
    "formats": "jpg, jpeg",
-   "max_8mb": "8mb",
-   "matte": "matte or semi matte",
+   "max_8mb": "8 mb",
    "iso_icao": "international standards organisation"
   }
  },
  "sa_evisa": {
   "consecutive_failures": 0,
   "last_status": "OK",
-  "last_checked": "2026-10-29",
+  "last_checked": "2026-10-30",
   "last_note": "OK",
   "facts_hash": "2fd00181c48990b1a8378d6e",
   "page_hash": "d0b851e32cd21552e6fbfb86",
@@ -190,7 +188,7 @@
  "nz_visa_online": {
   "consecutive_failures": 0,
   "last_status": "OK",
-  "last_checked": "2026-10-29",
+  "last_checked": "2026-10-30",
   "last_note": "OK",
   "facts_hash": "a79fec81137fa82ba8595d3e",
   "page_hash": "43df5ee8d95aca206e774c63",
@@ -214,7 +212,7 @@
  "uk_driving_licence": {
   "consecutive_failures": 0,
   "last_status": "OK",
-  "last_checked": "2026-10-29",
+  "last_checked": "2026-10-30",
   "last_note": "OK",
   "facts_hash": "94394e1dd186f007fceadc1a",
   "page_hash": "cc900a835c9468a84b8f9079",
@@ -232,7 +230,7 @@
  "ke_eta": {
   "consecutive_failures": 0,
   "last_status": "OK",
-  "last_checked": "2026-10-29",
+  "last_checked": "2026-10-30",
   "last_note": "OK",
   "facts_hash": "e7b9c291c7f488795ea5117c",
   "page_hash": "8952c00f6137f8979ac5e3a2",
@@ -249,9 +247,9 @@
  },
  "india_evisa": {
   "consecutive_failures": 0,
-  "last_status": "COSMETIC",
-  "last_checked": "2026-10-29",
-  "last_note": "页面措辞变化, 规格事实未变",
+  "last_status": "OK",
+  "last_checked": "2026-10-30",
+  "last_note": "OK",
   "facts_hash": "68e38d1da36874622a71f2d2",
   "page_hash": "606002bb0ae42ab984472b05",
   "last_facts": [
@@ -276,7 +274,7 @@
  "sa_visa": {
   "consecutive_failures": 0,
   "last_status": "OK",
-  "last_checked": "2026-10-29",
+  "last_checked": "2026-10-30",
   "last_note": "OK",
   "facts_hash": "a9c3c0ea78d2af506e0d9472",
   "page_hash": "d0b851e32cd21552e6fbfb86",
@@ -300,7 +298,7 @@
  "la_visa": {
   "consecutive_failures": 0,
   "last_status": "OK",
-  "last_checked": "2026-10-29",
+  "last_checked": "2026-10-30",
   "last_note": "OK",
   "facts_hash": "8357c71bbef50fac0bc54072",
   "page_hash": "c7c06d7714c80239db759894",
@@ -318,10 +316,10 @@
   }
  },
  "us_green_card": {
-  "consecutive_failures": 0,
-  "last_status": "OK",
+  "consecutive_failures": 1,
+  "last_status": "UNREACHABLE",
   "last_checked": "2026-10-30",
-  "last_note": "OK",
+  "last_note": "RuntimeError",
   "facts_hash": "0b73fa6d02d4162b4905ab40",
   "page_hash": "3afe8642e6b358acb5b7ccb0",
   "last_facts": [
@@ -350,10 +348,10 @@
   }
  },
  "us_ead": {
-  "consecutive_failures": 0,
-  "last_status": "OK",
+  "consecutive_failures": 1,
+  "last_status": "UNREACHABLE",
   "last_checked": "2026-10-30",
-  "last_note": "OK",
+  "last_note": "RuntimeError",
   "facts_hash": "33f799d010dc5e0720be0646",
   "page_hash": "6ce162e87493b997f8d45452",
   "last_facts": [
@@ -384,9 +382,9 @@
   }
  },
  "us_dv_lottery": {
-  "consecutive_failures": 4,
+  "consecutive_failures": 5,
   "last_status": "UNREACHABLE",
-  "last_checked": "2026-10-29",
+  "last_checked": "2026-10-30",
   "last_note": "RuntimeError",
   "facts_hash": "4f53cda18c2baa0c0354bb5f",
   "page_hash": "2754aad66b6216e8d7a184e1",
@@ -396,7 +394,7 @@
  "ca_pr_card": {
   "consecutive_failures": 0,
   "last_status": "OK",
-  "last_checked": "2026-10-29",
+  "last_checked": "2026-10-30",
   "last_note": "OK",
   "facts_hash": "26ad2ee608cdf6078c37177d",
   "page_hash": "a7192e64447fb4c59833f8dc",
@@ -412,7 +410,7 @@
  "tz_visa": {
   "consecutive_failures": 0,
   "last_status": "OK",
-  "last_checked": "2026-10-29",
+  "last_checked": "2026-10-30",
   "last_note": "OK",
   "facts_hash": "6694ebf90e31a258b8e20c30",
   "page_hash": "6e3e9de5b8e865d485966a3d",
@@ -430,7 +428,7 @@
  "et_visa": {
   "consecutive_failures": 0,
   "last_status": "OK",
-  "last_checked": "2026-10-29",
+  "last_checked": "2026-10-30",
   "last_note": "OK",
   "facts_hash": "218d9a4918fa318b5278d43d",
   "page_hash": "f5d83548f6dd7b35ab180d41",
@@ -449,11 +447,11 @@
  },
  "br_visa": {
   "consecutive_failures": 0,
-  "last_status": "OK",
-  "last_checked": "2026-10-29",
-  "last_note": "OK",
+  "last_status": "COSMETIC",
+  "last_checked": "2026-10-30",
+  "last_note": "页面措辞变化, 规格事实未变",
   "facts_hash": "a9a5524deb5d34b915f82eef",
-  "page_hash": "2bec8ee9072d981cb75506b4",
+  "page_hash": "b15cee54f674550a5017d1c6",
   "last_facts": [
    "face_and_shoulders_framed",
    "look_directly_at_camera",
@@ -480,7 +478,7 @@
  "cn_passport": {
   "consecutive_failures": 0,
   "last_status": "OK",
-  "last_checked": "2026-10-29",
+  "last_checked": "2026-10-30",
   "last_note": "OK",
   "facts_hash": "027a13eeeed16cad10c6b8cc",
   "page_hash": "2608e342bbc4b36b83177c7b",
@@ -506,7 +504,7 @@
  "in_passport_oci": {
   "consecutive_failures": 0,
   "last_status": "OK",
-  "last_checked": "2026-10-29",
+  "last_checked": "2026-10-30",
   "last_note": "OK",
   "facts_hash": "79fd5295cfe25723d85939cd",
   "page_hash": "e121bbe4c8412e15da3e65c6",
@@ -528,7 +526,7 @@
  "in_passport": {
   "consecutive_failures": 0,
   "last_status": "OK",
-  "last_checked": "2026-10-29",
+  "last_checked": "2026-10-30",
   "last_note": "OK",
   "facts_hash": "61941e308b3d8529f9ea0874",
   "page_hash": "2028ec0948042469b78a2755",
@@ -542,7 +540,7 @@
  "au_passport": {
   "consecutive_failures": 0,
   "last_status": "OK",
-  "last_checked": "2026-10-29",
+  "last_checked": "2026-10-30",
   "last_note": "OK",
   "facts_hash": "11d4e6e79f3f359e947e7f45",
   "page_hash": "9df178b05975188b13799cd8",
@@ -558,7 +556,7 @@
  "au_visa": {
   "consecutive_failures": 0,
   "last_status": "OK",
-  "last_checked": "2026-10-29",
+  "last_checked": "2026-10-30",
   "last_note": "OK",
   "facts_hash": "11d4e6e79f3f359e947e7f45",
   "page_hash": "9df178b05975188b13799cd8",
@@ -590,7 +588,7 @@
  "vn_visa": {
   "consecutive_failures": 0,
   "last_status": "ANOMALY",
-  "last_checked": "2026-10-29",
+  "last_checked": "2026-10-30",
   "last_note": "页面 200 但未提取到任何关键事实 — 页面结构可能已改, 需人工核对",
   "facts_hash": "4f53cda18c2baa0c0354bb5f",
   "page_hash": "ca188bd2ba817750da9ceff0",
@@ -610,10 +608,10 @@
  "vn_passport": {
   "consecutive_failures": 0,
   "last_status": "ANOMALY",
-  "last_checked": "2026-10-29",
+  "last_checked": "2026-10-30",
   "last_note": "页面 200 但未提取到任何关键事实 — 页面结构可能已改, 需人工核对",
   "facts_hash": "4f53cda18c2baa0c0354bb5f",
-  "page_hash": "7efdf8bc6757e57479b6d808",
+  "page_hash": "fa3ce938469c0a41da6eed40",
   "last_facts": [],
   "last_samples": {}
  },
@@ -625,11 +623,11 @@
  },
  "nz_passport": {
   "consecutive_failures": 0,
-  "last_status": "OK",
-  "last_checked": "2026-10-29",
-  "last_note": "OK",
+  "last_status": "COSMETIC",
+  "last_checked": "2026-10-30",
+  "last_note": "页面措辞变化, 规格事实未变",
   "facts_hash": "4252b5051134c6912e01946a",
-  "page_hash": "ef97f73c54e4e6adff29a11b",
+  "page_hash": "388574d0989ede396e178b0e",
   "last_facts": [
    "age_6mo",
    "bg_light",

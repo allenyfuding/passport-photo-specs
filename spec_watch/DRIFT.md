@@ -291,3 +291,9 @@
 ## 2026-10-28 — 需人工复核
 - **US Passport** (us_passport): 已连续 **3** 次不可达 (最近: RuntimeError; RuntimeError) — 保留核验日期 2026-10-26, 需检查网络/代理
 - **US Diversity Visa** (us_dv_lottery): 已连续 **3** 次不可达 (最近: RuntimeError) — 保留核验日期 2026-10-26, 需检查网络/代理
+
+## 2026-10-30 — 需人工复核
+- **Singapore Passport (ICA)** (sg_passport): **规格变更** — 官方页 https://www.ica.gov.sg/photo-guidelines
+  - 新增/变化事实: —
+  - 消失事实: ['matte (matte or semi matte)']
+  - **数值与核验日期未自动修改**(红线: 真实规格数据), 请人工复核后手动更新 JSON + 日期
