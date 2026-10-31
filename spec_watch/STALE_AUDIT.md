@@ -1,6 +1,6 @@
 # Spec source / staleness audit
 
-Generated: 2026-10-30
+Generated: 2026-10-31
 Automatic sources: 30
 Specs: 49
 Stale threshold: 60 days
@@ -9,19 +9,19 @@ Stale threshold: 60 days
 
 | id | document | verified_date | age_days | auto_source | source_status | official_url |
 |---|---|---|---:|---|---|---|
-| uz_visa | Uzbekistan Visa | 2026-08-09 | 82 | NO | - | https://evisa.mfa.uz/evisa_en/ |
-| ae_passport | UAE Passport | 2026-08-10 | 81 | NO | - | https://icp.gov.ae/en/ |
-| mm_passport | Myanmar Passport | 2026-08-10 | 81 | NO | - | https://www.immigration.gov.mm/ |
-| sa_passport | Saudi Arabia Passport | 2026-08-10 | 81 | NO | - | https://www.my.gov.sa/ |
-| uz_passport | Uzbekistan Passport | 2026-08-10 | 81 | NO | - | https://evisa.mfa.uz/evisa_en/ |
-| ae_visa | UAE Visa | 2026-08-17 | 74 | NO | - | https://u.ae/en/information-and-services/visa-and-emirates-id |
-| az_visa | Azerbaijan e-Visa | 2026-08-17 | 74 | NO | - | https://evisa.gov.az |
-| eg_visa | Egypt e-Visa | 2026-08-17 | 74 | NO | - | https://visa2egypt.gov.eg |
-| kh_visa | Cambodia e-Visa | 2026-08-17 | 74 | NO | UNREACHABLE | https://www.evisa.gov.kh |
-| mg_visa | Madagascar e-Visa | 2026-08-17 | 74 | NO | - | https://evisamada.gov.mg |
-| om_visa | Oman e-Visa | 2026-08-17 | 74 | NO | - | https://evisa.rop.gov.om |
-| ug_visa | Uganda e-Visa | 2026-08-17 | 74 | NO | - | https://visas.immigration.go.ug |
-| in_dl | India Driving Licence | 2026-08-20 | 71 | NO | - | https://sarathi.parivahan.gov.in/ |
+| uz_visa | Uzbekistan Visa | 2026-08-09 | 83 | NO | - | https://evisa.mfa.uz/evisa_en/ |
+| ae_passport | UAE Passport | 2026-08-10 | 82 | NO | - | https://icp.gov.ae/en/ |
+| mm_passport | Myanmar Passport | 2026-08-10 | 82 | NO | - | https://www.immigration.gov.mm/ |
+| sa_passport | Saudi Arabia Passport | 2026-08-10 | 82 | NO | - | https://www.my.gov.sa/ |
+| uz_passport | Uzbekistan Passport | 2026-08-10 | 82 | NO | - | https://evisa.mfa.uz/evisa_en/ |
+| ae_visa | UAE Visa | 2026-08-17 | 75 | NO | - | https://u.ae/en/information-and-services/visa-and-emirates-id |
+| az_visa | Azerbaijan e-Visa | 2026-08-17 | 75 | NO | - | https://evisa.gov.az |
+| eg_visa | Egypt e-Visa | 2026-08-17 | 75 | NO | - | https://visa2egypt.gov.eg |
+| kh_visa | Cambodia e-Visa | 2026-08-17 | 75 | NO | UNREACHABLE | https://www.evisa.gov.kh |
+| mg_visa | Madagascar e-Visa | 2026-08-17 | 75 | NO | - | https://evisamada.gov.mg |
+| om_visa | Oman e-Visa | 2026-08-17 | 75 | NO | - | https://evisa.rop.gov.om |
+| ug_visa | Uganda e-Visa | 2026-08-17 | 75 | NO | - | https://visas.immigration.go.ug |
+| in_dl | India Driving Licence | 2026-08-20 | 72 | NO | - | https://sarathi.parivahan.gov.in/ |
 
 ## Unsourced (19)
 
@@ -30,7 +30,7 @@ These specs cannot advance their verified_date until a source is registered or a
 - `ae_passport` — UAE Passport — 2026-08-10 — https://icp.gov.ae/en/
 - `ae_visa` — UAE Visa — 2026-08-17 — https://u.ae/en/information-and-services/visa-and-emirates-id
 - `az_visa` — Azerbaijan e-Visa — 2026-08-17 — https://evisa.gov.az
-- `cn_visa_online` — China Visa — 2026-10-30 — https://consular.mfa.gov.cn/VISA/img/zpyq1_zh_CN.f7c96ced.png
+- `cn_visa_online` — China Visa — 2026-10-31 — https://consular.mfa.gov.cn/VISA/img/zpyq1_zh_CN.f7c96ced.png
 - `eg_visa` — Egypt e-Visa — 2026-08-17 — https://visa2egypt.gov.eg
 - `id_evoa` — Indonesia e-VOA — 2026-10-27 — https://evisa.imigrasi.go.id
 - `in_dl` — India Driving Licence — 2026-08-20 — https://sarathi.parivahan.gov.in/
@@ -47,14 +47,15 @@ These specs cannot advance their verified_date until a source is registered or a
 - `uz_passport` — Uzbekistan Passport — 2026-08-10 — https://evisa.mfa.uz/evisa_en/
 - `uz_visa` — Uzbekistan Visa — 2026-08-09 — https://evisa.mfa.uz/evisa_en/
 
-## Automatic sources not OK (9)
+## Automatic sources not OK (10)
 
-- `br_visa` — COSMETIC — 2026-10-30
-- `nz_passport` — COSMETIC — 2026-10-30
-- `sg_passport` — CHANGED — 2026-10-29
+- `au_passport` — COSMETIC — 2026-10-31
+- `au_visa` — COSMETIC — 2026-10-31
+- `in_passport_oci` — REMOVED — 2026-10-30
+- `nz_passport` — COSMETIC — 2026-10-31
 - `us_dv_lottery` — UNREACHABLE — 2026-10-26
-- `us_ead` — UNREACHABLE — 2026-10-30
-- `us_green_card` — UNREACHABLE — 2026-10-30
+- `us_ead` — UNREACHABLE — 2026-10-31
+- `us_green_card` — UNREACHABLE — 2026-10-31
 - `us_passport` — UNREACHABLE — 2026-10-26
 - `vn_passport` — ANOMALY — 2026-10-28
 - `vn_visa` — ANOMALY — 2026-10-28
