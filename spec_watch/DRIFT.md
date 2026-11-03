@@ -302,3 +302,8 @@
 - **US Passport** (us_passport): 已连续 **6** 次不可达 (最近: RuntimeError; RuntimeError) — 保留核验日期 2026-10-26, 需检查网络/代理
 - **India OCI** (in_passport_oci): 官方页面 **REMOVED** — HTTP 404 — 官方页面已移除/失效, 需人工核对新 URL (URL: https://ociservices.gov.in/Photo-Spec-FINAL.pdf)
 - **US Diversity Visa** (us_dv_lottery): 已连续 **6** 次不可达 (最近: RuntimeError) — 保留核验日期 2026-10-26, 需检查网络/代理
+
+## 2026-11-03 — 需人工复核
+- **US Passport** (us_passport): 已连续 **9** 次不可达 (最近: RuntimeError; RuntimeError) — 保留核验日期 2026-10-26, 需检查网络/代理
+- **India OCI** (in_passport_oci): 官方页面 **REMOVED** — HTTP 404 — 官方页面已移除/失效, 需人工核对新 URL (URL: https://ociservices.gov.in/Photo-Spec-FINAL.pdf)
+- **US Diversity Visa** (us_dv_lottery): 已连续 **9** 次不可达 (最近: RuntimeError) — 保留核验日期 2026-10-26, 需检查网络/代理
