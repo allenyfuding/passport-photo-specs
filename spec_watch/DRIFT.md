@@ -307,3 +307,8 @@
 - **US Passport** (us_passport): 已连续 **9** 次不可达 (最近: RuntimeError; RuntimeError) — 保留核验日期 2026-10-26, 需检查网络/代理
 - **India OCI** (in_passport_oci): 官方页面 **REMOVED** — HTTP 404 — 官方页面已移除/失效, 需人工核对新 URL (URL: https://ociservices.gov.in/Photo-Spec-FINAL.pdf)
 - **US Diversity Visa** (us_dv_lottery): 已连续 **9** 次不可达 (最近: RuntimeError) — 保留核验日期 2026-10-26, 需检查网络/代理
+
+## 2026-11-05 — 需人工复核
+- **India OCI** (in_passport_oci): 官方页面 **REMOVED** — HTTP 404 — 官方页面已移除/失效, 需人工核对新 URL (URL: https://ociservices.gov.in/Photo-Spec-FINAL.pdf)
+- **US Green Card (I-485)** (us_green_card): 已连续 **3** 次不可达 (最近: RuntimeError) — 保留核验日期 2026-11-04, 需检查网络/代理
+- **US Employment Authorization (I-765)** (us_ead): 已连续 **3** 次不可达 (最近: RuntimeError) — 保留核验日期 2026-11-04, 需检查网络/代理
