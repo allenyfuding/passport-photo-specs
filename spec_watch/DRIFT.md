@@ -317,3 +317,9 @@
 - **US Passport** (us_passport): 已连续 **12** 次不可达 (最近: RuntimeError; RuntimeError) — 保留核验日期 2026-10-26, 需检查网络/代理
 - **US Diversity Visa** (us_dv_lottery): 已连续 **12** 次不可达 (最近: RuntimeError) — 保留核验日期 2026-10-26, 需检查网络/代理
 - **Ethiopia e-Visa** (et_visa): **ANOMALY** — 页面可达但提取不到规格事实 (hash f5d83548f6dd7b35ab180d41 → 826ad81e950102c6ec2d7539), 需人工核对 https://www.evisa.gov.et/visa
+
+## 2026-11-07 — 需人工复核
+- **Ethiopia e-Visa** (et_visa): **规格变更** — 官方页 https://www.evisa.gov.et/visa
+  - 新增/变化事实: ['clear_and_readable (image/document should be clear and readable)', 'jpeg_jpg_png (photo and passport copy should be only in image file type of)', 'max_2mb (less than 2mb)', 'no_blurred_or_unclean_background (blurred or unclean background)']
+  - 消失事实: —
+  - **数值与核验日期未自动修改**(红线: 真实规格数据), 请人工复核后手动更新 JSON + 日期
