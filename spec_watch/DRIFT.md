@@ -323,3 +323,6 @@
   - 新增/变化事实: ['clear_and_readable (image/document should be clear and readable)', 'jpeg_jpg_png (photo and passport copy should be only in image file type of)', 'max_2mb (less than 2mb)', 'no_blurred_or_unclean_background (blurred or unclean background)']
   - 消失事实: —
   - **数值与核验日期未自动修改**(红线: 真实规格数据), 请人工复核后手动更新 JSON + 日期
+
+## 2026-11-08 — 需人工复核
+- **India OCI** (in_passport_oci): 官方页面 **REMOVED** — HTTP 404 — 官方页面已移除/失效, 需人工核对新 URL (URL: https://ociservices.gov.in/Photo-Spec-FINAL.pdf)
