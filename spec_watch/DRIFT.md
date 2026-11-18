@@ -348,3 +348,7 @@
   - 新增/变化事实: ['face_and_shoulders_framed (face and shoulders must be fully framed)', 'look_directly_at_camera (must look directly at the camera)', 'neutral_expression_eyes_open (neutral expression and the eyes must be open)', 'no_shadows_or_reflections (no reflections, shadows, or penumbras)', 'photo_min_413x531 (at least 413x531 pixels)', 'white_background (against a white background)']
   - 消失事实: —
   - **数值与核验日期未自动修改**(红线: 真实规格数据), 请人工复核后手动更新 JSON + 日期
+
+## 2026-11-18 — 需人工复核
+- **US Passport** (us_passport): 已连续 **24** 次不可达 (最近: RuntimeError; RuntimeError) — 保留核验日期 2026-10-26, 需检查网络/代理
+- **US Diversity Visa** (us_dv_lottery): 已连续 **24** 次不可达 (最近: RuntimeError) — 保留核验日期 2026-10-26, 需检查网络/代理
