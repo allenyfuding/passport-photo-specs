@@ -372,3 +372,7 @@
 
 ## 2026-11-26 — 需人工复核
 - **Brazil e-Visa (MRE/SCI)** (br_visa): 已连续 **3** 次不可达 (最近: RuntimeError; RuntimeError) — 保留核验日期 2026-11-23, 需检查网络/代理
+
+## 2026-11-27 — 需人工复核
+- **US Passport** (us_passport): 已连续 **33** 次不可达 (最近: RuntimeError; RuntimeError) — 保留核验日期 2026-10-26, 需检查网络/代理
+- **US Diversity Visa** (us_dv_lottery): 已连续 **33** 次不可达 (最近: RuntimeError) — 保留核验日期 2026-10-26, 需检查网络/代理
